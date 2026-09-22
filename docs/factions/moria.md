@@ -1,26 +1,28 @@
-# Moria
+# Moria — Detailed Design
 
 ## Identity
 
-A subterranean fortress faction built around durability, mines, and tunnel logistics.
+Moria is a subterranean fortress and industrial faction. It wins through heavy infantry, durable positions, mineral wealth, and logistics through the underground rather than speed.
 
-## Strengths
+## Mithril Core
 
-- Heavy infantry and high durability.
-- Strong underground economy.
-- Tunnel movement and supply control.
-- Powerful late-game fortress play.
+Moria can maintain metal production after a normal metal node is depleted through the Mithril Core system. This should not mean infinite metal with no infrastructure or worker cost. The system may require a structure, technology, or diminishing efficiency.
 
-## Signature mechanic
+## Tunnels
 
-The Mithril Core allows sustainable metal extraction after a normal node is depleted. Tunnel entrances provide strategic movement and logistics.
+Tunnel entrances create strategic logistics and movement routes. They should be:
 
-## Weaknesses
+- expensive enough to matter;
+- visible and vulnerable;
+- capturable, blockable, or disableable;
+- unable to function as instant, risk-free global teleportation.
 
-- Slow movement and expansion.
-- Tunnel networks are expensive and can be captured, blocked, or disabled.
-- Vulnerable to cavalry, siege, and attacks that avoid prepared chokes.
+A tunnel network should reward map planning and chokepoints while giving enemies ways to cut the network.
 
-## Design notes
+## Units and counters
 
-Mithril Vanguard units should be durable without becoming immune to mobility and siege counters. The Deep Vaults of Khazad-dûm should reinforce productivity and tunnel logistics.
+Mithril Vanguard units are highly durable but should remain vulnerable to cavalry, siege, flanking, and attacks that bypass prepared chokes. Moria should have strong underground defenses without becoming impossible to invade.
+
+## Wonder
+
+The Deep Vaults of Khazad-dûm reinforces productivity, mineral extraction, and tunnel logistics. It should not simply provide a giant unconditional combat-stat increase.

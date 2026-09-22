@@ -1,31 +1,37 @@
-# Lindon
+# Lindon — Detailed Design
 
 ## Identity
 
-An elite maritime and disciplined infantry faction built around high-quality units, naval control, and careful technological progression.
+Lindon is an elite High-Elven maritime faction. It should feel disciplined, technically refined, and difficult to dislodge, but too expensive to replace losses indefinitely.
 
 ## Strengths
 
-- Strong navy and coastal operations.
-- Durable elite infantry.
-- High-quality research and infrastructure.
-- Strong defensive play.
-
-## Signature direction
-
-The Gift of the West supports faster research in selected technologies. Lindon's healing and support effects should remain local rather than creating an unbreakable global army.
-
-## Key units and structures
-
-Swan Ships act as mobile reinforcement or transport vessels rather than free infantry factories. The faction's naval roster should be a major part of its identity without making land forces irrelevant.
+- Strong coastal and naval control.
+- Elite infantry with high quality rather than mass numbers.
+- Good defensive support and research.
+- Mobile naval reinforcement through Swan Ships.
 
 ## Weaknesses
 
 - Expensive units and technologies.
-- Slower replacement of losses.
-- Less effective than mass factions in prolonged attrition.
-- Strongest when it has coastal access and time to prepare.
+- Poorer performance in prolonged attrition.
+- Requires time and resources to reach its quality advantage.
+- Land power should not automatically dominate factions specializing in mass armies or siege.
 
-## Design notes
+## Signature mechanics
 
-The wonder should emphasize maritime vision or naval command rather than a permanent map-wide reveal.
+### Gift of the West
+Selected technologies research faster. The bonus should apply to clearly chosen high-craft, naval, or defensive technologies rather than every technology globally.
+
+### Swan Ships
+Swan Ships may transport or reinforce nearby armies. They should not function as unlimited free unit factories. Reinforcements should have a resource, capacity, cooldown, or production limitation.
+
+## Wonders and heroes
+
+The wonder should emphasize naval vision, maritime command, or coastal support—not a permanent map-wide fog removal or universal combat buff.
+
+Healing and support effects should be local and interruptible so that an enemy can attack the support network instead of facing an unbreakable army.
+
+## Counterplay
+
+Attack Lindon before its research and infrastructure mature, deny its coast, force land battles away from prepared defenses, and exploit its replacement costs.

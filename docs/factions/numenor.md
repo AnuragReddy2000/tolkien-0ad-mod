@@ -1,27 +1,35 @@
-# Númenor
+# Númenor — Detailed Design
 
 ## Identity
 
-A disciplined, technologically advanced maritime kingdom with expensive, healthy, high-quality units and formidable infrastructure.
+Númenor is an elite, healthy, technologically advanced maritime human kingdom. It represents exceptional Men, not a universal biological hierarchy that automatically makes every Númenórean better at every task.
+
+## Health and lore
+
+Comparable Númenórean units should have a modest health premium over ordinary Men—approximately 5–10% as an initial balance target. Lifespan, strength, health, armor, and combat skill remain separate concepts. Equipment, training, and role determine actual battlefield durability.
 
 ## Strengths
 
-- Slightly higher health than comparable ordinary Men.
-- Strong stone infrastructure and coastal control.
-- Elite infantry, archers, and naval units.
-- Fortified docks and efficient housing.
-
-## Signature mechanic
-
-Númenórean houses provide increased population capacity without simply doubling it. Fortified docks project limited coastal influence and can receive defensive upgrades.
+- High-quality infantry, archers, and ships.
+- Strong stone and coastal infrastructure.
+- Population-efficient housing.
+- Good defensive preparation.
 
 ## Weaknesses
 
-- High unit and technology costs.
-- Slower early development.
+- Expensive units and technology.
+- Slower development and replacement.
 - Smaller armies than mass-production factions.
-- Dependent on preparation and, for its strongest identity, coastal access.
+- Vulnerable to attrition and economic disruption.
 
-## Design notes
+## Signature infrastructure
 
-Lifespan, health, strength, armor, and skill should not be treated as one universal hierarchy. Númenor receives a modest health premium, while equipment, role, and training determine actual combat durability. The Temple of Armenelos should provide a restrained champion or morale benefit.
+Houses provide increased population capacity, but not an unconditional doubling. Fortified docks project limited coastal control and can receive defensive upgrades.
+
+## Wonder and heroes
+
+The Temple of Armenelos should provide a restrained champion, morale, or quality-support effect. It should not combine maximum health, armor, damage, population efficiency, and naval superiority without costs.
+
+## Counterplay
+
+Pressure Númenor before its infrastructure matures, deny its coast, attack expensive production, and force it to replace elite units faster than its economy can support.

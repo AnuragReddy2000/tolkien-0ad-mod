@@ -1,32 +1,43 @@
-# Gondor & Arnor
+# Gondor & Arnor — Detailed Design
 
 ## Identity
 
-A branching Dúnedain faction with a shared Phase I and a Phase II choice between ranger mobility and fortress defense.
+This is a branching Dúnedain faction. Phase I establishes a shared identity; Phase II chooses a path; Phase III commits to that path.
 
 ## Shared Phase I
 
-The faction begins with strong human infantry, reliable structures, and common Dúnedain foundations.
+The common roster includes strong human infantry, reliable civic structures, outposts, and early stone defenses. The shared phase should be good but not so strong that the branch choice becomes irrelevant.
 
 ## Arnor path
 
-- Ranger and scout identity.
-- Stealth, ambush, and territorial control.
-- Dúnedain Rangers with stationary stealth and extended sight.
-- Better raids and hit-and-run pressure.
+Arnor emphasizes rangers, scouts, ambushes, and territorial defense.
 
-Line Unbroken provides a modest local resistance or morale benefit in friendly territory, not a universal invulnerability effect.
+### Line Unbroken
+
+Arnor units in friendly territory gain a modest damage-resistance and/or morale benefit, approximately 10–15% as an initial target. It does not function outside friendly territory and does not make Arnor invulnerable.
+
+### Rangers
+
+Dúnedain Rangers have extended sight and stationary stealth. They are effective for reconnaissance, harassment, and ambushes but fragile when exposed in melee or open battle.
+
+### Ranger Camp
+
+A Ranger Camp supports ranger production, scouting, and forward ambush operations. It is less of a fortress than Gondor’s defensive structures.
 
 ## Gondor path
 
-- Stronger walls, towers, and territory projection.
-- Citadel Stonework improves tower health and repair.
-- Defensive Shield-Maiden units hold chokepoints but are expensive and slow.
+Gondor emphasizes stonecraft, towers, walls, and holding chokepoints.
 
-## Weaknesses
+### Citadel Legacy
 
-Arnor is less effective in set-piece open battles. Gondor is slower and more dependent on established positions.
+Gondor watchtowers project stronger territory influence, and stone walls have higher health than standard equivalents. The projection must remain limited enough that enemy siege and territorial contest remain meaningful.
 
-## Design principle
+### Shield-Maidens
 
-Phase I establishes a common Dúnedain identity. Phase II chooses the playstyle. Phase III commits to and deepens that choice.
+Gondor Shield-Maidens are expensive, slow, highly defensive melee holders. They excel in chokepoints but should not dominate open ground or cavalry engagements.
+
+## Heroes and wonders
+
+Aragorn (Strider) is a shared Phase I hero whose rough-terrain movement penalty is removed. Arnor heroes emphasize ranger concealment, leadership, and controlled projectile defense. Gondor heroes emphasize anti-cavalry leadership, defensive command, and tower or repair support.
+
+Amon Sûl emphasizes fear and morale resistance. The White Tower emphasizes disciplined defense and local structure support. The two wonders should not become identical global combat buffs.

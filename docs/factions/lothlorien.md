@@ -1,26 +1,30 @@
-# Lothlórien
+# Lothlórien — Detailed Design
 
 ## Identity
 
-A forest-defense faction combining ranged superiority, elevated positions, and magical woodland control.
+Lothlórien combines forest economy, elevated defensive positions, long-range archery, and magical protection. It is strongest when it controls mature woodland and can prepare layered defenses.
+
+## Mallorn cycle and Telain Platforms
+
+Telain Platforms are elevated woodland positions for observation and ranged defense. A practical implementation should begin with platforms built on suitable mature trees. Mallorn-related upgrades can enable stronger versions or better support.
+
+Platforms must remain vulnerable to siege and concentrated attacks. They are not substitutes for a complete army or fortress.
+
+## Nenya’s Preservation
+
+Nenya supports defensive integrity in Lothlórien’s home territory. The effect should be local or conditional and should not make every structure permanently immune to damage.
+
+## Waystations
+
+The Cloaked Way-post is a forward military camp or waystation. It can support movement, scouting, and limited reinforcement, but should not act as a second unrestricted settlement.
 
 ## Strengths
 
-- Forest economy and terrain control.
-- Long-range archers.
-- Defensive platforms and waystations.
-- Strong protection in home territory.
+- High-range archers.
+- Forest movement and economy.
+- Prepared elevated defenses.
+- Strong home-territory protection.
 
-## Signature mechanic
+## Weaknesses and counterplay
 
-Mallorn growth and Telain Platforms create a layered woodland defense. Nenya's Preservation supports local defensive integrity.
-
-## Weaknesses
-
-- Less powerful away from forests and prepared positions.
-- Platforms and waystations should be vulnerable to siege.
-- Strong ranged units require protection from cavalry and melee pressure.
-
-## Design notes
-
-Telain Platforms should begin with a feasible tree-based implementation and gain stronger functionality through Mallorn-related upgrades. The wonder should support local forest control rather than globally reducing all training times.
+Lothlórien is less effective away from woodland and prepared positions. Cavalry, siege, fire, and cutting off the forest economy are important counters. Ranged superiority must require melee protection.

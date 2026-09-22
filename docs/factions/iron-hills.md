@@ -1,28 +1,35 @@
-# Iron Hills
+# Iron Hills — Detailed Design
 
 ## Identity
 
-A heavy-formation Dwarven faction centered on shield walls, war-wagons, and disciplined field engineering.
+The Iron Hills are a disciplined heavy-formation Dwarven faction focused on shield walls, war-wagons, repair, and controlled advances.
+
+## Iron Wall formation
+
+Iron Wall is a defensive formation or stance that:
+
+- reduces incoming ranged damage;
+- resists cavalry trample and charge disruption;
+- reduces movement and turning ability;
+- performs poorly when forced to chase or fight on multiple fronts.
+
+It is a tactical choice, not a permanent faction-wide bonus.
+
+## Field repair
+
+Iron Hills citizen-soldiers repair siege engines, ballistae, and war-wagons 25% faster than ordinary citizen units. This should reuse the normal 0 A.D. repair interaction rather than create a wholly separate repair economy.
 
 ## Strengths
 
-- Durable formation infantry.
-- Strong defensive engagements.
+- Reliable defensive line.
 - War-wagons and field siege.
-- Improved field repair.
+- Good sustained position holding.
+- Efficient repair support.
 
-## Signature mechanic
+## Weaknesses and counterplay
 
-Iron Wall is a defensive formation that reduces ranged damage and resists trample at the cost of movement and maneuverability.
+Iron Hills are slow and vulnerable to flanking, mobility, and attacks that separate the formation. Siege should threaten the shield wall, and cavalry should exploit its inability to turn quickly.
 
-Iron Hills citizen-soldiers repair siege engines, ballistae, and war-wagons 25% faster than ordinary citizen units. This enhances the standard 0 A.D. repair mechanic rather than introducing a completely new ability.
+## Wonder
 
-## Weaknesses
-
-- Slow movement.
-- Vulnerable to flanking and sustained siege.
-- Formation bonuses are less useful when scattered or forced to chase.
-
-## Design notes
-
-The wonder should anchor a defensive position without becoming an uncontestable fortress.
+The wonder anchors a strong defensive position, but should remain contestable and should not create an invulnerable fortress.
