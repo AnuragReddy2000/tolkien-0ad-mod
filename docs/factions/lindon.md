@@ -1,37 +1,50 @@
-# Lindon — Detailed Design
+# Lindon
 
 ## Identity
 
-Lindon is an elite High-Elven maritime faction. It should feel disciplined, technically refined, and difficult to dislodge, but too expensive to replace losses indefinitely.
+Lindon is an elite maritime and disciplined infantry faction. It should feel refined, expensive, resilient, and tactically strong when given time and coast.
+
+## Core mechanics
+
+### Gift of the West
+Selected technologies research faster. This should be a narrow, meaningful bonus to high-craft, naval, or defensive techs rather than a universal acceleration of every upgrade.
+
+### Swan Ships
+Swan Ships provide maritime reinforcement, transport, or coastal support. They are not a free infantry factory. They should feel expensive and special.
 
 ## Strengths
 
-- Strong coastal and naval control.
-- Elite infantry with high quality rather than mass numbers.
-- Good defensive support and research.
-- Mobile naval reinforcement through Swan Ships.
+- high-quality infantry and navy
+- strong coastal operations
+- good defensive and research identity
+- resilient elite units with high value
 
 ## Weaknesses
 
-- Expensive units and technologies.
-- Poorer performance in prolonged attrition.
-- Requires time and resources to reach its quality advantage.
-- Land power should not automatically dominate factions specializing in mass armies or siege.
+- slower replacement and less scalability than mass factions
+- vulnerable to attrition if the player cannot hold the coast or control the battlefield
+- best when given time and space to develop
 
-## Signature mechanics
+## Structures
 
-### Gift of the West
-Selected technologies research faster. The bonus should apply to clearly chosen high-craft, naval, or defensive technologies rather than every technology globally.
+- civic center; houses; docks; workshop or high-craft facilities; strongholds; towers; watch structures; relevant elite barracks.
 
-### Swan Ships
-Swan Ships may transport or reinforce nearby armies. They should not function as unlimited free unit factories. Reinforcements should have a resource, capacity, cooldown, or production limitation.
+## Units
 
-## Wonders and heroes
+- elite infantry; archers; marine or coast-focused infantry; a naval core; a high-quality supporting ranged line.
 
-The wonder should emphasize naval vision, maritime command, or coastal support—not a permanent map-wide fog removal or universal combat buff.
+## Heroes
 
-Healing and support effects should be local and interruptible so that an enemy can attack the support network instead of facing an unbreakable army.
+- a naval or command hero; an elite commander with range or support role; a local morale or support buff, not a global all-unit buff.
+
+## Wonder
+
+A wonder that emphasizes maritime vision, coastal command, or elite support should be preferred over a broad map-wide reveal or an all-unit combat boost.
 
 ## Counterplay
 
-Attack Lindon before its research and infrastructure mature, deny its coast, force land battles away from prepared defenses, and exploit its replacement costs.
+Pressure Lindon before its research cycle completes, deny coastal access, and force it into battles where its elite quality does not outweigh the enemy’s numbers or terrain control.
+
+## Balance notes
+
+The faction should be expensive to expand but highly effective in prepared fights. High quality is its strength, not raw numerical superiority.

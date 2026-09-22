@@ -1,37 +1,29 @@
-# Shared Design Principles
+# Top-Level Implementation Notes
 
-## Preserve the 0 A.D. loop
+## Shared system notes
 
-The mod retains:
+These notes apply to all factions and should be treated as baseline implementation requirements.
 
-- Food, Wood, Stone, and Metal as the main resources.
-- Village, Town, and City phases.
-- Worker-based economies.
-- Standard military roles and counters.
-- Normal territory, construction, garrison, capture, and population systems unless a faction mechanic deliberately modifies one of them.
+- Keep the standard 0 A.D. phase structure.
+- Preserve the vanilla economy model.
+- Pair strong mechanics with clear counterplay.
+- Avoid broad static buffs that make all units utility if one structure remains standing.
+- Use visible and readable UI cues when a faction mechanic is active.
+- Prefer local or terrain-based effects where possible.
 
-## Faction identity
+## Important engine features to prototype early
 
-Each faction should have:
+- aura filtering and target checks
+- temporary unit lifecycles and decay
+- howdah garrison behavior
+- territory-based gather penalties
+- reveal effect and search cone logic
+- conditional stealth and detection systems
+- movement and formation modifiers tied to a specific stance or unit state
 
-- one primary strategic identity;
-- one major signature mechanic;
-- a limited number of supporting mechanics;
-- a clear weakness;
-- recognizable counterplay.
+## Balance principles for the first public release
 
-## Balance rules
-
-- Avoid stacking health, armor, damage, speed, and cost advantages on the same unit.
-- Use local or conditional effects instead of unrestricted map-wide buffs.
-- Make free units temporary, weak, or strategically limited.
-- Keep passive economy bonuses modest and interactive.
-- Ensure every powerful mechanic has a practical response.
-
-## Heroes and wonders
-
-Heroes specialize armies or strategic plans rather than providing every bonus at once. Wonders should create a powerful late-game identity, but they should not make normal counterplay irrelevant.
-
-## Lore and gameplay
-
-Lore establishes a faction's baseline identity, but health, damage, armor, and longevity are not interchangeable. Unit role, training, equipment, and terrain should determine battlefield performance.
+- strong factions can win by timing and terrain, not just through permanent stat inflation;
+- temporary units are a bonus, not a replacement for real production;
+- each wonder should read clearly and feel powerful without becoming a universal answer;
+- heroes should support a role rather than stack every stat category at once.

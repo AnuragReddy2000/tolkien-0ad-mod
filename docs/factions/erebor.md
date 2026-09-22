@@ -1,37 +1,46 @@
-# Erebor — Detailed Design
+# Erebor
 
 ## Identity
 
-Erebor is a wealthy Dwarven faction that converts trade, metalworking, and stored wealth into ranged and siege pressure.
+Erebor is a wealthy, metal-rich faction that converts hoarded wealth into ranged pressure and industrial strength.
 
-## Hoard of the Mountain
+## Core mechanics
 
-Accumulated metal wealth improves selected ranged and siege capabilities. The effect should be:
+### Hoard of the Mountain
+Metal wealth improves certain ranged and siege abilities. The bonus is moderate and capped. It should never become a universal global stat multiplier.
 
-- modest at low wealth;
-- capped;
-- visible to the player;
-- vulnerable to raids that disrupt mines, trade, or production.
-
-It should not become an uncapped global damage multiplier.
-
-## Economy
-
-A modest starting metal reserve can represent inherited wealth, but Erebor must still mine, trade, and protect its economy. Wealth should create choices between immediate military spending and long-term scaling.
+### Trade and metallurgy
+Erebor invests heavily in trade, metal output, and specialist production. The faction should feel rich but not unassailable.
 
 ## Strengths
 
-- Crossbows and ranged siege.
-- Strong trade and industrial infrastructure.
-- Metal-focused late-game power.
+- excellent metallurgy and arsenals
+- strong ranged pressure and siege
+- economic depth and wealth
+- powerful late-game production
 
 ## Weaknesses
 
-- Expensive army.
-- Slow movement and replacement.
-- Vulnerable to cavalry raids and economic disruption.
-- Requires time to realize the full hoard advantage.
+- expensive units and complex routines
+- less effective in open-field melee without support
+- vulnerable to economic interruption or raids
+
+## Structures
+
+- metalworks; trade centers; stockpiles; treasure vaults; fortified production structures; ranged-support structures.
+
+## Units
+
+- crossbows; artillery; strong ranged infantry; heavy siege units; elite melee support.
+
+## Heroes
+
+- a high-craft or wealth-focused commander; a running war engineer; a hero with resource or siege support.
 
 ## Wonder
 
-The wonder supports the hoard and industrial economy. It should provide a meaningful passive resource or production benefit without stacking a second global combat advantage.
+The wonder should improve industrial output, local siege support, or a specific high-value strategic bonus instead of stacking broad combat buffs.
+
+## Counterplay
+
+Disrupt trade routes, attack the economy, and deny Erebor the time to convert wealth into stronger ranged support.

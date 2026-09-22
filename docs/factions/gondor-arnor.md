@@ -1,43 +1,43 @@
-# Gondor & Arnor — Detailed Design
+# Gondor & Arnor
 
 ## Identity
 
-This is a branching Dúnedain faction. Phase I establishes a shared identity; Phase II chooses a path; Phase III commits to that path.
+This is a branching Dúnedain faction with a shared Phase I and a Phase II split between ranger mobility and fortress defense.
 
 ## Shared Phase I
 
-The common roster includes strong human infantry, reliable civic structures, outposts, and early stone defenses. The shared phase should be good but not so strong that the branch choice becomes irrelevant.
+A strong Dúnedain base with reliable infantry, early stone support, and standard structures sets the foundation.
 
 ## Arnor path
 
-Arnor emphasizes rangers, scouts, ambushes, and territorial defense.
-
 ### Line Unbroken
+Friendly territory grants a modest morale or resistance effect. The bonus is local and contextual, not a permanent invulnerability.
 
-Arnor units in friendly territory gain a modest damage-resistance and/or morale benefit, approximately 10–15% as an initial target. It does not function outside friendly territory and does not make Arnor invulnerable.
-
-### Rangers
-
-Dúnedain Rangers have extended sight and stationary stealth. They are effective for reconnaissance, harassment, and ambushes but fragile when exposed in melee or open battle.
-
-### Ranger Camp
-
-A Ranger Camp supports ranger production, scouting, and forward ambush operations. It is less of a fortress than Gondor’s defensive structures.
+### Ranger identity
+Arnor favors stealth, scouting, raids, and ambushes. Rangers are excellent in skirmish and harassment but fragile in direct open-field combat.
 
 ## Gondor path
 
-Gondor emphasizes stonecraft, towers, walls, and holding chokepoints.
-
 ### Citadel Legacy
+Gondor emphasizes territory projection, towers, and stone structures. Watchtowers and walls support strategic space control without making Gondor unstoppable.
 
-Gondor watchtowers project stronger territory influence, and stone walls have higher health than standard equivalents. The projection must remain limited enough that enemy siege and territorial contest remain meaningful.
+### Shield-Maiden defense
+The Gondor branch gains strong defensive units for chokepoints and static holds. They are slow, paid for, and not ideal in open ground.
 
-### Shield-Maidens
+## Strengths
 
-Gondor Shield-Maidens are expensive, slow, highly defensive melee holders. They excel in chokepoints but should not dominate open ground or cavalry engagements.
+- strong early infantry and structure quality
+- branch-specific identity and tactical choice
+- excellent late-game direction when the branch is chosen properly
 
-## Heroes and wonders
+## Weaknesses
 
-Aragorn (Strider) is a shared Phase I hero whose rough-terrain movement penalty is removed. Arnor heroes emphasize ranger concealment, leadership, and controlled projectile defense. Gondor heroes emphasize anti-cavalry leadership, defensive command, and tower or repair support.
+Arnor can be overrun if forced into decisive melee. Gondor is slower and more dependent on prepared ground.
 
-Amon Sûl emphasizes fear and morale resistance. The White Tower emphasizes disciplined defense and local structure support. The two wonders should not become identical global combat buffs.
+## Heroes and wonder
+
+Aragorn is a shared early hero. Arnor heroes focus on rangers, mobility, and control. Gondor heroes focus on command, defense, and morale. The wonders are subtle but distinct: one favors ranger support, the other defensive structure support.
+
+## Counterplay
+
+Arnor is vulnerable to wide scouting and direct engagement; Gondor is vulnerable to ranged pressure, mobility, and siege that bypasses walls and towers.

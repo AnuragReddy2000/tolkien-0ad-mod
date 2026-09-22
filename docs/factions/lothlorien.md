@@ -1,30 +1,46 @@
-# Lothlórien — Detailed Design
+# Lothlórien
 
 ## Identity
 
-Lothlórien combines forest economy, elevated defensive positions, long-range archery, and magical protection. It is strongest when it controls mature woodland and can prepare layered defenses.
+Lothlórien is a forest-defense faction and an elevated ranged power. It privileges trees, visibility control, layered defense, and magical support.
 
-## Mallorn cycle and Telain Platforms
+## Core mechanics
 
-Telain Platforms are elevated woodland positions for observation and ranged defense. A practical implementation should begin with platforms built on suitable mature trees. Mallorn-related upgrades can enable stronger versions or better support.
+### Mallorn cycle and Telain Platforms
+The faction gains strong elevation and platform support from mature tree networks. Platforms should be easy to read and easy to counter with siege or broad-force attacks.
 
-Platforms must remain vulnerable to siege and concentrated attacks. They are not substitutes for a complete army or fortress.
-
-## Nenya’s Preservation
-
-Nenya supports defensive integrity in Lothlórien’s home territory. The effect should be local or conditional and should not make every structure permanently immune to damage.
-
-## Waystations
-
-The Cloaked Way-post is a forward military camp or waystation. It can support movement, scouting, and limited reinforcement, but should not act as a second unrestricted settlement.
+### Nenya’s Preservation
+Defensive structures and home territory gain a local preservation effect. This should not create a permanent invulnerable wall.
 
 ## Strengths
 
-- High-range archers.
-- Forest movement and economy.
-- Prepared elevated defenses.
-- Strong home-territory protection.
+- long-range archers
+- strong forest terrain economy
+- elevated defense and vision
+- local defensive integrity
 
-## Weaknesses and counterplay
+## Weaknesses
 
-Lothlórien is less effective away from woodland and prepared positions. Cavalry, siege, fire, and cutting off the forest economy are important counters. Ranged superiority must require melee protection.
+- weaker away from forested positions
+- vulnerable to cavalry disruption and siege pressure
+- loses effectiveness without prepared height and line of sight
+
+## Structures
+
+- forest watch towers; waystations; platform infrastructure; elevated ranged structures; defensive halls; local magical support.
+
+## Units
+
+- long-range archers; forest defenders; ranger-like support; elite archers with good vision and strong woodland movement.
+
+## Heroes
+
+- a forest guardian; a support hero with vision or morale effects; a ranger commander with local support.
+
+## Wonder
+
+The wonder supports forest control, vision, or local magical defense rather than a broad all-unit stat bonus.
+
+## Counterplay
+
+Disrupt Lothlórien's forest economy, attack its elevated platforms, and force the faction into open battle with cavalry or siege support.

@@ -1,50 +1,48 @@
-# Angmar — Detailed Design
+# Angmar
 
 ## Identity
 
-Angmar is a dark northern realm of cold, fear, sorcery, and temporary necromantic reinforcement. Its battlefield advantage comes from local control and attrition, not from a permanent free army.
+Angmar is a dark northern faction focused on fear, cold, and temporary necromantic reinforcement. It should feel oppressive and sinister without becoming a permanent free army generator.
 
-## Iron Crown Frost
+## Core mechanics
 
-Enemies engaging Angmar units or structures in close melee suffer a temporary attack-speed reduction, initially around 10% for 3 seconds. The effect should remain local and should not stack uncontrollably with other slows.
+### Iron Crown Frost
+Enemies attacking Angmar structures or units in close melee take a temporary attack-speed reduction. It is a local battlefield pressure effect, not a universal debuff.
 
-## Barrow Plague
+### Barrow Plague
+Enemy military deaths inside the aura of an Angmar Temple, Dark Temple, or Witch-Fortress have a chance to rise as weak Undead Thralls under Angmar's control. Conversion chance is about 15% for ordinary military units; larger units receive reduced conversion. Heroes, workers, summoned units, and Angmar units are not eligible.
 
-When an eligible enemy military unit dies within the aura of an Angmar Temple, Dark Temple, or Witch-Fortress, it has an approximately 15% chance to rise as an Undead Thrall under Angmar’s control.
+Thralls decay after about 45 seconds and can be controlled. They are weak, temporary, and cannot gather or build.
 
-Suggested eligibility:
+## Strengths
 
-- ordinary enemy military unit: 15%;
-- champion: 5–10%;
-- siege: reduced chance or excluded during initial testing;
-- workers: no;
-- heroes: no;
-- summoned units: no;
-- Angmar units: no.
-
-The percentage refers to the share of eligible deaths expected to convert, not a threshold. No artificial faction-wide cap is required. The natural limit is created by the invading force, conversion chance, and Thrall lifetime.
-
-Each death can trigger at most one conversion. Thralls cannot trigger further conversions.
-
-## Undead Thralls
-
-Thralls are weak, temporary, controllable melee auxiliaries:
-
-- roughly 40–50% of ordinary infantry health;
-- roughly 50–65% of ordinary infantry attack;
-- low armour;
-- slightly reduced speed;
-- no resource or population cost;
-- approximately 45-second TTL with gradual decay.
-
-They can move, attack, patrol, guard, stop, and attack-move. They cannot gather, construct, repair, capture territory, garrison, train units, or create more Thralls.
-
-Full player control is preferred. Automatic-only behavior would make their battlefield value unpredictable and could cause them to waste themselves on unsuitable targets.
-
-## Wonder
-
-The Citadel of Carn Dûm creates a local frost shroud that reduces invading enemy visibility and firing range near the base. It should not become a map-wide suppression mechanic.
+- battlefield control through fear and cold
+- temporary battlefield reinforcement
+- sinister late-game aura effects
+- strong local defense and temple-driven style
 
 ## Weaknesses
 
-Angmar is vulnerable to ranged pressure, mobility, economy disruption, and battles fought away from its temple and fortress auras.
+- weaker when forced into open-field equal-unit battle
+- dependent on battle aura and nearby structures
+- less mobile than cavalry or raiding factions
+
+## Structures
+
+- dark temple; witch-fortress; cold fortifications; worker and levy structures; strongholds and control points.
+
+## Units
+
+- levy infantry; dark melee units; sorcerous command units; mountain troll or monster support; ranged and anti-armour support.
+
+## Heroes
+
+- Witch-king; Hwaldar; a troll chieftain or dark commander. Hero roles should support fear, local control, or monster leadership.
+
+## Wonder
+
+Carn Dûm creates a local cold shroud that reduces visibility and enemy firing range near the base. It should remain regional, not map-wide.
+
+## Counterplay
+
+Break the aura area, force Angmar into open battle, deny the temple network, and use ranged pressure to prevent the undead reinforcement cycle from establishing momentum.

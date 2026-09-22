@@ -1,28 +1,50 @@
-# Doriath — Detailed Design
+# Doriath
 
 ## Identity
 
-Doriath is a hidden woodland faction built around ambushes, concealment, and defending favorable terrain rather than winning open-field confrontations through raw statistics.
+Doriath is a hidden woodland faction built around ambushes, concealment, and controlling forested terrain.
 
-## The Girdle of Melian
+## Core mechanics
 
-Doriath territory imposes a local detection and movement disadvantage on enemies. The effect should:
+### Girdle of Melian
+Enemy detection and movement are degraded inside Doriath territory. This should be local, readable, and healable through reclaiming territory or clearing forest pressure.
 
-- be strongest around Doriath structures or in forest;
-- degrade enemy scouting and movement rather than make units permanently invisible;
-- be readable through visual, audio, or UI feedback;
-- remain answerable by scouting, area attacks, and taking the territory.
+### Menegroth
+Menegroth deepens the Girdle and supports the faction's territorial defense. It should not create arbitrary production penalties or permanent unscoutable map control.
 
-Menegroth deepens or expands the Girdle. It should not impose arbitrary global training or production penalties.
+## Strengths
 
-## Units and tactics
+- stealth and ambush play
+- woodland defense and concealment
+- strong in forests and prepared terrain
+- strong sabotage and harassment potential
 
-Woodland camouflage should generally require stationary behavior, forest terrain, or a suitable stance. Rangers and ambush units are fragile if caught in melee or forced into open ground.
+## Weaknesses
 
-## Weaknesses and counterplay
+- weak in open ground and set-piece direct combat
+- fragile if discovered and forced into melee
+- dependent on terrain and map layout
 
-Doriath is weaker on open terrain and when opponents deny forest access. Enemy scouting, fire, cavalry pressure, and siege should all provide meaningful answers. Doriath should not create an entirely unscoutable map.
+## Structures
 
-## Wonder direction
+- woodland encampments; forest watch sites; hidden safehouses; ambush structures; fortified halls; core production structures with concealment support.
 
-The wonder strengthens concealment and territorial control locally. It should not be a global invisibility or permanent enemy debuff.
+## Units
+
+- concealed scouts; ambush infantry; long-range skirmishers; elite woodland defenders; elite ranged support.
+
+## Heroes
+
+- a ranger or hidden commander; a forest guardian hero; a hero with local concealment, morale support, or ambush damage bonuses.
+
+## Wonder
+
+The wonder should emphasize concealment and territory control. It should not completely negate all enemy scouting or make the map permanently invisible.
+
+## Counterplay
+
+Use cavalry, fire, siege, and broad territory control to disrupt the Girdle. Avoid fighting in the forest if the faction has already prepared the terrain.
+
+## Balance notes
+
+Stealth should be tactical, not universal. Doriath's concern is misdirection and preparation, not permanent enemy blindness.

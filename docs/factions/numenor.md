@@ -1,35 +1,46 @@
-# Númenor — Detailed Design
+# Númenor
 
 ## Identity
 
-Númenor is an elite, healthy, technologically advanced maritime human kingdom. It represents exceptional Men, not a universal biological hierarchy that automatically makes every Númenórean better at every task.
+Númenor is a disciplined elite kingdom that combines strong infrastructure, coastal power, and high-quality military units.
 
-## Health and lore
+## Core mechanics
 
-Comparable Númenórean units should have a modest health premium over ordinary Men—approximately 5–10% as an initial balance target. Lifespan, strength, health, armor, and combat skill remain separate concepts. Equipment, training, and role determine actual battlefield durability.
+### Great Houses and population efficiency
+The faction receives modest population support and efficient housing without becoming a universal population machine. The key is quality and infrastructure, not sheer volume.
+
+### Coastal fortification
+Fortified docks and coastal infrastructure support naval power and strong coastal defense.
 
 ## Strengths
 
-- High-quality infantry, archers, and ships.
-- Strong stone and coastal infrastructure.
-- Population-efficient housing.
-- Good defensive preparation.
+- healthy and elite infantry
+- strong infrastructure and defensive preparation
+- naval and coastal power
+- disciplined, expensive army with reliable composition
 
 ## Weaknesses
 
-- Expensive units and technology.
-- Slower development and replacement.
-- Smaller armies than mass-production factions.
-- Vulnerable to attrition and economic disruption.
+- slow expansion and less mass than cheaper factions
+- expensive replacements
+- vulnerable to economic disruption and sustained attrition
 
-## Signature infrastructure
+## Structures
 
-Houses provide increased population capacity, but not an unconditional doubling. Fortified docks project limited coastal control and can receive defensive upgrades.
+- fortified docks; elite barracks; stone strongholds; urban centers; naval and defence infrastructure.
 
-## Wonder and heroes
+## Units
 
-The Temple of Armenelos should provide a restrained champion, morale, or quality-support effect. It should not combine maximum health, armor, damage, population efficiency, and naval superiority without costs.
+- elite infantry; disciplined archers; well-equipped naval units; strong defenders; elite command units.
+
+## Heroes
+
+- a strategic commander; a marine or command hero; a support hero with morale or elite support.
+
+## Wonder
+
+The wonder should provide a focused champion, morale, or supreme defensive support effect rather than a broad all-unit buff.
 
 ## Counterplay
 
-Pressure Númenor before its infrastructure matures, deny its coast, attack expensive production, and force it to replace elite units faster than its economy can support.
+Disrupt coastal supply, force Númenor into attritional fights, and attack production before elite units are fully established.

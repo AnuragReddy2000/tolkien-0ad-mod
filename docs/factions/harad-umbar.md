@@ -1,42 +1,47 @@
-# Harad & Umbar — Detailed Design
+# Harad & Umbar
 
 ## Identity
 
-Harad & Umbar are desert and coastal raiders. They combine mobility, poison attrition, corsair economics, naval harassment, and Mûmakil warfare.
+Harad & Umbar are desert and coastal raiders built around mobility, plunder, poison attrition, and Mûmakil warfare.
 
-## Corsair Plunder versus ordinary loot
+## Core mechanics
 
-Standard 0 A.D. loot is a general reward for eligible kills. Corsair Plunder is a separate faction mechanic that can reward profitable targets and extend to buildings.
+### Corsair Plunder
+Harad receives a partial reward when destroying valuable enemy armies, ships, siege engines, and military buildings. It is stronger than standard 0 A.D. loot because it extends to building destruction and gives a strategic momentum boost, but it must be capped and not become a full cost refund.
 
-Harad should receive only a fraction of the value of destroyed military units, ships, siege engines, and selected buildings. Workers, farms, houses, and low-value structures should provide little or no special plunder. Fixed reward bands may be easier to implement than reading exact construction costs.
+### Scourge of the Desert
+Harad units receive a movement bonus on desert and open arid terrain. This should be moderate and not a universal all-map speed buff.
 
-Plunder creates momentum but must not refund the full enemy economy or become an infinite resource loop.
-
-## Poison
-
-Harad skirmishers and selected units use poison damage over time. Poison should reduce initial impact where necessary, be stronger against lightly armoured targets, and remain counterable by killing the unit, moving away, using armour, and applying support. It should not be universal.
+### Poison
+Harad poison is an attritional threat, not an auto-win effect. It works best against lightly armored or clustered infantry.
 
 ## Mûmakil
 
-Mûmakil use the established Indian war-elephant model as the implementation reference:
+Mûmakil are expensive battlefield monsters with:
 
-- very high health;
-- large footprint;
-- Crush/trample power;
-- slow turning and high cost;
-- significant population cost;
-- vulnerability to focused ranged fire, siege, and anti-large tactics.
+- high health and trample power;
+- large footprints and poor turning;
+- strong siege and formation-breaking capacity;
+- vulnerable anti-large pressure;
+- howdah archers with increased range and sight.
 
-A Mûmakil can garrison a small group of archers in its howdah, initially around 3–4. Garrisoned archers receive extended line of sight and a modest range bonus, around 10–20%. They can fire while the Mûmakil moves if supported by the engine.
+## Strengths
 
-Damage to the Mûmakil should threaten the garrison. When the elephant dies, surviving crew should be exposed rather than safely disappearing. Empty Mûmakil emphasize trampling; garrisoned Mûmakil trade some concentration risk for mobile ranged pressure.
-
-## Wonder and heroes
-
-The Great Obsidian Palace should provide a local or focused Mûmakil bonus such as howdah range, trample quality, or modest health—not a stack of global speed and health bonuses.
-
-The Black Serpent supports poison and ranged pressure. Castamir supports Corsair ships. Suladân supports Mûmakil and movement without making regeneration overwhelming.
+- desert mobility
+- raiding economy
+- powerful battlefield pressure
+- iconic elephant combat
 
 ## Weaknesses
 
-Harad is vulnerable when mobility is denied, when plunder momentum is interrupted, and when expensive elephants are isolated or trapped in static siege warfare.
+- vulnerable when mobility is denied
+- expensive elite units and Mûmakil
+- punished by static battle and concentrated anti-large tactics
+
+## Structures, units, and heroes
+
+Harad's structure tree and unit roster support raiding and trade, while the heroes focus on ship support, poison pressure, and Mûmakil leadership. The Great Obsidian Palace should improve elephant utility without giving a stack of global health and speed buffs.
+
+## Counterplay
+
+Attack the raiding fleet, break the Mûmakil, deny desert mobility, and force a battle in terrain or static defense where Harad's fabled pressure is reduced.

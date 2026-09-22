@@ -1,42 +1,49 @@
-# Rohan — Detailed Design
+# Rohan
 
 ## Identity
 
-Rohan is a mobile horse-lord faction that wins through scouting, open-ground maneuver, charges, and rapid exploitation of exposed positions.
+Rohan is a cavalry-centered horse-lord faction that depends on open ground, scouting, and charge timing.
 
-## Pastures of the Mark
+## Core mechanics
 
-Corrals provide a modest passive Food trickle and may support cavalry production. The trickle must not replace farms, workers, or normal economic decisions. Scaling should be limited through cost, stocking, technology, or diminishing returns.
+### Pastures of the Mark
+Pastures provide a limited Food trickle. They are thematic and useful, but they are not a replacement for farms or a complete economy.
 
-## Cavalry progression
+### Éored Wedge
+The wedge formation improves initial contact power and charge cohesion at the cost of turning and control after the first impact. The charge should feel decisive but temporary.
 
-- Phase I: scout cavalry and light raiders.
-- Phase II: Rohirrim horse-archers and Eorlingas shock cavalry.
-- Phase III: King's Guard and strongest cavalry technologies.
+### Stakes and Field Camps
+Rohan’s defensive identity comes from temporary field fortification rather than walls. Stakes punish cavalry and charge lanes. Field Camps support forward staging and limited reinforcement.
 
-The strongest King's Guard should not arrive immediately with the first Phase II stable. Cavalry remains expensive in Food and Metal and should have meaningful training time.
+## Strengths
 
-## Éored Wedge
-
-The wedge improves formation cohesion and initial charge or Crush damage, with a modest pre-contact speed benefit. It reduces turning ability, should not repeat its bonus indefinitely in melee, and can be defeated by braced spears, stakes, towers, terrain, and absorbed charges.
-
-## Defenses
-
-Rohan has no stone walls. It uses:
-
-- palisades;
-- Defensive Stakes that punish cavalry and charges but are weak to infantry, siege, and fire;
-- Field Camps that provide rallying, limited reinforcement, garrison, and local military support;
-- cavalry patrols and early warning.
-
-Field Camps are forward staging structures, not replacement Civic Centers.
-
-## Helm Hammerhand
-
-Helm has **Helm’s Horn**, a short-range fear and intimidation ability that briefly interrupts attacks and formation cohesion. A starting target is approximately 2–3 seconds of severe disruption, with a long cooldown around 3–5 minutes. Heroes, structures, and fear-resistant units should resist or ignore it.
-
-An isolation bonus may grant Helm moderate health and armor while away from allied military units, but it must not stack into an uncounterable duelist.
+- early cavalry power
+- strong open-ground speed and harassment
+- excellent scouting and raiding
+- good pressure at the right timing windows
 
 ## Weaknesses
 
-Rohan loses strength when cavalry is trapped, forced into braced infantry, denied open terrain, or required to defend multiple static locations.
+- weak against static defensive formations
+- vulnerable to siege and braced spearmen
+- expensive replacement and high reliance on mobility
+
+## Structures
+
+- corrals, palisades, watchtowers, field camps, cavalry stables, open-field support buildings.
+
+## Units
+
+- scout cavalry; Rohirrim horse-archers; shock cavalry; elite cavalry guard; support units and a specialized cavalry doctrine.
+
+## Heroes
+
+- Eorl; Helm Hammerhand; Théoden. Helm has the horn ability. The hero roster should support a rapid-moving and tactical cavalry plan.
+
+## Wonder
+
+The wonder should provide a cavalry-command or reinforcement effect, not an uncontrolled free army. It should be powerful but still contextual and limited.
+
+## Counterplay
+
+Break Rohan’s timing, stop its flanks, deny open ground, and force it into a prolonged defensive battle or a spear wall with support.
