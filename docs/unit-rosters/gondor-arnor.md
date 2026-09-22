@@ -1,71 +1,22 @@
-# Gondor & Arnor Unit Roster
+# Gondor & Arnor — Unit Balance v0.1
 
-## Core philosophy
+Costs are Food/Wood/Stone/Metal.
 
-This faction combines a shared human core with two different role trees: Arnor for ranger mobility and Gondor for fortress defense.
+| Unit | Phase | Cost | Pop | HP | Speed | Attack / interval | Range | Armour H/P/C | Quirk |
+|---|---|---:|---:|---:|---:|---|---:|---:|---|
+| Dúnedain Recruit | I | 40/0/0/10 | 1 | 105 | 1.0 | 6 hack / 1.6s | — | 1/1/0 | Reliable shared infantry |
+| Dúnedain Spearman | I | 40/10/0/15 | 1 | 120 | 0.98 | 6 hack / 1.6s; +7 vs cavalry | — | 2/2/0 | Braced line unit |
+| Dúnedain Archer | II | 40/15/0/15 | 1 | 75 | 1.0 | 7 pierce / 1.8s | 60 | 0/2/0 | Disciplined ranged support |
+| Dúnedain Guard | II | 55/0/0/30 | 1 | 170 | 0.92 | 9 hack / 1.7s | — | 5/4/1 | Shared elite infantry |
+| Arnor Ranger | II | 45/25/0/20 | 1 | 90 | 1.05 | 8 pierce / 2.0s | 70 | 0/2/0 | Stationary stealth; +10 sight |
+| Ranger Captain | III | 65/20/0/45 | 1 | 190 | 1.05 | 11 pierce / 1.8s | 75 | 2/4/1 | Ambush and local support |
+| Gondor Tower Guard | III | 60/0/0/40 | 1 | 205 | 0.85 | 10 hack / 1.8s | — | 7/6/2 | Strong in hold position |
+| Gondor Spear Guard | III | 55/10/0/35 | 1 | 190 | 0.88 | 8 hack / 1.7s; +10 vs cavalry | — | 6/5/2 | Defensive anti-cavalry |
+| Gondor Champion | III | 75/0/0/60 | 1 | 240 | 0.95 | 14 hack / 1.8s | — | 7/7/2 | Local morale aura |
 
-## Shared units
+## Balance quirks
 
-### 1. Dúnedain Recruit
-- Role: basic infantry
-- Cost: low-medium
-- HP: moderate
-- Speed: standard
-
-### 2. Dúnedain Spearman
-- Role: anti-cavalry infantry
-- Cost: moderate
-- HP: moderate
-- Special: braced defense and line support
-
-### 3. Dúnedain Archer
-- Role: ranged infantry
-- Cost: moderate
-- HP: moderate
-- Range: standard
-- Special: disciplined ranged support
-
-### 4. Dúnedain Guard
-- Role: elite infantry
-- Cost: moderate-high
-- HP: high
-- Special: strong formation support and leader status
-
-## Arnor units
-
-### 5. Ranger
-- Role: stealth / ranged scout
-- Cost: moderate
-- HP: moderate
-- Special: concealed movement or ambush pressure
-- Counterplay: detection, broad area fire, and direct pursuit
-
-### 6. Ranger Captain
-- Role: elite ranger commander
-- Cost: high
-- HP: high
-- Special: ambush and local support command
-
-## Gondor units
-
-### 7. Gondor Tower Guard
-- Role: fortified defender
-- Cost: moderate-high
-- HP: high
-- Special: strong defense in walls or chokepoints
-
-### 8. Gondor Spear Guard
-- Role: disciplined defensive infantry
-- Cost: moderate-high
-- HP: high
-- Special: excellent in hold positions and line defense
-
-### 9. Gondor Champion
-- Role: elite melee commander
-- Cost: high
-- HP: very high
-- Special: local morale and command support
-
-## Design notes
-
-The split should be clear but not create two mechanically incompatible factions. The shared Phase I enables similar early play, while the later paths create specific tactical advantages.
+- Line Unbroken: Arnor units in friendly territory receive 10% damage resistance; no benefit outside friendly territory.
+- Citadel Legacy: Gondor towers receive +15% health and walls +10% health; territory projection remains capped.
+- Rangers lose stealth when attacking, taking damage, constructing, or leaving suitable terrain.
+- The branch must be chosen in Phase II and should prevent access to the other branch's strongest upgrades.

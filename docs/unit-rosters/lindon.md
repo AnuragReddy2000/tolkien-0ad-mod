@@ -1,70 +1,19 @@
-# Lindon Unit Roster
+# Lindon — Unit Balance v0.1
 
-## Core philosophy
+Costs are Food/Wood/Stone/Metal.
 
-Lindon is an elite, disciplined faction with superior quality and coastal support. Unit costs are higher and replacements slower.
+| Unit | Phase | Cost | Pop | HP | Speed | Attack / interval | Range | Armour H/P/C | Quirk |
+|---|---|---:|---:|---:|---:|---|---:|---:|---|
+| Lindon Recruit | I | 35/0/0/10 | 1 | 105 | 1.0 | 6 hack / 1.5s | — | 1/1/0 | Reliable elite-leaning basic infantry |
+| Lindon Spearman | I | 35/10/0/15 | 1 | 120 | 0.95 | 6 hack / 1.6s; +5 vs cavalry | — | 2/2/0 | Brace-capable |
+| Lindon Archer | II | 35/15/0/15 | 1 | 70 | 1.0 | 7 pierce / 1.8s | 60 | 0/2/0 | +10 sight range |
+| Lindon Guard | II | 50/0/0/30 | 1 | 175 | 0.9 | 10 hack / 1.7s | — | 5/5/1 | Strong hold-position unit; expensive |
+| Lindon Mariner | II | 45/15/0/20 | 1 | 115 | 1.05 | 8 hack / 1.5s | — | 2/3/0 | Bonus on coastal or ship-deck maps |
+| Lindon Champion | III | 70/0/0/55 | 1 | 220 | 0.95 | 13 hack / 1.7s | — | 7/7/2 | Local morale aura; not mass-producible |
+| Swan Ship | II | 0/150/0/80 | 2 | 800 | 1.15 | none | — | 2/6/10 | Transport/reinforcement platform; no free factory |
 
-## Unit roster
+## Balance quirks
 
-### 1. Lindon Recruit
-- Role: basic infantry
-- Cost: 25 Food, 0 Wood, 0 Stone, 10 Metal
-- Population: 1
-- HP: low baseline
-- Speed: standard
-- Attack: melee spear or sword
-- Notes: basic early infantry, cheap and reliable
-
-### 2. Lindon Spearman
-- Role: anti-cavalry infantry
-- Cost: 30 Food, 10 Wood, 0 Stone, 15 Metal
-- Population: 1
-- HP: moderate
-- Speed: standard
-- Attack: spear thrust with reach bonus
-- Special: anti-cavalry and formation support
-- Counterplay: ranged pressure, flanking, siege
-
-### 3. Lindon Archer
-- Role: ranged infantry
-- Cost: 30 Food, 15 Wood, 0 Stone, 15 Metal
-- Population: 1
-- HP: low-medium
-- Speed: standard
-- Range: standard ranged attack
-- Special: strong line-of-sight and disciplined fire discipline
-- Notes: main ranged backbone
-
-### 4. Lindon Guard
-- Role: elite infantry
-- Cost: 40 Food, 0 Wood, 10 Stone, 25 Metal
-- Population: 1
-- HP: high
-- Speed: standard
-- Attack: melee, robust armor
-- Special: excellent in controlled engagements
-- Counterplay: siege and ranged disruption
-
-### 5. Lindon Shipwright or Swan Ship
-- Role: naval support / transport
-- Cost: varies by ship class
-- Population: depends on 0 A.D. naval units
-- HP: medium-high
-- Special: transport or coastal reinforcement
-- Notes: must be more specialized than a generic ship
-
-### 6. Lindon Mariner
-- Role: naval infantry or coastal raider
-- Cost: low-medium
-- HP: moderate
-- Special: coastal combat support
-
-### 7. Lindon Champion
-- Role: elite hero-tier melee fighter
-- Cost: high
-- HP: very high
-- Special: strong morale, formation support, local aura
-
-## Design notes
-
-The faction should feel strongest in prepared engagements and coastal warfare. It should not directly outclass mass factions in prolonged attrition.
+- Gift of the West: selected naval, defensive, and high-craft technologies research 15% faster.
+- Swan Ship reinforcement must consume resources or have a fixed capacity of 6 infantry.
+- Lindon units should cost more than equivalent mass-faction units and have longer replacement times.

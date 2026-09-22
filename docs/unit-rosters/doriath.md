@@ -1,60 +1,19 @@
-# Doriath Unit Roster
+# Doriath — Unit Balance v0.1
 
-## Core philosophy
+Costs are Food/Wood/Stone/Metal.
 
-Doriath is a stealth and ambush faction. It trades raw durability for stealth, terrain control, and precision engagements.
+| Unit | Phase | Cost | Pop | HP | Speed | Attack / interval | Range | Armour H/P/C | Quirk |
+|---|---|---:|---:|---:|---:|---|---:|---:|---|
+| Doriath Gatherer | I | 50/0/0/0 | 1 | 65 | 1.0 | 2 hack / 2.0s | — | 0/0/0 | Forest camouflage while stationary |
+| Doriath Hunter | I | 35/15/0/0 | 1 | 60 | 1.1 | 5 pierce / 1.8s | 45 | 0/1/0 | Stealth after 3s stationary in forest |
+| Doriath Spearman | I | 35/10/0/10 | 1 | 110 | 1.0 | 6 hack / 1.6s; +5 vs cavalry | — | 1/1/0 | +10% movement in forest |
+| Doriath Ranger | II | 40/25/0/15 | 1 | 85 | 1.05 | 8 pierce / 2.0s | 65 | 0/2/0 | Stationary forest stealth; first shot +25% |
+| Doriath Guardian | II | 55/0/0/25 | 1 | 155 | 0.95 | 9 hack / 1.7s | — | 4/4/1 | +10% armour in forest |
+| Doriath Sentinel | III | 55/35/0/30 | 1 | 115 | 0.95 | 10 pierce / 2.0s | 75 | 0/4/0 | +15 sight; weak in melee |
+| Doriath Champion | III | 70/20/0/50 | 1 | 205 | 1.0 | 12 hack / 1.7s | — | 5/5/1 | Local ambush and concealment aura |
 
-## Unit roster
+## Balance quirks
 
-### 1. Doriath Gatherer
-- Role: worker
-- Cost: low
-- Population: 1
-- Special: hidden or woodland-camouflaged in suitable terrain
-- Notes: workers should be less visible or more secure in forest areas
-
-### 2. Doriath Hunter
-- Role: skirmisher / scout
-- Cost: low-medium
-- HP: low
-- Speed: moderate-high
-- Attack: bow or short ranged attack
-- Special: ambush and concealment
-- Counterplay: discovery, cavalry, and fire
-
-### 3. Doriath Spearman
-- Role: anti-cavalry infantry
-- Cost: moderate
-- HP: moderate
-- Special: stronger in forests and prepared terrain
-- Notes: not meant to be an open-field powerhouse
-
-### 4. Doriath Ranger
-- Role: concealed ranged unit
-- Cost: moderate
-- HP: moderate
-- Range: mid-range
-- Special: stealth or concealment for ambush attacks
-- Counterplay: area damage and broad-sight detection
-
-### 5. Doriath Guardian
-- Role: elite melee defender
-- Cost: moderate-high
-- HP: high
-- Speed: standard
-- Special: strong hold position and fortification support
-
-### 6. Doriath Sentinel
-- Role: elite ranged defender or support
-- Cost: moderate-high
-- Range: long range
-- Special: excellent visibility and woodland defense
-
-### 7. Doriath Champion
-- Role: elite ambush or commander unit
-- HP: high
-- Special: concealment and local support aura
-
-## Design notes
-
-Doriath units should be strongest in forests and ambush zones. Their power is tactical and conditional, not raw mass control.
+- Girdle of Melian: enemy movement -10% and vision -15% inside Doriath territory; does not make units invisible.
+- Camouflage is broken by attacking, taking damage, constructing, or moving outside suitable forest.
+- Doriath has lower open-field durability than Lindon or Gondor.

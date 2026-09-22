@@ -1,64 +1,21 @@
-# Rohan Unit Roster
+# Rohan — Unit Balance v0.1
 
-## Core philosophy
+Costs are Food/Wood/Stone/Metal.
 
-Rohan is a cavalry faction keyed to mobility, shock charges, and field control. Its roster should be fast and aggressive, with a clear weakness in static defense.
+| Unit | Phase | Cost | Pop | HP | Speed | Attack / interval | Range | Armour H/P/C | Quirk |
+|---|---|---:|---:|---:|---:|---|---:|---:|---|
+| Rohan Villager | I | 50/0/0/0 | 1 | 70 | 1.0 | 2 hack / 2.0s | — | 0/0/0 | Standard worker |
+| Rohan Scout | I | 55/0/0/20 | 1 | 105 | 1.35 | 5 hack / 1.6s | — | 0/1/0 | +25 sight; low combat value |
+| Rohan Spearman | I | 35/10/0/10 | 1 | 105 | 1.0 | 6 hack / 1.6s; +8 vs cavalry | — | 1/1/0 | Brace and anti-charge |
+| Rohan Rider | II | 70/0/0/45 | 1 | 145 | 1.3 | 8 hack / 1.7s; charge 14 | — | 2/2/1 | High mobility; weak to braced spears |
+| Rohan Archer | II | 40/25/0/10 | 1 | 70 | 1.05 | 6 pierce / 1.8s | 60 | 0/1/0 | Mobile ranged support |
+| Rohirrim | II | 75/0/0/55 | 1 | 205 | 1.35 | 11 hack / 1.8s; charge 20 | — | 3/3/2 | Charge cooldown 12s |
+| Rohan Guard | III | 55/0/0/35 | 1 | 160 | 1.0 | 9 hack / 1.7s | — | 4/4/1 | Infantry anchor; slower than cavalry |
+| Rohan Champion | III | 80/0/0/65 | 1 | 245 | 1.3 | 14 hack / 1.8s; charge 24 | — | 5/5/2 | Cavalry leadership aura |
 
-## Unit roster
+## Balance quirks
 
-### 1. Rohan Farmer / Villager
-- Role: worker
-- Cost: low
-- Special: standard gatherer
-
-### 2. Rohan Scout
-- Role: light cavalry / scout
-- Cost: low-medium
-- Speed: high
-- HP: low
-- Special: reconnaissance and pursuit
-- Counterplay: anti-cavalry infantry and ranged attacks
-
-### 3. Rohan Rider
-- Role: melee cavalry
-- Cost: moderate
-- HP: moderate
-- Speed: high
-- Special: charge and chase
-- Counterplay: spear walls, towers, and terrain
-
-### 4. Rohan Archer
-- Role: mounted or infantry archer
-- Cost: moderate
-- Range: medium
-- Special: mobility and anti-skirmisher use
-
-### 5. Rohan Spearman
-- Role: anti-cavalry infantry
-- Cost: moderate
-- HP: moderate
-- Special: brace and anti-charge function
-
-### 6. Rohirrim
-- Role: elite cavalry shock unit
-- Cost: moderate-high
-- HP: high
-- Speed: very high
-- Special: strong charge and morale pressure
-- Counterplay: braced spears, towers, and sustained anti-cavalry support
-
-### 7. Rohan Guard
-- Role: elite melee infantry with support role
-- Cost: high
-- HP: high
-- Special: formed defense and disciplined combat
-
-### 8. Rohan Champion
-- Role: high-value cavalry commander
-- Cost: high
-- HP: very high
-- Special: mounted leadership or tactical disruption
-
-## Design notes
-
-Rohan is strongest when it chooses open-field engagement and controls the timing of the battle. It should not be a fortress faction.
+- Pastures of the Mark: each active pasture produces 0.4 Food/second; maximum four pastures per Civic Center.
+- Éored Wedge: +15% charge damage and +5% movement before contact; -25% turn rate; charge bonus cannot repeat until 12s have elapsed.
+- Defensive Stakes deal 12 crush damage to cavalry crossing them and are vulnerable to infantry, fire, and siege.
+- Field Camps provide rallying and local reinforcement but do not train citizens or replace Civic Centers.

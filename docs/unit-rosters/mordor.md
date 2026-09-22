@@ -1,82 +1,22 @@
-# Mordor Unit Roster
+# Mordor — Unit Balance v0.1
 
-## Core philosophy
+Costs are Food/Wood/Stone/Metal.
 
-Mordor is a mass-attrition faction. Units are cheap, numerous, and pressure-oriented, but individually weaker than elite armies.
+| Unit | Phase | Cost | Pop | HP | Speed | Attack / interval | Range | Armour H/P/C | Quirk |
+|---|---|---:|---:|---:|---:|---|---:|---:|---|
+| Snaga Slave | I | 35/0/0/0 | 1 | 55 | 0.95 | 2 hack / 2.0s | — | 0/0/0 | Cheap worker; vulnerable |
+| Orc Warrior | I | 35/0/0/5 | 1 | 85 | 0.95 | 5 hack / 1.6s | — | 1/0/0 | 15% faster training than baseline |
+| Orc Spearman | I | 35/5/0/10 | 1 | 100 | 0.9 | 5 hack / 1.6s; +7 vs cavalry | — | 1/1/0 | Mass anti-cavalry |
+| Orc Archer | II | 35/15/0/5 | 1 | 60 | 0.95 | 5 pierce / 1.9s | 55 | 0/1/0 | Cheap ranged pressure |
+| Warg Rider | II | 65/0/0/35 | 1 | 135 | 1.3 | 7 hack / 1.6s | — | 2/1/1 | Worker harassment and pursuit |
+| Crebain | II | 30/20/0/0 | 1 | 45 | 1.6 | none | — | 0/0/0 | 90 sight; fragile scout |
+| Black Uruk | III | 50/0/0/30 | 1 | 155 | 1.0 | 9 hack / 1.6s | — | 4/3/1 | Expensive quality step |
+| Mountain Troll | III | 100/0/0/80 | 2 | 360 | 0.8 | 20 hack / 2.2s; 18 crush | — | 6/4/5 | Large target; vulnerable to siege |
+| Siege Catapult | III | 0/100/0/100 | 3 | 220 | 0.65 | 75 crush / 5.0s | 180 | 2/5/8 | Area siege; weak if reached |
 
-## Unit roster
+## Balance quirks
 
-### 1. Snaga Slave
-- Role: worker
-- Cost: low
-- HP: low
-- Special: cheap and numerous gatherer
-- Notes: must be vulnerable enough that worker protection matters
-
-### 2. Orc Warrior
-- Role: basic melee infantry
-- Cost: low
-- HP: low-medium
-- Speed: standard
-- Special: simple, cheap, numerous
-- Notes: core of the industrial army
-
-### 3. Orc Spearman
-- Role: anti-cavalry infantry
-- Cost: moderate
-- HP: moderate
-- Special: anti-cavalry support
-- Notes: should be useful in a mass army but not dominant in all contingencies
-
-### 4. Orc Archer
-- Role: ranged infantry
-- Cost: moderate
-- HP: low-medium
-- Range: standard
-- Special: simple ranged pressure
-
-### 5. Warg Rider
-- Role: reconnaissance / harassment
-- Cost: moderate
-- Speed: high
-- HP: medium
-- Special: pursuit, worker harassment, scout pressure
-- Counterplay: towers, spears, formation control
-
-### 6. Crebain
-- Role: aerial scout
-- Cost: low-medium
-- Speed: high
-- HP: low
-- Special: high sight, scouting, reveal support
-- Counterplay: anti-air or missile fire if available
-
-### 7. Siege Catapult
-- Role: heavy ranged siege
-- Cost: high
-- HP: moderate
-- Special: area damage and direct siege support
-
-### 8. Mountain Troll
-- Role: heavy bruiser
-- Cost: very high
-- HP: very high
-- Attack: high melee damage
-- Special: brutal anti-infantry power
-- Counterplay: siege, anti-large, flanking, range
-
-### 9. Black Uruk / Uruk Elite
-- Role: elite infantry
-- Cost: high
-- HP: high
-- Special: stronger than standard Orc Warriors but expensive
-- Notes: the main elite step in the Mordor military tree
-
-### 10. Khamûl / Nazgûl support unit
-- Role: hero or hero-tier support
-- Cost: not standard production
-- Special: reconnaissance, fear, raiding pressure
-
-## Design notes
-
-Mordor’s worst-case scenario is a clean, equal-unit fight. Its best-case scenario is a battle where it overwhelms the opponent by numbers and pressure. The unit roster should reinforce that tradeoff.
+- Blighted Desolation: enemy workers within Mordor miasma gather 15% slower; Mordor workers are unaffected.
+- Crebain: no normal combat attack; optional Murder of Crows reveals a 25-radius area for 5s, cooldown 45s.
+- Khamûl's aura: nearby Wargs and raiders gain +5% speed and +10% damage against workers; fear is local and does not affect heroes.
+- Mordor's cheaper units must retain low HP and armour so elite armies can win direct equal-population fights.
