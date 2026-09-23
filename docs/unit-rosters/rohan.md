@@ -1,4 +1,6 @@
-# Rohan — Unit Balance v0.1
+# Rohan — Unit Balance v0.2
+
+> **Active balance target:** This roster is synchronized with `docs/balance/v0.2-active-targets.md`. Use these values for implementation until a later balance revision supersedes them.
 
 Costs are Food/Wood/Stone/Metal.
 
@@ -16,6 +18,7 @@ Costs are Food/Wood/Stone/Metal.
 ## Balance quirks
 
 - Pastures of the Mark: each active pasture produces 0.4 Food/second; maximum four pastures per Civic Center.
-- Éored Wedge: +15% charge damage and +5% movement before contact; -25% turn rate; charge bonus cannot repeat until 12s have elapsed.
-- Defensive Stakes deal 12 crush damage to cavalry crossing them and are vulnerable to infantry, fire, and siege.
+- Éored Wedge: **+10% charge damage and +5% movement before contact; -20% turn rate; charge bonus cannot repeat until 12s have elapsed.**
+- Defensive Stakes deal 12 crush damage to cavalry crossing them and are vulnerable to infantry, fire, and siege. Their durability must remain low enough that siege and fire can clear them.
 - Field Camps provide rallying and local reinforcement but do not train citizens or replace Civic Centers.
+- Helm’s Horn is a short disruption effect, not a hard stun or fear lock.

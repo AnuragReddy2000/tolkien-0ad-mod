@@ -1,4 +1,6 @@
-# Moria — Unit Balance v0.1
+# Moria — Unit Balance v0.2
+
+> **Active balance target:** This roster is synchronized with `docs/balance/v0.2-active-targets.md`. Use these values for implementation until a later balance revision supersedes them.
 
 Costs are Food/Wood/Stone/Metal.
 
@@ -16,5 +18,5 @@ Costs are Food/Wood/Stone/Metal.
 ## Balance quirks
 
 - Mithril Core allows depleted metal sites to continue at 50% normal yield while the required deep-mining structure remains active.
-- Tunnel movement grants units +10% speed inside linked tunnels but entrances can be blocked or disabled.
+- **Tunnel movement grants units +7% speed inside linked tunnels; entrances can be blocked or disabled.** Tunnels are not unrestricted global transport.
 - Moria units are durable but deliberately slow; they must not also have superior ranged reach or mobility.

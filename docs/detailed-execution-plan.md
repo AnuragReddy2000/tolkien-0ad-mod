@@ -47,12 +47,11 @@ Not yet implemented:
 - Record every balance change in `docs/balance/changelog.md`.
 - Do not add a custom mechanic until its fallback behavior is defined for unsupported engine features.
 - Separate lore/design assumptions from confirmed engine capabilities.
+- **All simulation-affecting randomness must use the engine's deterministic, seeded simulation RNG. Never use `Math.random()` or another unsynchronized random source in simulation code.**
 
 ## 4. Repository and mod structure to establish
 
-The implementer should first confirm the target 0 A.D. version and create the actual mod directory using the version-appropriate structure. Do not assume paths or component names from another engine version.
-
-The expected logical structure is:
+The implementer should first confirm the target 0 A.D. version and create the actual mod using the version-appropriate metadata format. The paths below are the expected 0 A.D. layout for the target implementation and should be validated against the selected release only if that release has a documented structural difference.
 
 ```text
 mod-root/
@@ -62,24 +61,29 @@ mod-root/
 ├── simulation/
 │   ├── components/
 │   ├── helpers/
-│   ├── templates/
-│   │   ├── units/
-│   │   ├── buildings/
-│   │   ├── ships/
-│   │   ├── siege/
-│   │   └── heroes/
-│   ├── technologies/
-│   └── data/
+│   ├── ai/
+│   ├── data/
+���   │   ├── civs/
+│   │   └── technologies/
+│   └── templates/
+│       ├── structures/
+│       └── units/
+│           ├── <civ>/
+│           │   ├── infantry/
+│           │   ├── cavalry/
+│           │   ├── siege/
+│           │   ├── ships/
+│           │   └── heroes/
+│           └── common/
 ├── art/
 ├── audio/
 ├── gui/
 ├── maps/
 ├── l10n/
-├── ai/
 └── tests/
 ```
 
-The exact directory names must follow the selected 0 A.D. release and be validated with a minimal loading mod before content is added.
+Use `simulation/data/technologies/` for technology definitions and `simulation/data/civs/` for civilization data. Use `simulation/ai/` for AI code. Put structures under `simulation/templates/structures/`; ships and siege are unit templates under `simulation/templates/units/<civ>/ships/` and `simulation/templates/units/<civ>/siege/`, not sibling template categories. Keep the logical grouping above even if the selected 0 A.D. release requires a small naming variation.
 
 ## 5. Workstream A — engine and toolchain validation
 
@@ -92,6 +96,8 @@ The exact directory names must follow the selected 0 A.D. release and be validat
 5. Verify XML validation, hot reload, log output, and error reporting.
 6. Document how to launch a test match and collect logs.
 7. Establish a formatting and naming convention.
+8. Confirm the available deterministic RNG API and document its correct simulation-side usage.
+9. Add a two-peer lockstep smoke test before implementing scripted randomness.
 
 ### Exit criteria
 
@@ -99,6 +105,7 @@ The exact directory names must follow the selected 0 A.D. release and be validat
 - A custom test unit can be spawned and selected.
 - A test technology can be researched.
 - The team can reproduce a clean test match from a new checkout.
+- Two identical simulations remain synchronized while exercising a deterministic random test mechanic.
 
 ## 6. Workstream B — shared data and template foundations
 
@@ -281,7 +288,8 @@ Fallback: approximately 15 seconds of global reveal with an 8–10-minute cooldo
 - Lower chance for champions and siege; exclude heroes, workers, summons, and Angmar units.
 - Thrall target: 45-second lifetime, weak stats, no gathering/building/capturing/garrisoning, controllable.
 - Prevent chain conversion.
-- Acceptance: Thralls cannot become a permanent free army through a single battle.
+- Use only the engine's seeded deterministic simulation RNG for the conversion roll; never use `Math.random()`.
+- Acceptance: Thralls cannot become a permanent free army through a single battle, and identical lockstep simulations produce identical conversions.
 
 ## 10. Heroes and wonders
 
@@ -364,6 +372,9 @@ Every map-dependent faction must be tested on both favorable and unfavorable map
 - Phase progression test.
 - Population and cost test.
 - Save/load test where custom scripts are involved.
+- **Two-peer lockstep determinism test for every simulation script that uses randomness or time-based state.**
+- **Repeat the same seeded scenario and verify identical random outcomes, entity creation, deaths, resources, and final state.**
+- **Static check or code review gate that rejects `Math.random()`, wall-clock time, local machine state, or unsynchronized iteration as simulation inputs.**
 
 ### Manual balance tests
 
@@ -375,6 +386,7 @@ Every map-dependent faction must be tested on both favorable and unfavorable map
 - Wonder disabled/enabled comparison.
 - Favorable and unfavorable terrain comparison.
 - Rush, defensive, raid, and late-game scenarios.
+- Repeat scripted-random scenarios with identical seeds and compare replays or state hashes where supported.
 
 ### Bug report minimum
 
@@ -388,7 +400,8 @@ Every issue should include:
 - expected behavior;
 - actual behavior;
 - log excerpt;
-- screenshots or replay where useful.
+- screenshots or replay where useful;
+- whether the issue reproduces in a two-peer lockstep test.
 
 ## 14. Balance process
 
@@ -441,7 +454,9 @@ The next contributor should not begin by adding random units. They should:
 - read the relevant faction and roster files;
 - confirm the target 0 A.D. version;
 - create the minimal loading mod;
-- report engine limitations before changing the design.
+- confirm the actual `simulation/data/technologies/`, `simulation/data/civs/`, `simulation/ai/`, `simulation/templates/structures/`, and `simulation/templates/units/` paths;
+- report engine limitations before changing the design;
+- document and test the deterministic RNG API before implementing Barrow Plague or any other scripted random mechanic.
 
 ## 17. Definition of done for the first public vertical slice
 
@@ -457,6 +472,7 @@ The first public vertical slice is complete only when:
 - test maps cover open, forest, mountain, and coastal conditions;
 - known limitations are documented;
 - balance changes are recorded and versioned;
+- scripted random mechanics pass two-peer lockstep determinism tests;
 - the build can be reproduced from the repository by another contributor.
 
 ## 18. Known risks and fallback decisions
@@ -467,6 +483,8 @@ The first public vertical slice is complete only when:
 - If territory-based worker penalties are too expensive to calculate, use aura regions around major structures as a controlled approximation.
 - If death-triggered conversion is unreliable, prototype a manual or periodic eligible-death queue before attempting a fully reactive script.
 - If terrain-sensitive stealth is not available, use stance- and position-based camouflage with explicit visual feedback.
+- **If a custom random mechanic cannot use the engine's seeded simulation RNG, do not implement it with `Math.random()`. Replace it with a deterministic queue, fixed seeded lookup, periodic deterministic roll, or a non-random fallback and document the deviation.**
+- **Do not use wall-clock time, network state, filesystem state, unordered external data, or unsynchronized native code to influence simulation outcomes.**
 
 ## 19. Final handoff expectation
 
@@ -480,6 +498,7 @@ The implementation owner is expected to return:
 - known bugs;
 - balance changes from v0.2;
 - updated changelog;
+- determinism test results and any RNG limitations;
 - next milestone estimate.
 
 The design is ready for implementation, but numeric values remain targets until tested in the actual engine. Engine limitations must be documented and resolved through the listed fallbacks rather than silently changing the intended faction identities.
