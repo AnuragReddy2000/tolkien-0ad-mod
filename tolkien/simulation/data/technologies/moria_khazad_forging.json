@@ -1,0 +1,17 @@
+﻿{
+	"genericName": "Khazad Forging",
+	"description": "The halls of Khazad-dûm are hewn and braced to stand against everything the deep can send against them.",
+	"cost": {
+		"stone": 300,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "moria" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "masonry_clamps.png",
+	"researchTime": 60,
+	"tooltip": "Structures +15% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.15, "affects": "Structure" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

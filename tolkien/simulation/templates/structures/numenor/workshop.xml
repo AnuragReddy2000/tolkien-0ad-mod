@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_arsenal">
+  <Identity>
+    <Civ>numenor</Civ>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <SpecificName>King's Warworks</SpecificName>
+    <Tooltip>Steel-bow ballista works. Long-range precision engines — no stone-throwers or rams.</Tooltip>
+  </Identity>
+  <Researcher disable=""/>
+  <!-- Siege roster per siege_recommendations.md / docs/factions/numenor.md:
+       Steel-Bow Ballista ONLY on land (greater range/velocity than wooden variants).
+       No stonethrower/catapult, no ram, no siege tower.
+       Heavy siege power at sea lives on Heavy Siege Ships (dock), not here. -->
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/siege_ballista
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/hellenes/workshop.xml</Actor>
+  </VisualActor>
+</Entity>

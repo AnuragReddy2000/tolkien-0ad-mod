@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/doriath/infantry_guardian_a">
+  <Identity>
+    <Rank>Elite</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/doriath/champion_marchwarden</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/doriath/guardian_e.xml</Actor>
+  </VisualActor>
+</Entity>

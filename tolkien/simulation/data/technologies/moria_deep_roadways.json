@@ -1,0 +1,17 @@
+{
+	"genericName": "Deep Roadways",
+	"description": "The long roads under the mountains are graded true, and a Dwarf on a roadway walks as fast as an Orc on the surface.",
+	"cost": {
+		"wood": 200,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "moria" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "walk.png",
+	"researchTime": 60,
+	"tooltip": "Infantry +5% movement speed.",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.05, "affects": "Infantry" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

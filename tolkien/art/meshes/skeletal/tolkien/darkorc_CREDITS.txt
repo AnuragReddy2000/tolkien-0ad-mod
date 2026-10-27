@@ -1,0 +1,4 @@
+Derivative of 'Dark Orc Warrior' (Viking Orc Warrior) by RavenMalmhaus, CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/dark-orc-warrior-4b9f2a23153246178a1668d2500ccab2
+Changes: stripped carried weapons (none as separate meshes - no-op logged), armour kept merged (one material/UV), iteratively decimated ~173.9k -> ~5.5k tris, rigged to stock 0 A.D. Biped (art/skeletons/biped.xml), rescaled ~1.15x human, 512px baseTex (Principled Base Color map; packed data/normal maps dropped), global mis-weight correction (hand weights had splattered the skirt).
+Custom tall idle + walk + run (biped/darkorc_*.dae); melee/death/promotion stock.

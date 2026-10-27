@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_arsenal">
+  <Identity>
+    <Civ>lindon</Civ>
+    <SpecificName>Works of the Havens</SpecificName>
+    <Tooltip>Elven bolt-thrower works. Precise counter-siege engines only — no heavy catapults.</Tooltip>
+  </Identity>
+  <Researcher disable=""/>
+  <!-- Siege roster per siege_recommendations.md / docs/factions/lindon.md:
+       Elven Bolt-Thrower ONLY (counter-siege / high-value sniping).
+       No stonethrower/catapult, no ram, no siege tower.
+       Walls are answered via Vanguard Saboteurs / Singing-arrows, not here. -->
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/siege_bolt_thrower
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/seleucids/workshop.xml</Actor>
+  </VisualActor>
+</Entity>

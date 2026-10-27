@@ -1,0 +1,10 @@
+Moria dwarf clothing, leather, and metal skins are recolored derivatives of
+0 A.D. public character textures. The base palettes use
+`skeletal_pers_linothorax_01_01.png` and
+`skeletal_pers_padded_01_01.png`; subsequent Moria variants are recolored from
+the project-made `moria_cloth_01.png` and `moria_iron_01.png`.
+Source art Copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/
+Generated outputs: moria_iron_01.png, moria_leather_01.png,
+moria_cloth_01.png, moria_cloth_red_01.png, moria_cloth_blue_01.png,
+moria_iron_02_steel.png, and moria_gold_01.png.

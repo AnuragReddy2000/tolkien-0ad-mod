@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_archer">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>27</Pierce>
+      </Damage>
+      <MaxRange>78</MaxRange>
+      <RepeatTime>1500</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    units/doriath_beleg_guide
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>200</food>
+      <wood>200</wood>
+      <stone>0</stone>
+      <metal>150</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SelectionGroupName>units/doriath/hero_beleg</SelectionGroupName>
+    <GenericName>Beleg</GenericName>
+    <SpecificName>Beleg Strongbow</SpecificName>
+    <Icon>units/maur/hero_ashoka.png</Icon>
+    <Tooltip>Hero of Doriath. The great bow of the marches: long reach, keen sight, and nearby archers shoot truer under his guidance.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>6</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <Visibility>
+    <Camouflage>
+      <StationaryDelay>3000</StationaryDelay>
+      <ForestRadius>10</ForestRadius>
+      <MinTrees>4</MinTrees>
+      <DetectRadius>12</DetectRadius>
+      <GirdleDetectRadius>6</GirdleDetectRadius>
+    </Camouflage>
+  </Visibility>
+  <Vision>
+    <Range>110</Range>
+  </Vision>
+  <VisualActor>
+    <!-- No fitting male foot-archer hero exists in vanilla (only Cleopatra/Ashoka/Xerxes/Amanirenas); elite Athenian archer look instead. -->
+    <Actor>units/athenians/infantry_archer_e.xml</Actor>
+  </VisualActor>
+</Entity>

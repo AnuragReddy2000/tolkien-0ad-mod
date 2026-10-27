@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_tower_stone">
+  <Footprint>
+    <Square width="10.0" depth="10.5"/>
+    <Height>15.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>numenor</Civ>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <SpecificName>Coast Guard Tower</SpecificName>
+    <Tooltip>Anti-ship and anti-landing specialist. Strong vs ships and coastal raiders; not the all-round best tower.</Tooltip>
+  </Identity>
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>12</Pierce>
+      </Damage>
+      <Bonuses>
+        <BonusShips>
+          <Classes>Ship</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusShips>
+      </Bonuses>
+      <PreferredClasses datatype="tokens">Ship Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Obstruction>
+    <Static width="7.0" depth="8.0"/>
+  </Obstruction>
+  <StatusBars>
+    <HeightOffset>22.0</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>structures/spartans/defense_tower.xml</Actor>
+  </VisualActor>
+</Entity>

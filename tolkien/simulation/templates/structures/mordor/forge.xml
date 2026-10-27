@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_forge">
+  <Identity>
+    <Civ>mordor</Civ>
+    <SpecificName>Iron-works</SpecificName>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      mordor_black_uruk_forging
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/mordor/forge.xml</Actor>
+  </VisualActor>
+</Entity>

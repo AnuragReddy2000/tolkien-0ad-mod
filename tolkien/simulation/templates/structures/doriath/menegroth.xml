@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <Auras datatype="tokens">
+    structures/doriath_girdle_deepens
+  </Auras>
+  <BuildRestrictions>
+    <Category>Menegroth</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>400</wood>
+      <stone>600</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Circle radius="14.0"/>
+    <Height>10.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <GenericName>Menegroth</GenericName>
+    <SpecificName>The Thousand Caves</SpecificName>
+    <Tooltip>Wonder of Doriath — the Thousand Caves. The Girdle Deepens: while Menegroth stands, the woodland mist around it slows and blinds enemies further. Raze it to break the hidden kingdom.</Tooltip>
+    <Classes datatype="tokens">CivSpecific ConquestCritical Wonder</Classes>
+    <VisibleClasses datatype="tokens">Girdle</VisibleClasses>
+    <Icon>structures/tholos.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <stone>120</stone>
+    <metal>40</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      doriath_girdle_of_melian
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_tholos.xml</select>
+      <constructed>interface/complete/building/complete_tholos.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>60</Radius>
+    <Weight>40000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <!-- Menegroth: regular Persian Hanging Gardens frame.
+         Stage in Atlas by sliding the asset into a sculpted cliff face so the
+         rear halls vanish into the rock (Feature 3). Footprint unchanged. -->
+    <Actor>structures/doriath/menegroth.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/mordor/infantry_warrior_a">
+  <Identity>
+    <Rank>Elite</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/mordor/champion_uruk</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/mordor/orc_warrior_e.xml</Actor>
+  </VisualActor>
+</Entity>

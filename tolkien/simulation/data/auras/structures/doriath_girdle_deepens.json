@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affectedPlayers": ["Enemy"],
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.85 },
+		{ "value": "Vision/Range", "multiply": 0.8 }
+	],
+	"auraName": "The Girdle Deepens",
+	"auraDescription": "Enemy units in the deepened mist -15% movement speed and -20% vision. While Menegroth stands the Girdle holds.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png"
+}

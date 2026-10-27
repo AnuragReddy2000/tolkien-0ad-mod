@@ -1,0 +1,42 @@
+{
+	"Code": "tolkien_test",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Placeholder Bonus",
+			"History": "Placeholder civ bonus for Workstream A skeleton validation.",
+			"Description": "Placeholder. Replaced by real faction identities in Workstream C."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade"
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/tolkien_test/civil_centre"
+		},
+		{
+			"Template": "units/tolkien_test/support_worker",
+			"Count": 4
+		},
+		{
+			"Template": "units/tolkien_test/infantry_spearman",
+			"Count": 2
+		}
+	],
+	"AINames": [
+		"Test Leader"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_infantry_melee_b": "units/tolkien_test/infantry_spearman",
+		"skirmish/units/default_support_civilian": "units/tolkien_test/support_worker",
+		"skirmish/units/default_cavalry": "units/tolkien_test/infantry_spearman"
+	},
+	"SelectableInGameSetup": false
+}

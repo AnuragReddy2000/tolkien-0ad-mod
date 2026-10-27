@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_civilian">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/menegroth
+      structures/{civ}/hunters_cache
+      structures/{civ}/ent_grove
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Cost>
+    <Resources>
+      <food>50</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>65</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <GenericName>Doriath Gatherer</GenericName>
+    <SpecificName>Woodland Gatherer of Doriath</SpecificName>
+    <Icon>units/athen/support_civilian.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/citizen_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>

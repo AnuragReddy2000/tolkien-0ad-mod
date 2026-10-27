@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 35,
+	"affectedPlayers": ["Enemy"],
+	"affects": ["Human"],
+	"modifications": [
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 1.3 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.3 }
+	],
+	"auraName": "Morgul Dread",
+	"auraDescription": "Enemy soldiers near the Nine's lieutenants attack ~23% slower in dread — the full terror of the Black Captains. Slay them to lift it.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png",
+	"stackable": false
+}

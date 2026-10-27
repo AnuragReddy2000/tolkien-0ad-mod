@@ -1,0 +1,18 @@
+{
+	"genericName": "Sindar Forging",
+	"description": "The forges of Menegroth temper axe and blade for the hidden kingdom's wardens, keen enough for a single clean stroke.",
+	"cost": {
+		"food": 200,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "doriath" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "battle_axe.png",
+	"researchTime": 45,
+	"tooltip": "Infantry +1 Hack attack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "add": 1 }
+	],
+	"affects": ["Infantry Champion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

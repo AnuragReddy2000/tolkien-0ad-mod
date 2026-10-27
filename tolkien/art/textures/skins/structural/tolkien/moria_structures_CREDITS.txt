@@ -1,0 +1,6 @@
+Moria structure reskins: recolored derivatives of 0 A.D. public building textures - darkened to deep-hall basalt; meshes, UVs, AO untouched.
+Source art copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/
+Sources: hele_struct_b.png, hele_struct.dds, celt_struct_1.dds, hele_gate.png, palisade_main.png, sparta_struct.png.
+
+Wonder (Vaults of Khazad-dûm): uses the vanilla Carthaginian wonder (kart_wonder) mesh and kart_struct.dds/ao unmodified - no derivative texture used.

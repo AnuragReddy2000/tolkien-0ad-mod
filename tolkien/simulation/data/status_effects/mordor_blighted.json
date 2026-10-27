@@ -1,0 +1,7 @@
+{
+	"applierTooltip": "The land itself sickens under Mordor's shadow, and intruders harvest little from it.",
+	"code": "BlightedMordor",
+	"icon": "blighted",
+	"statusName": "Blighted",
+	"receiverTooltip": "Gathering inside (or just beyond) Mordor territory: -15% gather speed. Leave the shadow or reclaim the land to lift it."
+}

@@ -1,0 +1,4 @@
+Derivative of 'Dwarf_Helmet_LP' by prorok_009, CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/dwarf-helmet-lp-6196f83b8dc7416583f6197df9f09177
+Changes: baked part transforms, cleanup, decimated to troop budget, single material/UV, 512px baseTex, scaled into the stock helmet-bone frame (origin = helmet bone).
+NOTE: upstream design derives from Weta Workshop film concepts (author credits them) - review IP comfort before release; swap path documented in actor XML.

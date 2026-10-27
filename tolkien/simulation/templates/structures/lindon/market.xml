@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_market">
+  <Identity>
+    <Civ>lindon</Civ>
+    <SpecificName>Market of Mithlond</SpecificName>
+  </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/support_trader
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/seleucids/market.xml</Actor>
+  </VisualActor>
+</Entity>

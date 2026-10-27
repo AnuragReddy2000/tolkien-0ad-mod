@@ -1,0 +1,11 @@
+{
+	"type": "player",
+	"affects": ["Player", "Human"],
+	"modifications": [
+		{ "value": "Player/MaxPopulation", "multiply": 1.1 },
+		{ "value": "Cost/Resources/metal", "multiply": 1.1, "affects": "Human" }
+	],
+	"auraName": "The Great Armament",
+	"auraDescription": "Maximum population +10% and Númenórean land units +10% Metal cost while Ar-Pharazon lives. The population bonus stacks multiplicatively with other cap bonuses; no land-training slowdown.",
+	"stackable": false
+}

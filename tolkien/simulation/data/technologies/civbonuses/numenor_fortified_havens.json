@@ -1,0 +1,12 @@
+{
+	"genericName": "Fortified Havens",
+	"autoResearch": true,
+	"description": "The mariners of Númenor raised strong harbours of white stone along their coasts, sheltered strongholds from which great fleets put to sea.",
+	"requirements": { "civ": "numenor" },
+	"requirementsTooltip": "Númenor civilization bonus (automatic).",
+	"icon": "armor_ship_bronze.png",
+	"tooltip": "Docks +15% health. Kill the docks to bleed the fleet-building economy.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.15, "affects": "Dock" }
+	]
+}

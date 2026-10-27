@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 20,
+	"affectedPlayers": ["Enemy"],
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 0.9 }
+	],
+	"auraName": "Ambush of the Marchwarden",
+	"auraDescription": "Enemy units near the Marchwarden see -10% less in the deepening gloom. Slay the Marchwarden to lift it.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png",
+	"stackable": false
+}

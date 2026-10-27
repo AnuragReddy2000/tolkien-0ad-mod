@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>200</wood>
+      <stone>100</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <!-- Wonder-scale mesh: single 55x57m Stonehenge ring (measured from the
+       .dae vertex bounds), so the footprint mirrors the vanilla wonder
+       (Circle 30 / 55x55). Do NOT shrink this to "save space" — the ring
+       would overhang neighbours and read as a placement lie in Atlas. -->
+  <Footprint replace="">
+    <Circle radius="30.0"/>
+    <Height>20.0</Height>
+  </Footprint>
+  <Health>
+    <Max>1500</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <GenericName>Ent Grove</GenericName>
+    <SpecificName>Grove of the Shepherds</SpecificName>
+    <Icon>structures/doriath/ent_grove.png</Icon>
+    <Tooltip>A living moot of the great Shepherds. Trains Ent-allies — Doriath's answer to walls, needing neither engine nor forge.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Obstruction>
+    <Static width="55.0" depth="55.0"/>
+  </Obstruction>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/siege_ent
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <!-- Stone-circle moot ring with a living tree heart (see actor). -->
+    <FoundationActor>structures/fndn_stonehenge.xml</FoundationActor>
+    <Actor>structures/doriath/ent_grove.xml</Actor>
+  </VisualActor>
+</Entity>

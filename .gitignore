@@ -1,0 +1,14 @@
+.tmp_vanilla/
+__pycache__/
+*.py[cod]
+dist/
+previews/
+_site/
+.jekyll-cache/
+.bundle/
+.DS_Store
+tools/_dbg.ps1
+tools/*.ps1
+tools/art_build/*.ps1
+tolkien/art/textures/skins/skeletal/tolkien/troll_trial3/
+tolkien/art/meshes/skeletal/tolkien/warg.dae

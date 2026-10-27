@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.2 }
+	],
+	"auraName": "Endurance of Durin",
+	"auraDescription": "Nearby Moria Infantry +20% health while Durin stands. Fear immunity has no engine path and is not implemented.",
+	"stackable": false
+}

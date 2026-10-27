@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.05 }
+	],
+	"auraName": "Elven Morale",
+	"auraDescription": "Nearby Lindon Infantry +5% melee hack damage. Fades if the Champion falls.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_trader">
+  <Identity>
+    <Civ>moria</Civ>
+    <GenericName>Khazad Trader</GenericName>
+    <SpecificName>Caravan of the Deep Road</SpecificName>
+    <Icon>units/hele/support_trader.png</Icon>
+    <Tooltip>Pack-mule caravan bearing Khazad craft to Dale and Esgaroth, returning with grain. Moria's answer to the empty field.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <!-- TODO: proper mule caravan; reuses a vanilla trader for the slice. -->
+    <Actor>units/hellenes/trader.xml</Actor>
+  </VisualActor>
+</Entity>

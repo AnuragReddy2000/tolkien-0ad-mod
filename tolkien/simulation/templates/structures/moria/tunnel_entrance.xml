@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="12.0" depth="11.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>150</wood>
+      <stone>100</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>moria</Civ>
+    <SpecificName>Tunnel Mouth</SpecificName>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <Icon>structures/moria_tunnel_entrance.png</Icon>
+    <Tooltip>Link to another Tunnel Mouth with a rally point, then garrison units to send them through the deep ways after about 5 seconds. Arrivals emerge outside, on foot. Destroy linked mouths to cut the network.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="10.0" depth="9.0"/>
+  </Obstruction>
+  <Auras datatype="tokens">
+    units/moria_tunnel_swiftness
+  </Auras>
+  <RallyPoint>
+    <TunnelLink>
+      <TransferDelay>5000</TransferDelay>
+    </TunnelLink>
+  </RallyPoint>
+  <VisualActor>
+    <Actor>structures/moria/tunnel_entrance.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>12.0</Length>
+    <Indent>4.0</Indent>
+  </WallPiece>
+</Entity>

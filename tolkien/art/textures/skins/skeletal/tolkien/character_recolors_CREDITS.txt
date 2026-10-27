@@ -1,0 +1,12 @@
+The Doriath, Erebor, Lindon, and Orc recolor textures in this directory are
+generated derivatives of 0 A.D. public character skins. Source files used by
+the build scripts include `skeletal_pers_padded_01_01.png` and
+`skeletal_pers_linothorax_01_01.png`.
+Source art Copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/
+Generated outputs include elf_green_01.png, elf_steel_01.png,
+erebor_iron_01.png, erebor_leather_01.png, lindon_sea_green_01.png,
+lindon_silver_01.png, orc_leather_01.png, and orc_iron_01.png.
+The byte-identical duplicate
+`art/textures/skins/skeletal/erebor_leather_01.png` has the same source and
+license as `art/textures/skins/skeletal/tolkien/erebor_leather_01.png`.

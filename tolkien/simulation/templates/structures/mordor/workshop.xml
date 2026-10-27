@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_arsenal">
+  <Identity>
+    <Civ>mordor</Civ>
+    <SpecificName>War Foundry</SpecificName>
+    <Tooltip>Siege engine production. Heavy catapults; Grond and war-trolls field separately.</Tooltip>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      mordor_engines_of_morgoth
+    </Technologies>
+  </Researcher>
+  <!-- Siege roster per siege_recommendations.md / docs/factions/mordor.md:
+       standard heavy catapult + Grond Phase III champion ram (both here)
+       + dual-mode Mountain Trolls (boulder-throw / clubbing, Fortress). -->
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/siege_catapult
+      units/{civ}/siege_grond
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <!-- TODO: replace with a Mordor-specific works once custom art lands. -->
+    <Actor>structures/mordor/workshop.xml</Actor>
+  </VisualActor>
+</Entity>

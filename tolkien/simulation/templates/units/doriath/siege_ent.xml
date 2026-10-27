@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee">
+  <Footprint replace="">
+    <Square width="2.5" depth="2.5"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <StatusBars>
+    <HeightOffset>8.5</HeightOffset>
+  </StatusBars>
+  <Attack>
+    <Ranged>
+      <AttackName>Hurl Stones</AttackName>
+      <Damage>
+        <Crush>40</Crush>
+      </Damage>
+      <MaxRange>80</MaxRange>
+      <RepeatTime>4500</RepeatTime>
+      <Bonuses>
+        <BonusStructures>
+          <Classes>Structure</Classes>
+          <Multiplier>2</Multiplier>
+        </BonusStructures>
+      </Bonuses>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>1.5</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Crush>20</Crush>
+        </Damage>
+      </Splash>
+      <Projectile>
+        <Speed>45</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>9.81</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <ActorName>props/units/weapons/rock.xml</ActorName>
+        <ImpactActorName>props/units/weapons/rock_explosion.xml</ImpactActorName>
+        <ImpactAnimationLifetime>0.4</ImpactAnimationLifetime>
+      </Projectile>
+    </Ranged>
+    <Melee>
+      <AttackName>Maul</AttackName>
+      <Damage>
+        <Hack>12</Hack>
+        <Crush>10</Crush>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2500</RepeatTime>
+      <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <food>100</food>
+      <wood>100</wood>
+      <stone>0</stone>
+      <metal>50</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>420</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SelectionGroupName>units/doriath/siege_ent</SelectionGroupName>
+    <GenericName>Ent-ally</GenericName>
+    <SpecificName>Shepherd of the Trees</SpecificName>
+    <Icon>units/doriath/siege_ent.png</Icon>
+    <Tooltip>Trained at the Ent Grove. Hurls great stones over walls (shorter reach than true artillery); mauls whatever closes in. Vulnerable to massed fire and counter-siege.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>2</Pierce>
+        <Crush>6</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>6.5</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/doriath/ent.xml</Actor>
+  </VisualActor>
+</Entity>

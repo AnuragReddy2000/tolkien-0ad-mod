@@ -1,0 +1,11 @@
+Title: 'LOTR Cave Troll - (for animating/rigging)'
+Author: Ole Gunnar Isager (@FrenchBaguette)
+Source: https://sketchfab.com/3d-models/lotr-cave-troll-for-animatingrigging-20a50af723314c1dac04aad8c929aa1e
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Derived files in this folder (troll.dae, troll_body.png, biped/troll_*.dae):
+  Derivative - decimated ~17.9k -> ~5.5k tris, rigged to stock 0 A.D. Biped
+  (art/skeletons/biped.xml), rescaled ~1.8x human, single material/UV, 512px baseTex.
+  Custom tall idle + walk + run (biped/troll_*.dae); melee/death/promotion stock.
+Note: original Sketchfab download is NOT bundled (per docs/sketchfab-to-0ad.md §1).
+  This attribution satisfies CC-BY 4.0 §3(a) - no endorsement implied.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/doriath/infantry_sentinel">
+  <Identity>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/doriath/infantry_sentinel_e</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/doriath/sentinel_a.xml</Actor>
+  </VisualActor>
+</Entity>

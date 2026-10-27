@@ -1,0 +1,7 @@
+The generated Elf, Dwarf, and Orc face textures in this directory are
+derivatives of 0 A.D. public skin textures. Source files used by the build
+scripts include `celt_fem_a.dds` and `props_head_pers_face_a.png`.
+Source art Copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/
+Generated outputs: elf_face_a.png, erebor_face_*.png, lindon_face_a.png,
+orc_face_a.png.

@@ -1,0 +1,157 @@
+{
+	"Code": "moria",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Highland_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "Moria",
+			"Description": "Khazad-dûm is a Dwarven city beneath the Misty Mountains. Its slow, durable infantry and deep infrastructure excel at holding ground, but it lacks mounted troops and can be vulnerable in open terrain.",
+			"Technologies": [
+				{
+					"Name": "Deep Delving",
+					"History": "The Khazad sink shafts deeper than any other kindred dares, and the deep veins pay them in stone and metal.",
+					"Description": "Workers +15% stone and metal gather rate."
+				},
+				{
+					"Name": "Deep Larders",
+					"History": "Salted meats, sealed grain and stone-cool store-vaults preserve food through siege and winter.",
+					"Description": "+1 food per second."
+				},
+				{
+					"Name": "Deep Roadways",
+					"History": "The long roads under the mountains are graded true, so a Dwarf can keep pace beneath the earth.",
+					"Description": "Infantry +5% movement speed."
+				},
+				{
+					"Name": "Dwarven Axe-mastery",
+					"History": "A Khazad axe is laid on the anvil for a year and swung for a moment, and that moment ends the fight.",
+					"Description": "Infantry +1 Hack attack damage."
+				},
+				{
+					"Name": "Khazad Forging",
+					"History": "The halls of Khazad-dûm are hewn and braced to stand against everything the deep can send against them.",
+					"Description": "Structures +15% health."
+				},
+				{
+					"Name": "Pacts with Dale",
+					"History": "The Dwarves trade their craft and steel for the grain of Dale and Esgaroth.",
+					"Description": "Traders +15% trade gain, received as food."
+				},
+				{
+					"Name": "Stone-halls of the Dwarves",
+					"History": "Dwarven halls rise course by course in a determined shift, for a Khazad works fastest when the stone is hot to shape.",
+					"Description": "Houses -25% build time."
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Durin VI",
+					"Class": "Deep-guard Commander",
+					"Armament": "Axe",
+					"Emblem": "",
+					"History": "Durin strengthens the health of nearby infantry."
+				},
+				{
+					"Name": "Fundin",
+					"Class": "Delver",
+					"Armament": "Axe",
+					"Emblem": "",
+					"History": "Fundin improves nearby stone and metal gathering."
+				},
+				{
+					"Name": "Náin",
+					"Class": "Fortress Commander",
+					"Armament": "Axe",
+					"Emblem": "",
+					"History": "Náin improves nearby infantry attacks, including their ability to damage structures."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Mithril Core",
+			"History": "Deep beneath Khazad-dûm the Dwarves work veins no other people can reach, drawing metal long after lesser mines run dry.",
+			"Description": "Depleted metal sites continue at 50% normal yield while the required deep-mining structure remains active."
+		},
+		{
+			"Name": "Tunnel Network",
+			"History": "The mines of Moria are a maze of halls and shafts known only to the Dwarves, letting them move unseen between fortified gates.",
+			"Description": "Linked tunnel entrances grant +7% movement speed; entrances are visible, attackable, and can be blocked or disabled."
+		},
+		{
+			"Name": "Deep Guard",
+			"History": "Few in number and slow to march, the hosts of Moria hold their ground where others break, shield-wall against charge and storm.",
+			"Description": "Durable but slow infantry with strong armour; weak in open terrain against cavalry and siege."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/moria/wallset_stone"
+	],
+	"Structures": [
+		{
+			"Name": "Mithril Deep-Shaft",
+			"History": "Moria's miners sink shafts into the deep veins beneath the mountains.",
+			"Description": "Trickles metal while standing and accepts metal and stone only; shafts must be spaced apart."
+		},
+		{
+			"Name": "Tunnel Mouth",
+			"History": "The Dwarves know hidden roads through the halls beneath the mountains.",
+			"Description": "Links to another Tunnel Mouth to move garrisoned units underground; linked mouths can be attacked and destroyed."
+		},
+		{
+			"Name": "The Dwarrowdelf",
+			"History": "The great halls of Khazad-dûm stand as the last defense of the Dwarrowdelf.",
+			"Description": "While the wonder stands, Moria's structures gain +50% health and are much harder to capture."
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/moria/civil_centre"
+		},
+		{
+			"Template": "units/moria/support_worker",
+			"Count": 4
+		},
+		{
+			"Template": "units/moria/infantry_guardsman",
+			"Count": 2
+		}
+	],
+	"AINames": [
+		"Durin",
+		"Balin",
+		"Dwalin",
+		"Fundin",
+		"Floi",
+		"Oin",
+		"Ori",
+		"Gimli"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_infantry_ranged_b": "units/moria/infantry_archer",
+		"skirmish/units/default_infantry_melee_b": "units/moria/infantry_spearman",
+		"skirmish/units/default_support_civilian": "units/moria/support_worker",
+		"skirmish/units/default_cavalry": "units/moria/infantry_spearman",
+		"skirmish/structures/default_defense_tower": "structures/moria/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

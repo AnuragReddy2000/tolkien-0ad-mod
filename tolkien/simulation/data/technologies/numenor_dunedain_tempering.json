@@ -1,0 +1,18 @@
+{
+	"genericName": "Dúnedain Tempering",
+	"description": "The forge-halls of the Númenóreans temper steel for the heirs of Bëor, Hador, and Haleth alike — a blessing of the Valar and a smith's craft.",
+	"cost": {
+		"food": 200,
+		"metal": 300
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "numenor" }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Númenor only.",
+	"icon": "sword_01.png",
+	"researchTime": 45,
+	"tooltip": "Infantry +1 Hack attack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "add": 1 }
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

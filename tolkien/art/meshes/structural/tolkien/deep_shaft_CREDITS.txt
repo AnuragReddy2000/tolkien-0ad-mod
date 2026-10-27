@@ -1,0 +1,3 @@
+Derivative of 'Iron Mine v2 (LowPoly)' by risKris Design, CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/iron-mine-v2-lowpoly-b25c0bf08f05474787c8441675bb58a8
+Changes: timber hut objects removed (replaced in-actor by vanilla Carthaginian storehouse prop structures/carthaginians/storehouse.xml on a 'prop-yard' point parked south-west of the mouth, clear of the track and wagon); remaining meshes joined; flat materials baked to 8x8 palette texture (ore pile tinted mithril-silver); translated so the yard spot sits at origin, then the whole diorama (mine + store) recentred on its footprint; scaled x3.5; based on Z=0.

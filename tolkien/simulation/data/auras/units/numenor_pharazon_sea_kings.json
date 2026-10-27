@@ -1,0 +1,13 @@
+{
+	"type": "global",
+	"affects": ["Warship"],
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15 },
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"auraName": "Sea-Kings' Command",
+	"auraDescription": "Warships +15% attack and +10% health while Ar-Pharazon lives.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
+}

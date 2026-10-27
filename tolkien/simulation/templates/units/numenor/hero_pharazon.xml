@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>24</Hack>
+      </Damage>
+      <RepeatTime>1500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/numenor_pharazon_sea_kings
+    units/numenor_pharazon_great_armament
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>250</food>
+      <wood>150</wood>
+      <stone>0</stone>
+      <metal>300</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1050</Max>
+  </Health>
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/hero_pharazon</SelectionGroupName>
+    <GenericName>Ar-Pharazôn</GenericName>
+    <SpecificName>Ar-Pharazôn the Golden</SpecificName>
+    <Tooltip>Warships +15% attack and +10% health while he lives. Númenórean land units cost +10% Metal and maximum population increases by 10% while he lives (multiplicative with other cap bonuses; no land-training slowdown). One hero per match.</Tooltip>
+    <Icon>units/athen/hero_themistocles.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>12</Hack>
+        <Pierce>12</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>8.8</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <!-- TODO: proper Sea-King; reuses a vanilla naval hero for the slice. -->
+    <Actor>units/romans/hero_infantry_swordsman_marcellus.xml</Actor>
+  </VisualActor>
+</Entity>

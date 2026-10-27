@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affectedPlayers": ["Enemy"],
+	"affects": ["Human"],
+	"modifications": [
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 1.15 }
+	],
+	"auraName": "Morgul Dread",
+	"auraDescription": "Enemy soldiers near the Olog-hai attack ~13% slower in dread. Slay it to lift it. The Nine carry a stronger dread.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png",
+	"stackable": false
+}

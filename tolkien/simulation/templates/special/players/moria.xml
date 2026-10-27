@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>moria</Civ>
+    <GenericName>Moria</GenericName>
+    <History>Khazad-dûm, the Dwarrowdelf, is the greatest of the Dwarf-mansions, delved beneath the Misty Mountains. Its hosts are slow to march but unmatched in holding ground: heavy infantry behind shield and spear, supplied through deep mines and fortified gates. Cut their tunnels, draw them into the open, and even the Deep Guard can be broken.</History>
+    <Icon>emblems/emblem_macedonians.png</Icon>
+  </Identity>
+</Entity>

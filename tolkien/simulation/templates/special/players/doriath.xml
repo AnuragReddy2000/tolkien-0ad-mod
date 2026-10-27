@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>doriath</Civ>
+    <GenericName>Doriath</GenericName>
+    <History>Hidden behind the Girdle of Melian, Doriath is the woodland realm of King Thingol and the Sindar. Its Marchwardens fight as the forest fights: through concealment, ambush, and prepared ground rather than open-field strength. Doriath is formidable in its woods, but vulnerable when drawn onto open ground.</History>
+    <Icon>emblems/emblem_celts.png</Icon>
+  </Identity>
+</Entity>

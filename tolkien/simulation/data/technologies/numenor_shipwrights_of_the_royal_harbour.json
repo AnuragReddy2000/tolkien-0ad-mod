@@ -1,0 +1,17 @@
+{
+	"genericName": "Shipwrights of the Royal Harbour",
+	"description": "The shipwrights of Rómenna build the island's fleets, and their nets and lines feed the greatest navy the world has known.",
+	"cost": {
+		"wood": 150
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "numenor" }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Númenor only.",
+	"icon": "fishing_net.png",
+	"researchTime": 45,
+	"tooltip": "Fishing ships +25% fish gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.fish", "multiply": 1.25 }
+	],
+	"affects": ["FishingShip"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

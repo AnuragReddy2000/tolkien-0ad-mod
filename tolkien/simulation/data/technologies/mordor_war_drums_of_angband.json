@@ -1,0 +1,18 @@
+{
+	"genericName": "War-drums of Angband",
+	"description": "The drums of the old forge-fortress still keep time in the camps of Mordor, and the Orcs swing their blades on the beat.",
+	"cost": {
+		"food": 100,
+		"metal": 150
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "mordor" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "carnyx.png",
+	"researchTime": 45,
+	"tooltip": "Orc infantry +1 Hack attack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "add": 1 }
+	],
+	"affects": ["Orc"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

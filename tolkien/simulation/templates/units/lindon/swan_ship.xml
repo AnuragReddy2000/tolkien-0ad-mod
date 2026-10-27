@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_merchant">
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>150</wood>
+      <stone>0</stone>
+      <metal>80</metal>
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <Max>20</Max>
+    <List datatype="tokens">Infantry</List>
+  </GarrisonHolder>
+  <Health>
+    <Max>800</Max>
+  </Health>
+  <Auras datatype="tokens">
+    structures/lindon_haven_vigil
+  </Auras>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/swan_ship</SelectionGroupName>
+    <GenericName>Swan Ship</GenericName>
+    <SpecificName>Ciryatur of the Havens</SpecificName>
+    <Tooltip>Warship transport for up to 20 infantry. May muster Spearmaidens and Archers aboard at full cost, including while damaged or away from friendly structures.</Tooltip>
+    <Icon>units/noldor_ship_bireme.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/lindon/infantry_spearman
+      units/lindon/infantry_archer
+    </Entities>
+  </Trainer>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>10</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Trader disable=""/>
+  <UnitMotion>
+    <WalkSpeed>12.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>60</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/elven_bireme.xml</Actor>
+  </VisualActor>
+</Entity>

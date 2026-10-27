@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <LastShore>
+    <RefundPercent>15</RefundPercent>
+  </LastShore>
+  <Identity>
+    <Civ>lindon</Civ>
+    <GenericName>Arches of the Last Shore</GenericName>
+    <SpecificName>The Haven Keep</SpecificName>
+    <Icon>structures/wonder.png</Icon>
+    <Tooltip>Grace of the West: while the Arches stand, 15% of each fallen Lindon unit's cost returns to your treasury. Heroes, structures, and unfinished works grant nothing. Raze it to end the grace.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Vision>
+    <Range>60</Range>
+  </Vision>
+  <VisualActor>
+    <!-- TODO: kitbash a standalone triumphal arch (swan-winged mound keep); keeps the White Towers actor as placeholder until then. -->
+    <Actor>structures/seleucids/wonder.xml</Actor>
+  </VisualActor>
+</Entity>

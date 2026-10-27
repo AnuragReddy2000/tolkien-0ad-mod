@@ -1,0 +1,7 @@
+Derivative of 'Sauron' by rokaarh, licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+Source: https://sketchfab.com/3d-models/sauron-5ad2aea041a141d6b3640715a7a54659
+License: https://creativecommons.org/licenses/by/4.0/
+Changes: dropped duplicate body + stray parts, decimated to ~5.5k tris,
+rigged to stock 0 A.D. Biped (art/skeletons/biped.xml), rescaled ~1.35x human,
+flat PBR colors baked to a single 512px baseTex, mace merged.
+Custom idle + walk + run (biped/sauron_*.dae); melee/capture/death stock-based.

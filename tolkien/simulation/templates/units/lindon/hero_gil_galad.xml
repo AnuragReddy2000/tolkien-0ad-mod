@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_spearman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Pierce>14</Pierce>
+        <Hack>26</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/lindon_gil_galad_spear_of_the_stars
+  </Auras>
+  <Cost>
+    <Resources>
+      <food>250</food>
+      <wood>200</wood>
+      <stone>0</stone>
+      <metal>300</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1100</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/hero_gil_galad</SelectionGroupName>
+    <GenericName>Gil-galad</GenericName>
+    <SpecificName>Gil-galad, High King of the Noldor</SpecificName>
+    <Tooltip>Elite commander. Nearby infantry strike harder and turn aside pierce attacks. One hero per match.</Tooltip>
+    <Icon>units/athen/hero_pericles.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Hero</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <!-- TODO: proper High King with Aeglos; reuses a vanilla spear hero for the slice. -->
+    <Actor>units/seleucids/hero_infantry_spearman_seleucid_victor.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Crebain Swarm flock: the vanilla bird-circle carrier pattern, rescaled to
+     unit size. Carrier mesh + wheeling animation are mod-local tight copies
+     of the ambient sky-flock (27 m altitude / wide orbits do not fit a unit):
+     - skeletal/tolkien/crebain_swarm_carrier.dae (3 m altitude, was 27.46 m)
+     - others/crebain_swarm_idle.dae (~2.2 m orbits, was ~5.5 m)
+     Built by tools/art_build/scale_anim_translations.py plus the one-shot
+     carrier rescale (base node + rigid bind poses x0.10924, orbit keys x0.4).
+     Crow props are full crow actors, so every bird flaps on its own. -->
+<actor version="1">
+  <castshadow/>
+  <float/>
+  <group>
+    <variant name="Murder of Crows" frequency="1">
+      <animations>
+        <animation file="others/crebain_swarm_idle.dae" name="Idle" speed="100"/>
+      </animations>
+      <mesh>skeletal/tolkien/crebain_swarm_carrier.dae</mesh>
+      <textures>
+        <texture file="null_white.dds" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant frequency="100" name="Swarm Seven">
+      <props>
+        <prop actor="fauna/crow.xml" attachpoint="fish_01"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_04"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_07"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_10"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_13"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_16"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_19"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="Swarm Six">
+      <props>
+        <prop actor="fauna/crow.xml" attachpoint="fish_02"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_05"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_09"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_12"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_15"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_18"/>
+      </props>
+    </variant>
+    <variant frequency="100" name="Swarm Five">
+      <props>
+        <prop actor="fauna/crow.xml" attachpoint="fish_03"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_06"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_08"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_11"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_14"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_17"/>
+        <prop actor="fauna/crow.xml" attachpoint="fish_20"/>
+      </props>
+    </variant>
+  </group>
+  <material>no_trans_norm_spec.xml</material>
+</actor>

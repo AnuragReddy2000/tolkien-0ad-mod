@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/stable
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/workshop
+      structures/{civ}/wonder
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>4</Hack>
+        <Pierce>3</Pierce>
+      </Damage>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>45</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>5</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/infantry_spearman</SelectionGroupName>
+    <GenericName>Lindon Spearman</GenericName>
+    <SpecificName>Spear of the Falathrim</SpecificName>
+    <Icon>units/athen/infantry_spearman.png</Icon>
+    <Tooltip>Counters: 2.5x vs Cavalry.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/lindon/infantry_spearman_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>3</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/seleucids/infantry_spearman_b.xml</Actor>
+  </VisualActor>
+</Entity>

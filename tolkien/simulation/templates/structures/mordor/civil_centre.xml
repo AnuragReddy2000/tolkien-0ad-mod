@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <!-- Blighted Desolation: entire Mordor territory + spillover (see component). -->
+  <BlightedDesolation/>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_hele_cc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <SpecificName>Morannon</SpecificName>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      phase_town_{civ}
+      phase_city_{civ}
+      mordor_orc_cookhouses
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <!-- Village-phase muster: Snaga + basic Orcs + hired Variag riders of Khand. Archers and beasts come from the Breeding Pits, champions from the Black Fortress. -->
+    <Entities datatype="tokens">
+      units/{civ}/support_worker
+      units/{civ}/infantry_warrior
+      units/{civ}/infantry_spearman
+      units/{civ}/cavalry_variag_rider
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/mordor/civil_centre.xml</Actor>
+  </VisualActor>
+</Entity>

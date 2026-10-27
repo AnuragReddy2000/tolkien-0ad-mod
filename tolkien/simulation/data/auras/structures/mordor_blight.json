@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 60,
+	"affects": ["Worker"],
+	"affectedPlayers": ["Enemy"],
+	"modifications": [
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 0.85 }
+	],
+	"auraName": "Blighted Desolation",
+	"auraDescription": "Enemy workers gathering near this Mordor stronghold suffer -15% gather speed (gathering only; no destruction, no build/move/combat effect). Mordor workers are immune; the effect ends when the territory is reclaimed. Does not stack.",
+	"overlayIcon": "art/textures/ui/session/auras/buildgather_bonus.png",
+	"stackable": false
+}

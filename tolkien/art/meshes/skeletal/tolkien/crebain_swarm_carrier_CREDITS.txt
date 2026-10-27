@@ -1,0 +1,8 @@
+Derivative of the 0 A.D. public ambient fish-shoal flock carrier mesh
+(`art/meshes/skeletal/animal_fish_shoal.dae`), adapted as a low-altitude
+attachment carrier for the Crebain swarm.
+The source art is Copyright (C) 2009 Wildfire Games and licensed under
+CC BY-SA 3.0: https://creativecommons.org/licenses/by-sa/3.0/
+The carrier mesh and bind poses were rescaled from the ambient sky-flock
+layout for use as a unit actor. The attached crows use the base-game
+`fauna/crow.xml` actor and are not copied into this mod.

@@ -1,17 +1,21 @@
-# Iron Hills — Unit Balance v0.1
+# Iron Hills — Unit Balance v0.3
+
+> v0.3 vanilla-cadence pass: swords 0.75s / spears 1.0s / bows 1.25s
+> (Breaker 1.0s deliberate). War Wagon 2.0s siege platform unchanged.
+> Damage-per-hit, HP, cost, range, armour unchanged.
 
 Costs are Food/Wood/Stone/Metal.
 
 | Unit | Phase | Cost | Pop | HP | Speed | Attack / interval | Range | Armour H/P/C | Quirk |
 |---|---|---:|---:|---:|---:|---|---:|---:|---|
 | Iron Hills Laborer | I | 50/0/0/0 | 1 | 75 | 0.95 | 2 hack / 2.0s | — | 0/0/0 | Standard worker |
-| Iron Hills Guard | I | 40/0/0/20 | 1 | 125 | 0.88 | 7 hack / 1.7s | — | 3/2/1 | Durable basic infantry |
-| Iron Hills Spearman | I | 40/10/0/15 | 1 | 130 | 0.88 | 6 hack / 1.6s; +8 vs cavalry | — | 3/2/1 | Anti-charge specialist |
-| Iron Hills Archer | II | 35/20/0/15 | 1 | 72 | 0.9 | 6 pierce / 1.8s | 55 | 0/2/0 | Defensive ranged support |
-| War Wagon | II | 0/90/0/80 | 2 | 260 | 0.7 | 12 pierce / 2.0s | 80 | 3/5/8 | Mobile siege and support platform |
-| Iron Hills Siege Engineer | II | 30/35/0/20 | 1 | 90 | 0.9 | 5 hack / 1.6s | — | 1/1/0 | Repair and siege support |
-| Iron Hills Breaker | III | 60/0/0/40 | 1 | 190 | 0.74 | 11 hack / 1.9s | — | 5/4/2 | Heavy melee bruiser |
-| Iron Hills Champion | III | 80/0/0/65 | 1 | 245 | 0.88 | 13 hack / 1.9s | — | 6/6/2 | Formation leader, local morale support |
+| Iron Hills Guard | I | 40/0/0/20 | 1 | 125 | 0.88 | 7 hack / 0.75s | — | 3/2/1 | Durable basic infantry |
+| Iron Hills Spearman | I | 40/10/0/15 | 1 | 130 | 0.88 | 6 hack / 1.0s; +8 vs cavalry | — | 3/2/1 | Anti-charge specialist |
+| Iron Hills Archer | II | 35/20/0/15 | 1 | 72 | 0.9 | 6 pierce / 1.25s | 55 | 0/2/0 | Defensive ranged support |
+| War Wagon | II | 0/90/0/80 | 2 | 260 | 0.7 | 12 pierce / 2.0s | 80 | 3/5/8 | Mobile siege and support platform; slow rate deliberate |
+| Iron Hills Siege Engineer | II | 30/35/0/20 | 1 | 90 | 0.9 | 5 hack / 0.75s | — | 1/1/0 | Repair and siege support |
+| Iron Hills Breaker | III | 60/0/0/40 | 1 | 190 | 0.74 | 11 hack / 1.0s | — | 5/4/2 | Heavy melee bruiser; deliberately slower hold cadence |
+| Iron Hills Champion | III | 80/0/0/65 | 1 | 245 | 0.88 | 13 hack / 0.75s | — | 6/6/2 | Formation leader, local morale support |
 
 ## Balance quirks
 

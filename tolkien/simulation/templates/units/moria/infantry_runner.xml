@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/barracks
+      structures/{civ}/workshop
+      structures/{civ}/wonder
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/tunnel_entrance
+      structures/{civ}/mithril_shaft
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>6</Hack>
+      </Damage>
+      <RepeatTime>750</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>40</food>
+      <wood>25</wood>
+      <stone>0</stone>
+      <metal>5</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <SelectionGroupName>units/moria/infantry_runner</SelectionGroupName>
+    <GenericName>Tunnel Runner</GenericName>
+    <SpecificName>Deepway Runner</SpecificName>
+    <Icon>units/rome/infantry_swordsman.png</Icon>
+    <Tooltip>Fastest Moria foot; fastest inside linked tunnel nets under Tunnel Swiftness. Tunnel-conditional bonus itself is aura-zone based, not per-unit.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/moria/infantry_runner_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>2</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>10.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moria/infantry_runner.xml</Actor>
+  </VisualActor>
+</Entity>

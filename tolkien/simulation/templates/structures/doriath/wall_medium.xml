@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_medium">
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Girdle Wall</SpecificName>
+  </Identity>
+  <VisualActor>
+    <!-- TODO: reskin to a Celtic woodland look once custom art lands. -->
+    <Actor>structures/doriath/wall_medium.xml</Actor>
+  </VisualActor>
+</Entity>

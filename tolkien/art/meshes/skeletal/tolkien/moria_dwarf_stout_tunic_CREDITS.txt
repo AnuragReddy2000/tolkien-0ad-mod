@@ -1,0 +1,4 @@
+B+C body: derived from 0 A.D. public stock mesh meshes_skeletal_new_m_tunic_short.dae.
+Copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/
+Baked stout scale X*1.16 Y*1.16 Z*0.82; bone names unchanged so all stock biped/* variants keep working.

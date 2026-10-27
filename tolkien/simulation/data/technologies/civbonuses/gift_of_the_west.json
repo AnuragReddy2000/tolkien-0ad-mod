@@ -1,0 +1,15 @@
+{
+	"genericName": "Gift of the West",
+	"autoResearch": true,
+	"description": "The Elves of Lindon preserve the high craft of the Noldor. Naval, defensive, and high-craft technologies complete their research sooner.",
+	"requirements": { "civ": "lindon" },
+	"requirementsTooltip": "Lindon civilization bonus (automatic).",
+	"icon": "armor_ship_bronze.png",
+	"tooltip": "Gift of the West: technologies researched at Docks, Stone Towers, Fortresses, and Forges complete 15% faster. (Fortress and Forge apply once those structures are added.)",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.85, "affects": "Dock" },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.85, "affects": "StoneTower" },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.85, "affects": "Fortress" },
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.85, "affects": "Forge" }
+	]
+}

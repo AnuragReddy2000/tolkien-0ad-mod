@@ -1,0 +1,17 @@
+{
+	"genericName": "Masonry of Armenelos",
+	"description": "The white citadel of Armenelos crowns the king's city, and its strongholds were raised to outlast the pride of even the Lords of the Sea.",
+	"cost": {
+		"stone": 300,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "numenor" }] },
+	"requirementsTooltip": "Unlocked in City Phase. Númenor only.",
+	"icon": "masonry_marble.png",
+	"researchTime": 60,
+	"tooltip": "Fortresses +15% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.15, "affects": "Fortress" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

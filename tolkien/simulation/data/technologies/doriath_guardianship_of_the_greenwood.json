@@ -1,0 +1,15 @@
+{
+	"genericName": "Guardianship of the Greenwood",
+	"description": "The woodland folk take only what the forest can spare, leaving each tree with strength to live and grow.",
+	"cost": {
+		"food": 150,
+		"wood": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "doriath" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "shields_generic_wood.png",
+	"researchTime": 45,
+	"tooltip": "Doriath gatherers stop harvesting each tree with at least 5% of its wood remaining.",
+	"modifications": [],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

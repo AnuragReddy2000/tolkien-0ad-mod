@@ -1,0 +1,18 @@
+{
+	"genericName": "Girdle of Melian",
+	"description": "Melian's girdle folds the mist about the Thousand Caves, and no foe may pass the thresholds of Thingol unseen.",
+	"cost": {
+		"stone": 300,
+		"metal": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "doriath" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "reference/grove_of_fetters.png",
+	"researchTime": 60,
+	"tooltip": "Menegroth +33% health and +25% vision. The mist's slowing gaze itself is carried by Menegroth's aura.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.33, "affects": "Girdle" },
+		{ "value": "Vision/Range", "multiply": 1.25, "affects": "Girdle" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

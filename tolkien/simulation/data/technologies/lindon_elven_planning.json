@@ -1,0 +1,16 @@
+{
+	"genericName": "Elven Planning",
+	"description": "Elven halls are raised in a single day of ordered labour, as if the timber remembered its shape from Aman.",
+	"cost": {
+		"wood": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "lindon" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "tenement.png",
+	"researchTime": 30,
+	"tooltip": "Houses -25% build time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75, "affects": "House" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

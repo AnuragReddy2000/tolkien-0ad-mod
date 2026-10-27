@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_civil_centre">
+  <Auras datatype="tokens">
+    structures/doriath_girdle
+  </Auras>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_hele_cc</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Thingol's Court</SpecificName>
+    <Tooltip>The Girdle of Melian: enemy units near this structure move and see worse in the woodland mist.</Tooltip>
+    <VisibleClasses datatype="tokens">Girdle</VisibleClasses>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      phase_town_{civ}
+      phase_city_{civ}
+      doriath_march_wardens
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <!-- Village-phase muster only: worker + basic spearman + foot scout. Rangers and elites come from Barracks/Fortress. -->
+    <Entities datatype="tokens">
+      units/{civ}/support_worker
+      units/{civ}/infantry_spearman
+      units/{civ}/infantry_scout
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/doriath/civil_centre.xml</Actor>
+  </VisualActor>
+</Entity>

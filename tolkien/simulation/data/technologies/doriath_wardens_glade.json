@@ -1,0 +1,19 @@
+{
+	"genericName": "Warden's Glade",
+	"description": "In Doriath's guarded glades, field and forest yield together, and gatherers take only what the woodland can spare.",
+	"cost": {
+		"food": 150,
+		"wood": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "doriath" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "crop_rotation.png",
+	"researchTime": 45,
+	"tooltip": "Workers +15% food and wood gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.15 },
+		{ "value": "ResourceGatherer/Rates/wood.tree", "multiply": 1.15 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

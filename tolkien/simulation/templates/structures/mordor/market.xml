@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_market">
+  <Identity>
+    <Civ>mordor</Civ>
+    <SpecificName>Scaffolding Market</SpecificName>
+  </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/support_trader
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/mordor/market.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>4</Hack>
+        <Crush>65</Crush>
+      </Damage>
+      <RepeatTime>4500</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/barracks
+      structures/{civ}/workshop
+      structures/{civ}/wonder
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/tunnel_entrance
+      structures/{civ}/mithril_shaft
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Population>2</Population>
+    <Resources>
+      <food>0</food>
+      <wood>100</wood>
+      <stone>0</stone>
+      <metal>70</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <SelectionGroupName>units/moria/siege_engineer</SelectionGroupName>
+    <GenericName>Siege Engineer</GenericName>
+    <SpecificName>Siege-wright of the Deep Forge</SpecificName>
+    <Icon>units/athen/support_civilian.png</Icon>
+    <Tooltip>Chokepoint crew: massive crush against structures and siege, repairs nearby engines. Weak in open combat.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/moria/siege_engineer_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>4</Pierce>
+        <Crush>7</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>7.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moria/siege_engineer.xml</Actor>
+  </VisualActor>
+</Entity>

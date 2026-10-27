@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_tower_sentry">
+  <Identity>
+    <Civ>mordor</Civ>
+    <SpecificName>Crude Lookout</SpecificName>
+    <Tooltip>Cheap wooden eyes: early warning on the cheap. Burns easily — upgrade to a Watch-crag where it matters.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <!-- TODO: proper Orc lookout; reuses a vanilla wooden tower for the slice. -->
+    <Actor>structures/mordor/sentry_tower.xml</Actor>
+  </VisualActor>
+</Entity>

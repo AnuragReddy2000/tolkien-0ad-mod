@@ -35,26 +35,29 @@ Build the Tolkien 0 A.D. total-conversion mod in small, testable stages. The goa
 
 ## Phase 2 — First playable faction set
 
-### Choose the first six factions
+### Choose the first five factions
 1. Lindon
 2. Doriath
-3. Rohan
-4. Mordor
-5. Moria
-6. Gondor & Arnor
+3. Mordor
+4. Moria
+5. Númenor
 
 ### Why this set
 It covers the most distinct game identities while testing the following systems:
 - ranged and elite infantry
 - stealth and hiding
-- cavalry mobility
 - attrition and industrial pressure
 - subterranean logistics
-- branch-based faction mechanics
+- naval production and fortified-haven durability
+
+> Rohan (cavalry mobility/charge) and Gondor & Arnor (branch-based mechanics) moved
+> to the second wave; Númenor promoted here because its implementation is underway.
+> Custom art is deprioritized for this wave — reuse vanilla art per the per-faction
+> mapping in `docs/design-decisions.md`.
 
 ### Initial milestone
 By the end of this phase, the project should have:
-- six playable civilizations;
+- five playable civilizations;
 - shared economy and phase structure;
 - a clear first-wave roster for each civilization;
 - testing notes for matchups and counterplay.
@@ -79,12 +82,13 @@ By the end of this phase, the project should have:
 ## Phase 4 — Second-wave factions
 
 ### Add in this order
-1. Harad & Umbar
-2. Erebor
-3. Iron Hills
-4. Númenor
-5. Angmar
-6. Lothlórien
+1. Rohan
+2. Gondor & Arnor
+3. Harad & Umbar
+4. Erebor
+5. Iron Hills
+6. Angmar
+7. Lothlórien
 
 ### Why this order
 These are either more specialized or more tightly coupled to shared systems already proven in the first wave.
@@ -126,7 +130,7 @@ These are either more specialized or more tightly coupled to shared systems alre
 ### Milestone A — Core template ready
 Weeks 1–3
 
-### Milestone B — First six factions playable
+### Milestone B — First five factions playable
 Weeks 4–10
 
 ### Milestone C — First balanced test build
@@ -140,4 +144,4 @@ Weeks 23–28
 
 ## Summary
 
-The project should proceed by proving the shared 0 A.D. loop and testing the hardest custom mechanics first. The first wave of factions is designed to validate the most complicated systems: stealth, reveal, temporary undead, Mûmakil garrison, tunnel logistics, and cavalry charges.
+The project should proceed by proving the shared 0 A.D. loop and testing the hardest custom mechanics first. The first wave of factions is designed to validate the most complicated systems in scope: stealth (Doriath), reveal and attrition (Mordor), tunnel logistics (Moria), and naval plus elite infantry (Lindon and Númenor).

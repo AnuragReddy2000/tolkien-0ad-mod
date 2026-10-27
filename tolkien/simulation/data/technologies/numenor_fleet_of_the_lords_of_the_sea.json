@@ -1,0 +1,19 @@
+{
+	"genericName": "Fleet of the Lords of the Sea",
+	"description": "The great armaments of Ar-Pharazôn sailed with ballista and ram, and the shorelines of Middle-earth learned to fear the horizon.",
+	"cost": {
+		"wood": 150,
+		"metal": 300
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "numenor" }] },
+	"requirementsTooltip": "Unlocked in City Phase. Númenor only.",
+	"icon": "ship_ram.png",
+	"researchTime": 60,
+	"tooltip": "Warships +15% attack damage.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15 }
+	],
+	"affects": ["Warship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

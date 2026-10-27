@@ -1,0 +1,12 @@
+{
+	"genericName": "Hordes of Mordor",
+	"autoResearch": true,
+	"description": "The hosts of Mordor are numberless. Orcs breed in the pits of Udûn and slaves are driven from the East, so the Dark Lord can field a greater host than any other power.",
+	"requirements": { "civ": "mordor" },
+	"requirementsTooltip": "Mordor civilization bonus (automatic).",
+	"icon": "population.png",
+	"tooltip": "Mordor's maximum population limit is increased by 10%.",
+	"modifications": [
+		{ "value": "Player/MaxPopulation", "multiply": 1.1 }
+	]
+}

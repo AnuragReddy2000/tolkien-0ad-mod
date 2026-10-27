@@ -1,0 +1,17 @@
+{
+	"genericName": "Song of Things Unseen",
+	"description": "The masons of Menegroth shape stone deep beneath the forest, building halls that endure like the trees above.",
+	"cost": {
+		"stone": 300,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "doriath" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "masonry_polygonal.png",
+	"researchTime": 60,
+	"tooltip": "Structures +15% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.15, "affects": "Structure" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

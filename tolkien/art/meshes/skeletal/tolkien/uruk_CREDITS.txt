@@ -1,0 +1,4 @@
+Derivative of 'Uruk Hai - LOTR' by Ulrik Langvandsbraaten (@best3deu), CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/uruk-hai-lotr-c86d316b3f314d11bf3234771b2cc212
+Changes: kept the LEFT (helmeted sword+shield) figure of the two-figure diorama - second (bald dual-wielder) figure, sword/shield prop mesh (Object_4, 9447 tris) + display base excluded (separate props / second unit pass later). Body 19913 verts/37520 tris -> micro-island (rivet) cleanup -> decimated ~29.4k -> ~5k tris, rigged to stock 0 A.D. Biped (art/skeletons/biped.xml), rescaled ~1.15x human, 512px baseTex.
+Custom tall idle + walk + run (biped/uruk_*.dae); melee/capture retargeted stock.

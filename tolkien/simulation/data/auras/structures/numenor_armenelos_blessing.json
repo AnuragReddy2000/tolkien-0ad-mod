@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Champion"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"auraName": "Blessing of Armenelos",
+	"auraDescription": "Champions +10% health while the Temple of Armenelos stands. No damage bonus by design. Raze it to end the blessing."
+}

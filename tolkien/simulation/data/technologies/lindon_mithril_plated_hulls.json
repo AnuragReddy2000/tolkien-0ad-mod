@@ -1,0 +1,17 @@
+{
+	"genericName": "Mithril-Plated Hulls",
+	"description": "The prows of Mithlond are sheathed in mithril-alloy plates, and the sea itself seems to break around them.",
+	"cost": {
+		"wood": 100,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "lindon" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "armor_ship_silver.png",
+	"researchTime": 60,
+	"tooltip": "Ships +15% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.15, "affects": "Ship" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

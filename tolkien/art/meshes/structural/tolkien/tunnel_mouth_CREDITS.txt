@@ -1,0 +1,4 @@
+Derivative of 'Cave entrance' by meumh, CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/cave-entrance-0c1f82288a4046e6919d422c5f16c773
+Note: AI-generated via Meshy; generic rock/adit, no film derivation claimed.
+Changes: baked transforms, cleanup, light decimate, single material (source UVs kept), 1024px baseTex, mouth yawed to +Y, scaled to ~10m footprint, base on Z=0.

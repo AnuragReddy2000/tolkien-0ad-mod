@@ -1,0 +1,18 @@
+{
+	"genericName": "Singing Arrows",
+	"description": "The bow-strings of the Havens sing before the shafts land, and each note finds a joint in timber or stone.",
+	"cost": {
+		"wood": 200,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "lindon" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "arrow_accuracy.png",
+	"researchTime": 60,
+	"tooltip": "Elven Bolt-Throwers +20% pierce attack; Vanguard Saboteurs +25% crush attack.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.2, "affects": "Siege" },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.25, "affects": "Saboteur" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

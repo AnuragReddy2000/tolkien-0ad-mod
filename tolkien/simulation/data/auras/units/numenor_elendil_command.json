@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.1 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1 },
+		{ "value": "Vision/Range", "multiply": 1.15 }
+	],
+	"auraName": "Command of Elendil",
+	"auraDescription": "Nearby Infantry +10% attack and +15% vision while Elendil stands. Morale-resist portion has no engine path. Fades if he falls.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
+}

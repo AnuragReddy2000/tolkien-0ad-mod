@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_storehouse">
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Woodland Storehouse</SpecificName>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      doriath_guardianship_of_the_greenwood
+      doriath_song_of_things_unseen
+    </Technologies>
+  </Researcher>
+  <VisualActor>
+    <Actor>structures/doriath/storehouse.xml</Actor>
+  </VisualActor>
+</Entity>

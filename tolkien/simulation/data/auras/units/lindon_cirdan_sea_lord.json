@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Ship"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 0.85 }
+	],
+	"auraName": "Lord of the Havens",
+	"auraDescription": "Ships +10% movement speed and -15% construction time while Círdan lives."
+}

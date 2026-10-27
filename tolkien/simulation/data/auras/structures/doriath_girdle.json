@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 50,
+	"affectedPlayers": ["Enemy"],
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.9 },
+		{ "value": "Vision/Range", "multiply": 0.85 }
+	],
+	"auraName": "Girdle of Melian",
+	"auraDescription": "Enemy units in the woodland mist -10% movement speed and -15% vision. Destroy the Civic Centre to lift the Girdle.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png"
+}

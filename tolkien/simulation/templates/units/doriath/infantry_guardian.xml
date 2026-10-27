@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/menegroth
+      structures/{civ}/hunters_cache
+      structures/{civ}/ent_grove
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>9</Hack>
+      </Damage>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>14</BuildTime>
+    <Resources>
+      <food>60</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>15</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>155</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SelectionGroupName>units/doriath/infantry_guardian</SelectionGroupName>
+    <GenericName>Doriath Guardian</GenericName>
+    <SpecificName>Guard of the Caves</SpecificName>
+    <Icon>units/rome/infantry_swordsman.png</Icon>
+    <Tooltip>Expensive slow chokepoint holder. Its armour hardens in the forest (+2 Hack/Pierce/Crush); softer in the open, and vulnerable to massed ranged fire and cavalry.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/doriath/infantry_guardian_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>3</Hack>
+        <Pierce>3</Pierce>
+        <Crush>13</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ForestAffinity>
+    <Modifiers>
+      <GuardHack>
+        <Paths datatype="tokens">Resistance/Entity/Damage/Hack</Paths>
+        <Add>2</Add>
+      </GuardHack>
+      <GuardPierce>
+        <Paths datatype="tokens">Resistance/Entity/Damage/Pierce</Paths>
+        <Add>2</Add>
+      </GuardPierce>
+      <GuardCrush>
+        <Paths datatype="tokens">Resistance/Entity/Damage/Crush</Paths>
+        <Add>2</Add>
+      </GuardCrush>
+    </Modifiers>
+  </ForestAffinity>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/doriath/guardian_a.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>26</Hack>
+      </Damage>
+      <RepeatTime>750</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/mordor_gothmog_fury
+    units/morgul_dread_hero
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>250</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>250</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <SelectionGroupName>units/mordor/hero_gothmog</SelectionGroupName>
+    <GenericName>Gothmog</GenericName>
+    <SpecificName>Lieutenant of Morgul</SpecificName>
+    <Tooltip>Hero of Mordor. His Fury drives nearby Orcs to strike faster; his Morgul Dread slows nearby enemy attacks. Kill him to take the speed out of the horde.</Tooltip>
+    <Icon>units/mordor/hero_gothmog.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>12</Hack>
+        <Pierce>12</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <!-- TODO: proper Lieutenant of Morgul; reuses the Uruk-hai look for the slice. -->
+    <Actor>units/mordor/uruk_hai.xml</Actor>
+  </VisualActor>
+</Entity>

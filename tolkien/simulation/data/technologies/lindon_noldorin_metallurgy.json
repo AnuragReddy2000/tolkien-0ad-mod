@@ -1,0 +1,19 @@
+{
+	"genericName": "Noldorin Metallurgy",
+	"description": "The Noldor of Lindon kept the metalcraft of Aman alive through the long ages, tempering blades that lesser forges cannot match.",
+	"cost": {
+		"food": 200,
+		"metal": 300
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "lindon" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "sword_02.png",
+	"researchTime": 45,
+	"tooltip": "Champion infantry +1 Pierce attack damage. Only the high craft of the Noldor reaches the champions' forge.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Pierce", "add": 1 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "add": 1 }
+	],
+	"affects": ["Champion"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

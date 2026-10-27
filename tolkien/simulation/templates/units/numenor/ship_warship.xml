@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship_arrow">
+  <Cost>
+    <BuildTime>28</BuildTime>
+  </Cost>
+  <Health>
+    <Max>1100</Max>
+  </Health>
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/ship_warship</SelectionGroupName>
+    <GenericName>Númenórean Warship</GenericName>
+    <SpecificName>War-ship of the King's Fleet</SpecificName>
+    <Tooltip>Counters: 3x vs Ships.</Tooltip>
+    <Icon>units/hele/ship_arrow.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/athenians/trireme.xml</Actor>
+  </VisualActor>
+</Entity>

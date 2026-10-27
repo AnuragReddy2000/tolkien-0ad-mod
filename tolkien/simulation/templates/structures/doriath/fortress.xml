@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Hold of the Girdle</SpecificName>
+  </Identity>
+  <Researcher disable=""/>
+  <!-- Champions, saboteurs, and heroes of the hidden kingdom.
+       No mechanical siege engines by design: the Saboteur answers
+       at need, while Ent-allies muster at their own Grove. -->
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/champion_marchwarden
+      units/{civ}/infantry_saboteur
+      units/{civ}/hero_thingol
+      units/{civ}/hero_beleg
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/doriath/fortress.xml</Actor>
+  </VisualActor>
+</Entity>

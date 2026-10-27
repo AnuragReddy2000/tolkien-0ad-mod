@@ -1,8 +1,15 @@
-# Cross-Faction Balance Audit v0.1
+# Cross-Faction Balance Audit (Historical v0.1)
+
+> Historical qualitative review only. Its matchup observations and
+> recommendations predate the implemented templates and are not validated
+> balance findings. Use [unit-balance.md](unit-balance.md) for the current
+> five-faction baseline and measured-comparison plan.
 
 ## Purpose
 
-This audit is a first structural pass to check whether the faction rosters are internally consistent before actual XML implementation begins. It compares value, power, counterplay, and role symmetry across factions.
+This audit was a first structural pass to check whether the faction rosters
+were internally consistent before actual XML implementation began. It
+compared value, power, counterplay, and role symmetry across factions.
 
 The goal is not to lock final numbers. The goal is to catch obvious imbalance, missing counters, and role overlap before the team enters the implementation and AI tuning phase.
 
@@ -97,7 +104,7 @@ Status: strong as a mass-pressure faction; must stay cheap and numerically oppre
 What works:
 - worker separation and the Snaga worker identity are readable;
 - mass production and attrition are coherent;
-- Wargs and Crebain support the faction's scavenger nature.
+- Crebain and the hired Variag riders support the faction's scavenger nature.
 
 Potential problems:
 - if Orc Warriors are too durable, the faction loses its intended weakness to elite direct fights;

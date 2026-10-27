@@ -1,0 +1,18 @@
+{
+	"genericName": "Deep Larders",
+	"description": "Salted meats, sealed grain and stone-cool store-vaults: the long bargaining of the Dale-men, laid down in the dark against siege and winter.",
+	"cost": {
+		"wood": 200,
+		"metal": 250
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "moria" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "grain.png",
+	"researchTime": 60,
+	"tooltip": "+1.0 food trickle per second.",
+	"modifications": [
+		{ "value": "ResourceTrickle/Rates/food", "add": 1 }
+	],
+	"affects": ["Player"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/tolkien/darkorc.dae</mesh>
+      <props>
+        <prop actor="props/units/weapons/spear.xml" attachpoint="weapon_R"/>
+      <prop actor="props/units/helmets/gladiator_secutor.xml" attachpoint="helmet"/>
+        </props>
+      <textures>
+        <texture file="skeletal/tolkien/orc_leather_02.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+      <variant file="biped/darkorc_relax.xml"/>
+      <variant file="biped/darkorc_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

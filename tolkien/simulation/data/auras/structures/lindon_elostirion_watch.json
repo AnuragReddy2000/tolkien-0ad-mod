@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Ship"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.2 }
+	],
+	"auraName": "Watch of Elostirion",
+	"auraDescription": "Lindon ships +20% vision while the White Towers stand."
+}

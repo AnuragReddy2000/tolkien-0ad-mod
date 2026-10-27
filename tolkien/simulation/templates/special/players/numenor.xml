@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>numenor</Civ>
+    <GenericName>Númenor</GenericName>
+    <History>The Isle of the King's Men, gifted to the Edain for their aid against Morgoth, rises in the sea between Aman and Middle-earth. Under the King's Tower in Armenelos the Númenóreans became the greatest mariners and masons the world has known: their havens shelter great fleets, their houses endure, and their warriors are taller and longer-lived than other Men. They win prepared fights by sea and shore, but they are few, and their elite host is slow and costly to replace.</History>
+    <Icon>emblems/emblem_athenians.png</Icon>
+  </Identity>
+</Entity>

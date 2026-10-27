@@ -1,0 +1,16 @@
+{
+	"genericName": "King's Building-craft",
+	"description": "The Númenóreans raise their quarters and storehouses in orderly rows, planned by the king's architects and raised by disciplined crews.",
+	"cost": {
+		"wood": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "numenor" }] },
+	"requirementsTooltip": "Unlocked in Town Phase. Númenor only.",
+	"icon": "tenement.png",
+	"researchTime": 30,
+	"tooltip": "Houses -25% build time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75, "affects": "House" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

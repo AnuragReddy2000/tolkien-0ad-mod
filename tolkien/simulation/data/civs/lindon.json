@@ -1,0 +1,162 @@
+{
+	"Code": "lindon",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Highland_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "Lindon",
+			"Description": "The Grey Havens of Lindon, last Elven realm in the west of Middle-earth: elite maritime infantry and ships, costly but disciplined, strongest given time and coast.",
+			"Technologies": [
+				{
+					"Name": "Harvest of the Falas",
+					"History": "The Falathrim of the Grey Havens read the tides as other men read fields, and their nets never come up empty.",
+					"Description": "Dock, Town Phase. Fishing ships +25% fish gather rate."
+				},
+				{
+					"Name": "Elven Planning",
+					"History": "Elven halls are raised in a single day of ordered labour, as if the timber remembered its shape from Aman.",
+					"Description": "Civic Centre, Town Phase. Houses -25% build time."
+				},
+				{
+					"Name": "Noldorin Metallurgy",
+					"History": "The Noldor of Lindon kept the metalcraft of Aman alive through the long ages, tempering blades that lesser forges cannot match.",
+					"Description": "Forge, Town Phase. Champion infantry +1 pierce attack."
+				},
+				{
+					"Name": "Mithril-Plated Hulls",
+					"History": "The prows of Mithlond are sheathed in mithril-alloy plates, and the sea itself seems to break around them.",
+					"Description": "Dock, City Phase. Ships +15% health."
+				},
+				{
+					"Name": "Elven Ladders",
+					"History": "Elven towers rise taller than any siege-ladder can reach, and their crests carry guards that never tire.",
+					"Description": "Fortress, City Phase. Fortresses and Stone Towers +15% health."
+				},
+				{
+					"Name": "Singing Arrows",
+					"History": "The bow-strings of the Havens sing before the shafts land, and each note finds a joint in timber or stone.",
+					"Description": "Forge, City Phase. Elven Bolt-Throwers +20% pierce attack; Vanguard Saboteurs +25% crush attack."
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Cirdan",
+					"Class": "Shipwright",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "Cirdan the Shipwright, lord of the Falathrim and keeper of the Grey Havens since the First Age, eldest of the Elves remaining in Middle-earth. Naval hero: his ships sail faster, build sooner, and endure more near him."
+				},
+				{
+					"Name": "Gil-galad",
+					"Class": "High King of the Noldor",
+					"Armament": "Spear (Aeglos)",
+					"Emblem": "",
+					"History": "Gil-galad, last High King of the Noldor in Middle-earth, who led the hosts of Lindon into the Last Alliance and fell facing Sauron himself. Elite commander: nearby infantry strike harder and turn aside pierce attacks."
+				},
+				{
+					"Name": "Elrond",
+					"Class": "Herald of Gil-galad",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "Elrond Half-elven, herald of Gil-galad and bearer of Vilya, Ring of Air, who fought beside the High King in the War of the Last Alliance. Warrior-lord: fights with hero sword in the front line while Vilya's aura steadies nearby infantry."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Gift of the West",
+			"History": "The Elves of Lindon preserve the high craft of the Noldor, learned in Aman and refined through long ages at the Grey Havens.",
+			"Description": "Naval, defensive, and high-craft technologies research 15% faster (Docks, Stone Towers, Fortresses, Forges)."
+		},
+		{
+			"Name": "Swan Ships",
+			"History": "The swan-ships of the Falathrim carry the Elves along the coasts and, when need is great, bear warriors to distant shores.",
+			"Description": "Swan Ships carry up to 20 infantry and may train eligible Spearmaidens and Archers aboard at full cost. They provide transport and coastal reinforcement, not free troops."
+		},
+		{
+			"Name": "Elven Craft",
+			"History": "Few in number but skilled beyond other kindreds, the warriors of Lindon favour quality over quantity.",
+			"Description": "Infantry favour health and discipline over numbers, with longer training times than mass-faction equivalents."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/lindon/wallset_stone"
+	],
+	"Structures": [
+		{
+			"Name": "Forge of the Noldor",
+			"History": "The Noldor of Lindon kept the metalcraft of Aman alive through the long ages at the Grey Havens.",
+			"Description": "High-craft forge. Researches Noldorin Metallurgy and Singing Arrows; its technologies complete 15% faster through the Gift of the West."
+		},
+		{
+			"Name": "Harlond",
+			"History": "The sea-ward haven of Mithlond, where Cirdan the Shipwright tends the swan-ships of the Falathrim.",
+			"Description": "Lindon dock. Trains Swan Ships, Fishing Boats, Merchant Ships, and Fire Galleys; repairs idle ships nearby and sharpens Mariners. Researches Harvest of the Falas and Mithril-Plated Hulls."
+		},
+		{
+			"Name": "Rider's Lodge",
+			"History": "The border wardens of Mithlond ride swift horses along the shores, carrying word and warning rather than the shock of war.",
+			"Description": "Light-cavalry stable. Trains Mithlond Border Riders only — no heavy cavalry, no cavalry upgrades."
+		},
+		{
+			"Name": "Works of the Havens",
+			"History": "Clear-cutting forests for clunky wooden engines is antithetical to Elven culture; the Havens build slender engines that strike like needles.",
+			"Description": "Elven workshop. Trains precise Bolt-Throwers for counter-siege work only — no catapults, rams, or siege towers."
+		},
+		{
+			"Name": "Arches of the Last Shore",
+			"History": "A monumental archway of the West, the inland checkpoint where Elves gather before their journey across the sea.",
+			"Description": "Wonder of Lindon. While the completed Arches stand, 15% of each fallen Lindon unit's cost returns to your treasury. Raze it to end the grace."
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/lindon/civil_centre"
+		},
+		{
+			"Template": "units/lindon/support_worker",
+			"Count": 4
+		},
+		{
+			"Template": "units/lindon/infantry_recruit",
+			"Count": 2
+		}
+	],
+	"AINames": [
+		"Gil-galad",
+		"Elrond",
+		"Cirdan",
+		"Celeborn",
+		"Galadriel",
+		"Glorfindel",
+		"Erestor",
+		"Galdor"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_infantry_ranged_b": "units/lindon/infantry_archer",
+		"skirmish/units/default_infantry_melee_b": "units/lindon/infantry_spearman",
+		"skirmish/units/default_support_civilian": "units/lindon/support_worker",
+		"skirmish/units/default_cavalry": "units/lindon/cavalry_border_rider",
+		"skirmish/structures/default_defense_tower": "structures/lindon/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

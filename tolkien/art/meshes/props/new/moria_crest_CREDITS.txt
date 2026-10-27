@@ -1,0 +1,1 @@
+Procedural Moria helmet decoration (crown band / horns / crest), authored in the stock helmet-bone frame. Companion prop for the remodelled 'Dwarf_Helmet_LP' by prorok_009 (CC-BY 4.0); Weta-derived upstream - same IP review note as erebor_helm.md.

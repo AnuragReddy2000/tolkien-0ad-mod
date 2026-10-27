@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_boltshooter">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>50</Pierce>
+      </Damage>
+      <MaxRange>165</MaxRange>
+      <MinRange>15</MinRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>5000</RepeatTime>
+      <Projectile>
+        <Speed>150</Speed>
+        <Spread>1</Spread>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human Siege Mechanical</PreferredClasses>
+      <Splash>
+        <Shape>Linear</Shape>
+        <Range>9</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Pierce>20</Pierce>
+        </Damage>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Population>2</Population>
+    <Resources>
+      <food>0</food>
+      <wood>120</wood>
+      <stone>0</stone>
+      <metal>120</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>180</Max>
+  </Health>
+  <!-- Pack disabled for v1: stays unpacked, mobile and able to fire, like the Mordor catapult. -->
+  <Pack disable=""/>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/siege_bolt_thrower</SelectionGroupName>
+    <GenericName>Elven Bolt-Thrower</GenericName>
+    <SpecificName>Engine of the Havens</SpecificName>
+    <Icon>units/hele/siege_oxybeles.png</Icon>
+    <Tooltip>Precise counter-siege engine; snipes high-value targets. Weak if reached. No wall-breaker.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>10</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>6.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hellenes/siege_oxybeles.xml</Actor>
+  </VisualActor>
+</Entity>

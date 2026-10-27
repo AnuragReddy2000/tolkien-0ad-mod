@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_dog">
+  <!-- Crebain Swarm: a single trainable flock (limit 1 alive), replacing the
+       individual-bird scout — one bird is too small to notice or click.
+       No attack; melee can only chip it (high Hack/Crush resistance, the
+       engine's stand-in for flying), while arrows and towers kill it. -->
+  <Attack disable=""/>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Population>1</Population>
+    <Resources>
+      <food>30</food>
+      <wood>20</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="2.5" depth="2.5"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Health>
+    <Max>120</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <SelectionGroupName>units/mordor/scout_crebain</SelectionGroupName>
+    <GenericName>Crebain Swarm</GenericName>
+    <SpecificName>A Murder of Crows</SpecificName>
+    <Icon>units/mordor/scout_crebain.png</Icon>
+    <Tooltip>One trainable flock at a time. Fast flying scout with broad vision and no attack; melee cannot touch the sky, but ranged units can. Doriath's forest camouflage hides units from the Crebain until they move, attack, or take damage.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>30</Hack>
+        <Pierce>0</Pierce>
+        <Crush>30</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <TrainingRestrictions>
+    <Category>CrebainSwarm</Category>
+  </TrainingRestrictions>
+  <TreasureCollector disable=""/>
+  <UnitMotion>
+    <WalkSpeed>14.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/mordor/crebain_swarm.xml</Actor>
+  </VisualActor>
+</Entity>

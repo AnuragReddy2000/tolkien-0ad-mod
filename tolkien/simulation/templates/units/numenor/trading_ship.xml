@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_merchant">
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/trading_ship</SelectionGroupName>
+    <GenericName>Númenórean Trading Ship</GenericName>
+    <SpecificName>Trader of the Eastern Coasts</SpecificName>
+    <Icon>units/hele/ship_merchant.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/hellenes/merchant.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,18 @@
+{
+	"genericName": "Dwarven Axe-mastery",
+	"description": "A Khazad axe is laid on the anvil for a year and swung for a moment, and that moment ends the fight.",
+	"cost": {
+		"food": 200,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "moria" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "battle_axe_02.png",
+	"researchTime": 45,
+	"tooltip": "Infantry +1 Hack attack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "add": 1 }
+	],
+	"affects": ["Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

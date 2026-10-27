@@ -1,0 +1,137 @@
+{
+	"Code": "mordor",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Highland_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "Mordor",
+			"Description": "Sauron's war-state uses expendable Orc soldiers, enslaved Snaga workers, and industrial siege to win through pressure and attrition. Protect its workers and avoid fighting on Mordor's terms.",
+			"Technologies": [
+				{
+					"Name": "Black Uruk Forging",
+					"History": "The Uruks of Lugburz are bred and mailed in the Black Mountain itself, and their harness turns aside the blows that kill lesser Orcs.",
+					"Description": "Orc champions +15% health."
+				},
+				{
+					"Name": "Engines of Morgoth",
+					"History": "Slave-crewed and iron-braced, the siege-engines of Mordor hurl everything the forges can spare until the walls come down.",
+					"Description": "Siege engines +15% attack damage."
+				},
+				{
+					"Name": "Orc Cookhouses",
+					"History": "The cook-houses of the camp keep the Snaga at the wheel and the pick, boiling mash for the labour that feeds the war-machine.",
+					"Description": "Workers +20% food gather rate."
+				},
+				{
+					"Name": "War-drums of Angband",
+					"History": "The drums of the old forge-fortress still keep time in the camps of Mordor, and the Orcs swing their blades on the beat.",
+					"Description": "Orc infantry +1 Hack attack damage."
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Sauron",
+					"Class": "Dark Lord",
+					"Armament": "Mace",
+					"Emblem": "",
+					"History": "Sauron is a slow, powerful front-line hero whose crushing blows and Morgul Dread weaken nearby foes."
+				},
+				{
+					"Name": "Gothmog",
+					"Class": "Lieutenant of Morgul",
+					"Armament": "Mace",
+					"Emblem": "",
+					"History": "Gothmog's command drives nearby Orcs to attack faster while his Morgul Dread slows enemies."
+				},
+				{
+					"Name": "Khamûl",
+					"Class": "The Black Easterling",
+					"Armament": "Horse",
+					"Emblem": "",
+					"History": "Khamûl leads the hunt, helping nearby Orcs move faster and strike harder."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Snaga Thralls",
+			"History": "The Snaga are the slave-labour of Mordor, cheap and quick to breed, driven to work while Orc warriors are bred only for war.",
+			"Description": "Snaga Slaves are the only Mordor gatherers: cheap, fast to train, and defenseless. All Orc military omits gathering, forcing reliance on Snaga numbers and protection."
+		},
+		{
+			"Name": "Blighted Desolation",
+			"History": "Where the shadow of Mordor falls the land itself sickens, and the harvests of intruders wither in blighted soil.",
+			"Description": "Enemy workers gathering inside Mordor territory suffer -15% gather efficiency (gathering only; no destruction, no build/move/combat effect). Mordor workers are immune; the effect ends when territory is reclaimed."
+		},
+		{
+			"Name": "All-Seeing Eye",
+			"History": "From Barad-dûr the Eye of Sauron sweeps the lands, and none may hide long when its gaze turns upon them.",
+			"Description": "While Barad-dûr stands, the Eye searches enemy strongholds for about 40 seconds on an eight-minute cycle. Its arrival is announced globally; it does not reveal the whole map."
+		},
+		{
+			"Name": "Hordes of Mordor",
+			"History": "The hosts of Mordor are numberless, bred in the pits of Udûn and driven from the East under the lash.",
+			"Description": "Mordor's maximum population limit is increased by 10%. The larger host relies on numbers, not higher-quality troops."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/mordor/wallset_stone"
+	],
+	"Structures": [
+		{
+			"Name": "Barad-dûr",
+			"History": "The Dark Tower is Sauron's fortress and the seat of the Eye.",
+			"Description": "Mordor's wonder sends a searching gaze across enemy strongholds every eight minutes while it stands; it does not reveal the whole map."
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/mordor/civil_centre"
+		},
+		{
+			"Template": "units/mordor/support_worker",
+			"Count": 4
+		},
+		{
+			"Template": "units/mordor/infantry_warrior",
+			"Count": 2
+		}
+	],
+	"AINames": [
+		"Sauron",
+		"Gothmog",
+		"Khamul",
+		"Shagrat",
+		"Gorbag",
+		"Grishnakh",
+		"Ugluk",
+		"Mauhur"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_infantry_ranged_b": "units/mordor/infantry_archer",
+		"skirmish/units/default_infantry_melee_b": "units/mordor/infantry_warrior",
+		"skirmish/units/default_support_civilian": "units/mordor/support_worker",
+		"skirmish/units/default_cavalry": "units/mordor/cavalry_variag_rider",
+		"skirmish/structures/default_defense_tower": "structures/mordor/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

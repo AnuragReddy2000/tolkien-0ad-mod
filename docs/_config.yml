@@ -1,0 +1,10 @@
+title: Tolkien 0 A.D. Mod
+description: A fan-made Tolkien-inspired total conversion for 0 A.D.
+theme: minima
+markdown: kramdown
+relative_links:
+  enabled: true
+  collections: false
+header_pages:
+  - civilizations.md
+  - overview.md

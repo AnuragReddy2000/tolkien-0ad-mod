@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/moria/infantry_runner">
+  <Identity>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/moria/infantry_runner_e</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/moria/infantry_runner_a.xml</Actor>
+  </VisualActor>
+</Entity>

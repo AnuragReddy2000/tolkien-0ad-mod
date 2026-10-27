@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <AttackName>Crush of the Black Hand</AttackName>
+      <Damage>
+        <Crush>30</Crush>
+      </Damage>
+      <MaxRange>5</MaxRange>
+      <RepeatTime>2200</RepeatTime>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>3</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Crush>15</Crush>
+        </Damage>
+      </Splash>
+      <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/morgul_dread_hero
+  </Auras>
+  <Cost>
+    <BuildTime>60</BuildTime>
+    <Resources>
+      <food>400</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>600</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1500</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <SelectionGroupName>units/mordor/hero_sauron</SelectionGroupName>
+    <GenericName>Sauron</GenericName>
+    <SpecificName>The Dark Lord of Mordor</SpecificName>
+    <Tooltip>Hero of Mordor. Massive crushing blows that break shield-walls — substantial, not auto-kill. Slow, and worth every spear thrown at him. His Morgul Dread slows nearby enemy attacks.</Tooltip>
+    <Icon>units/mordor/hero_sauron.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>15</Hack>
+        <Pierce>15</Pierce>
+        <Crush>30</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>8.0</WalkSpeed>
+  </UnitMotion>
+  <!-- 5.2-unit Dark Lord: wider stance, taller health bar. -->
+  <Footprint replace="">
+    <Square width="2.0" depth="2.0" />
+    <Height>6.0</Height>
+  </Footprint>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
+  <VisualActor>
+    <Actor>units/mordor/hero_sauron.xml</Actor>
+  </VisualActor>
+</Entity>

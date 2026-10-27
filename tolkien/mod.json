@@ -1,0 +1,8 @@
+{
+	"name": "tolkien",
+	"version": "0.0.1",
+	"label": "Tolkien: Total Conversion",
+	"description": "A Tolkien Legendarium total conversion for 0 A.D. Release 28.",
+	"url": "https://github.com/AnuragReddy2000/tolkien-0ad-mod",
+	"dependencies": ["0ad=0.28.0"]
+}

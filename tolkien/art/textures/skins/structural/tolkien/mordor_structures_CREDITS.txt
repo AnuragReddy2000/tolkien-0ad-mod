@@ -1,0 +1,10 @@
+Mordor structure skins are darkened derivatives of 0 A.D. public textures.
+Sources: kush_struct.png, kush_struct_02.png, kart_struct.dds,
+hele_struct_b.png, and palisade_main.png. Only the base-color art was
+recolored; the associated vanilla normal, specular, and ambient-occlusion
+maps are referenced from the installed game.
+Source art Copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/
+Generated outputs: mordor_kush_struct.png, mordor_kush_struct_02.png,
+mordor_kart_struct.png, mordor_hele_struct_b.png, and
+mordor_palisade_main.png.

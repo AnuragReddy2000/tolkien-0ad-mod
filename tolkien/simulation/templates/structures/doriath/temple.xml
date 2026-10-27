@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Sanctuary of Melian</SpecificName>
+  </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/support_healer
+      units/{civ}/hero_melian
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/doriath/temple.xml</Actor>
+  </VisualActor>
+</Entity>

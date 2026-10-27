@@ -1,0 +1,16 @@
+{
+	"genericName": "Stone-halls of the Dwarves",
+	"description": "Dwarven halls rise course by course in a single determined shift, for a Khazad works fastest when the stone is hot to shape.",
+	"cost": {
+		"stone": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "moria" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "tenement.png",
+	"researchTime": 30,
+	"tooltip": "Houses -25% build time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75, "affects": "House" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

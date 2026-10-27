@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 }
+	],
+	"auraName": "Aegis of Armenelos",
+	"auraDescription": "Friendly Infantry near the Temple +1 hack / +1 pierce armour. Small defensive aura; does not stack.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png",
+	"stackable": false
+}

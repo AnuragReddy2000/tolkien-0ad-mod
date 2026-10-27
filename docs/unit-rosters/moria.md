@@ -1,22 +1,27 @@
-# Moria — Unit Balance v0.2
+# Moria Unit Roster
 
-> **Active balance target:** This roster is synchronized with `docs/balance/v0.2-active-targets.md`. Use these values for implementation until a later balance revision supersedes them.
+For current numeric profiles, shared balance rules, and implementation status,
+see the [canonical unit-balance specification](../balance/unit-balance.md).
+This page records roles only; it is not a second balance target.
 
-Costs are Food/Wood/Stone/Metal.
+| Unit | Template | Role |
+|---|---|---|
+| Moria Laborer | `support_worker` | Civilian worker and deep-mining specialist |
+| Provisions Cart | `support_provisions_cart` | Support unit; mobile drop-site for all resources (German supply wagon base) |
+| Moria Guardsman | `infantry_guardsman` | Durable basic melee infantry |
+| Moria Spearman | `infantry_spearman` | Chokepoint infantry; anti-cavalry |
+| Moria Battle Dwarf | `infantry_dwarf` | Melee infantry |
+| Moria Axe-Thrower | `infantry_archer` | Short-range throwing-axe skirmisher; not a bow archer |
+| Mountain Ranger | `infantry_ranger` | High-vision throwing-axe scout |
+| Moria Breaker | `infantry_breaker` | Heavy melee bruiser |
+| Tunnel Runner | `infantry_runner` | Mobile tunnel-support infantry |
+| Mithril Vanguard | `champion_vanguard` | Elite line-holder |
+| Siege Engineer | `siege_engineer` | Structure attacker and repair support |
+| Steam Ram | `siege_ram` | Compact chokepoint siege |
+| Durin VI, Náin, Fundin | `hero_*` | Defensive, siege-support, and economic heroes |
 
-| Unit | Phase | Cost | Pop | HP | Speed | Attack / interval | Range | Armour H/P/C | Quirk |
-|---|---|---:|---:|---:|---:|---|---:|---:|---|
-| Moria Laborer | I | 50/0/0/0 | 1 | 75 | 0.95 | 3 hack / 2.0s | — | 0/0/0 | Supports deep mining |
-| Moria Guardsman | I | 40/0/0/15 | 1 | 125 | 0.9 | 7 hack / 1.7s | — | 3/2/1 | Durable basic infantry |
-| Moria Spearman | I | 40/5/0/15 | 1 | 130 | 0.88 | 6 hack / 1.7s; +8 vs cavalry | — | 3/2/1 | Strong in chokepoints |
-| Moria Archer | II | 40/20/0/15 | 1 | 75 | 0.9 | 6 pierce / 1.9s | 55 | 0/2/0 | Defensive ranged support |
-| Moria Breaker | II | 60/0/0/35 | 1 | 190 | 0.75 | 11 hack / 1.9s | — | 5/4/2 | Slow bruiser |
-| Tunnel Runner | II | 45/10/0/20 | 1 | 95 | 1.05 | 5 hack / 1.6s | — | 1/1/0 | Receives movement bonus in tunnels |
-| Siege Engineer | III | 0/100/0/70 | 2 | 180 | 0.7 | 65 crush / 4.5s | 160 | 2/4/7 | Siege and repair support |
-| Mithril Vanguard | III | 70/0/0/60 | 1 | 235 | 0.78 | 13 hack / 1.9s | — | 7/6/3 | Elite; cavalry and siege counter it |
-
-## Balance quirks
-
-- Mithril Core allows depleted metal sites to continue at 50% normal yield while the required deep-mining structure remains active.
-- **Tunnel movement grants units +7% speed inside linked tunnels; entrances can be blocked or disabled.** Tunnels are not unrestricted global transport.
-- Moria units are durable but deliberately slow; they must not also have superior ranged reach or mobility.
+Depleted metal nodes convert to permanent shafts at half yield. Worker
+presence/upkeep remains deferred. Tunnel Swiftness currently grants +7%
+movement near entrances; Deep Roadways separately grants +5% infantry
+movement globally. A linked-tunnel-only movement bonus remains deferred.
+Moria has no cavalry or open-air catapult.

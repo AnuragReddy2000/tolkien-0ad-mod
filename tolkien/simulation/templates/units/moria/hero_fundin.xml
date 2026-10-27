@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>20</Hack>
+      </Damage>
+      <RepeatTime>1800</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/moria_fundin_providence
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>180</food>
+      <wood>50</wood>
+      <stone>0</stone>
+      <metal>150</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>900</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <SelectionGroupName>units/moria/hero_fundin</SelectionGroupName>
+    <GenericName>Fundin</GenericName>
+    <SpecificName>Delver of the Deep Lodes</SpecificName>
+    <Icon>units/rome/hero_maximus.png</Icon>
+    <Tooltip>Heroic defender of the works: nearby stone and metal gathering runs faster while he stands. One hero per match.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>10</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moria/hero_fundin.xml</Actor>
+  </VisualActor>
+</Entity>

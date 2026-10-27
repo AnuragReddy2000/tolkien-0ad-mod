@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>mordor</Civ>
+    <GenericName>Mordor</GenericName>
+    <History>From the Black Land of Mordor the hosts of Sauron march without number: cheap Orc levies bred for war, Snaga slaves driven to labour, Variag horse-archers hired from Khand, Crebain ranging ahead, and the land itself sickening under their shadow. Break their workers, refuse them the long attrition war, and even the darkness can be undone.</History>
+    <Icon>emblems/emblem_carthaginians.png</Icon>
+  </Identity>
+  <!-- Scout caps (merge additively with vanilla template_player limits):
+       one Crebain Swarm alive at a time. -->
+  <EntityLimits>
+    <Limits>
+      <CrebainSwarm>1</CrebainSwarm>
+    </Limits>
+  </EntityLimits>
+</Entity>

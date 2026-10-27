@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/lindon/cavalry_border_rider">
+  <Identity>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/lindon/cavalry_border_rider_e</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/persians/cavalry_archer_a_m.xml</Actor>
+  </VisualActor>
+</Entity>

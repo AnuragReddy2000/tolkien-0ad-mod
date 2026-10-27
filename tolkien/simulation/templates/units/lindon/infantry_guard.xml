@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/stable
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/workshop
+      structures/{civ}/wonder
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>5.5</Hack>
+        <Pierce>4.5</Pierce>
+      </Damage>
+      <RepeatTime>1000</RepeatTime>
+      <Bonuses>
+        <BonusCavalry>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.5</Multiplier>
+        </BonusCavalry>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>14</BuildTime>
+    <Resources>
+      <food>60</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>15</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>175</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/infantry_guard</SelectionGroupName>
+    <GenericName>Lindon Guard</GenericName>
+    <SpecificName>Noldorin Phalanx</SpecificName>
+    <Icon>units/athen/infantry_spearman.png</Icon>
+    <Tooltip>Phalanx guard with 2.5x damage versus cavalry.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/lindon/infantry_guard_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>5</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/lindon/lindon_spearman.xml</Actor>
+  </VisualActor>
+</Entity>

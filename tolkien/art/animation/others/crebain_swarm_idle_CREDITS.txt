@@ -1,0 +1,4 @@
+Adapted from the 0 A.D. public ambient bird-circle idle animation
+(`art/animation/others/bird_circle_idle_01.dae`) to make the Crebain flock
+orbit at unit scale. Source art Copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/

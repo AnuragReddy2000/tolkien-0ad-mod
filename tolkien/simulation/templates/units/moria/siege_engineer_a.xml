@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/moria/siege_engineer">
+  <Identity>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/moria/siege_engineer_e</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/moria/siege_engineer_a.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["Ship"],
+	"modifications": [
+		{ "value": "GarrisonHolder/Max", "add": 4 },
+		{ "value": "Health/Max", "multiply": 1.1 }
+	],
+	"auraName": "Haven-master",
+	"auraDescription": "Nearby ships +4 garrison capacity and +10% health."
+}

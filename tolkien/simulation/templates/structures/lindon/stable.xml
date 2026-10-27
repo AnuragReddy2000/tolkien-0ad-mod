@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Identity>
+    <Civ>lindon</Civ>
+    <SpecificName>Rider's Lodge</SpecificName>
+    <Tooltip>Border Rider production. Light skirmish cavalry only — no shock upgrades.</Tooltip>
+  </Identity>
+  <Researcher disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/cavalry_border_rider
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <!-- TODO: replace with an Elven lodge once custom art lands. -->
+    <Actor>structures/seleucids/stable.xml</Actor>
+  </VisualActor>
+</Entity>

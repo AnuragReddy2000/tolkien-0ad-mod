@@ -1,0 +1,21 @@
+{
+	"genericName": "Engines of Morgoth",
+	"description": "Slave-crewed and iron-braced, the siege-engines of Mordor hurl everything the forges can spare until the walls come down.",
+	"cost": {
+		"wood": 300,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "mordor" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "flaming_munitions.png",
+	"researchTime": 60,
+	"tooltip": "Siege engines +15% attack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Melee/Damage/Pierce", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.15 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

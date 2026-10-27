@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_fishing">
+  <Identity>
+    <Civ>lindon</Civ>
+    <GenericName>Lindon Fishing Boat</GenericName>
+    <SpecificName>Skiff of the Falathrim</SpecificName>
+    <Icon>units/hele/ship_fishing.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/hellenes/fishing_boat.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,150 @@
+{
+	"Code": "numenor",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Highland_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "Númenor",
+			"Description": "The island kingdom of Men was famed for its ships, stonework, and disciplined armies. Númenor combines strong infrastructure and coastal power with costly, high-quality troops rather than overwhelming numbers.",
+			"Technologies": [
+				{
+					"Name": "Masonry of Armenelos",
+					"History": "The white citadel of Armenelos crowns the king's city, and its strongholds were raised to outlast the pride of even the Lords of the Sea.",
+					"Description": "Fortresses +15% health."
+				},
+				{
+					"Name": "Dúnedain Tempering",
+					"History": "The forge-halls of the Númenóreans temper steel for the heirs of the Edain, joining the blessing of the Valar with a smith's craft.",
+					"Description": "Infantry +1 Hack attack damage."
+				},
+				{
+					"Name": "Fleet of the Lords of the Sea",
+					"History": "The great armaments of Ar-Pharazôn sailed with ballista and ram, and the shorelines of Middle-earth learned to fear the horizon.",
+					"Description": "Warships +15% attack damage."
+				},
+				{
+					"Name": "King's Building-craft",
+					"History": "The Númenóreans raise their quarters and storehouses in orderly rows, planned by the king's architects and raised by disciplined crews.",
+					"Description": "Houses -25% build time."
+				},
+				{
+					"Name": "Shipwrights of the Royal Harbour",
+					"History": "The shipwrights of Rómenna build the island's fleets, and their nets and lines feed the greatest navy the world has known.",
+					"Description": "Fishing ships +25% fish gather rate."
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Elendil",
+					"Class": "High King",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "Elendil improves nearby infantry attack and sight."
+				},
+				{
+					"Name": "Isildur",
+					"Class": "Duelist",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "Isildur is a duelist who strengthens nearby infantry and is especially dangerous to enemy heroes."
+				},
+				{
+					"Name": "Ar-Pharazôn",
+					"Class": "King of the Sea",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "Ar-Pharazôn strengthens Númenórean warships; his ambition also raises land-unit metal costs while he lives."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Blessing of the West",
+			"History": "The Edain were raised above other Men by the Valar, and the Númenóreans grew taller, wiser, and longer-lived than any other kindred of Men.",
+			"Description": "Non-hero Númenórean infantry have +5% health. The Dúnedain are long-lived and strong, but remain mortal."
+		},
+		{
+			"Name": "Great Houses of the Dúnedain",
+			"History": "The great houses and kindreds of Númenor — the King's Men, the Faithful, and the houses of Bëor, Hador, and Haleth — settled the land in ordered realms under the King's Tower in Armenelos.",
+			"Description": "Houses support +10% population. Númenor's strength is disciplined settlement, not endless levies."
+		},
+		{
+			"Name": "Fortified Havens",
+			"History": "The Numenóreans were the greatest mariners of the world, and their havens, from Rómennölië to Andúnië, were strong in stone and sheltered their great fleets.",
+			"Description": "Docks +15% health. Coastal strongholds anchor Númenor's sea power."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/numenor/wallset_stone"
+	],
+	"Structures": [
+		{
+			"Name": "Rómennölië",
+			"History": "The Royal Harbour of Rómenna sends Númenor's fleets across the sea.",
+			"Description": "Trains Númenórean warships and researches naval technologies."
+		},
+		{
+			"Name": "Coast Guard Tower",
+			"History": "Númenor's coastal watch protects its havens from ships and raiders.",
+			"Description": "A tower specialized against ships and coastal landings."
+		},
+		{
+			"Name": "Temple of Armenelos",
+			"History": "The temple of the royal city embodies Númenor's power and ambition.",
+			"Description": "While it stands, champions gain +10% health and nearby civic centers receive a defensive aura."
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/numenor/civil_centre"
+		},
+		{
+			"Template": "units/numenor/support_worker",
+			"Count": 4
+		},
+		{
+			"Template": "units/numenor/infantry_recruit",
+			"Count": 2
+		}
+	],
+	"AINames": [
+		"Elros",
+		"Tar-Aldarion",
+		"Tar-Ancalime",
+		"Tar-Minastir",
+		"Tar-Ardamina",
+		"Ar-Pharazon",
+		"Amandil",
+		"Elendil",
+		"Isildur",
+		"Anarion"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_support_civilian": "units/numenor/support_worker",
+		"skirmish/units/default_infantry_ranged_b": "units/numenor/infantry_archer",
+		"skirmish/units/default_infantry_melee_b": "units/numenor/infantry_spearman",
+		"skirmish/units/default_cavalry": "units/numenor/cavalry_scout",
+		"skirmish/structures/default_house_10": "structures/numenor/house",
+		"skirmish/structures/default_defense_tower": "structures/numenor/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}

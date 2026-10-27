@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>tolkien_test</Civ>
+    <GenericName>Tolkien Test Faction</GenericName>
+    <History>Placeholder faction used to validate the mod skeleton in 0 A.D. Release 28. Replaced by real faction identities in Workstream C.</History>
+    <Icon>emblems/emblem_athenians.png</Icon>
+  </Identity>
+</Entity>

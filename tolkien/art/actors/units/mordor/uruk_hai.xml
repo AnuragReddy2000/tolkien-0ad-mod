@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kitbashed Uruk-hai: proven darkorc body + stock public armor props.
+     No Sketchfab skirmish here on purpose: the darkorc mesh is already
+     rigged + animated in-game, and props are rigid bone attachments, so
+     none of the multi-shell skinning failure modes apply.
+     Body: skeletal/tolkien/darkorc.dae (darkorc_body.png).
+     Helm: stock gladiator secutor (smooth enclosed helm, closest to Uruk
+     plate vibe - swap freely, candidates: gladiator_murmillo,
+     celt_helmet_montefortino_01). Shield: stock player-color aspis
+     (faction-tinted round shield; white-hand emblem needs a custom
+     shield texture - see TODO below). Sword: mod orc_sword.
+     Variants: darkorc custom idle/walk/run/capture + stock slaughter/death.
+     TODO (optional): paint White Hand onto a cloned shield texture for
+     the movie read; try alternate helmets in Atlas if the secutor clips
+     the orc jaw/ears (darkorc runs ~15% larger than stock humans). -->
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/tolkien/darkorc.dae</mesh>
+      <props>
+        <prop actor="props/units/helmets/gladiator_secutor.xml" attachpoint="helmet"/>
+        <prop actor="props/units/shields/aspis_player_color.xml" attachpoint="shield"/>
+        <prop actor="props/units/weapons/orc_sword.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/tolkien/urukhai_body.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+      <variant file="biped/darkorc_relax.xml"/>
+      <variant file="biped/darkorc_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

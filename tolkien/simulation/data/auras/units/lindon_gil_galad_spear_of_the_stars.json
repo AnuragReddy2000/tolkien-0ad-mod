@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Pierce", "add": 1 },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 }
+	],
+	"auraName": "Spear of the Stars",
+	"auraDescription": "Nearby infantry +1 pierce attack and +1 pierce armour."
+}

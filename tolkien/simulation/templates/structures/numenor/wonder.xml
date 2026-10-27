@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <Auras datatype="tokens">
+    structures/numenor_armenelos_blessing
+    structures/numenor_armenelos_aegis
+  </Auras>
+  <Identity>
+    <Civ>numenor</Civ>
+    <Classes datatype="tokens">CivSpecific ConquestCritical Wonder</Classes>
+    <GenericName>Temple of Armenelos</GenericName>
+    <SpecificName>Armenelos the Golden</SpecificName>
+    <Icon>structures/wonder.png</Icon>
+    <Tooltip>Champions +10% health while it stands, with a small defensive aura near allied civic cores. Raze it to end the blessing.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <!-- TODO: proper Armenelos model; reuses a marble sanctuary for the slice. -->
+    <Actor>structures/hellenes/temple.xml</Actor>
+  </VisualActor>
+</Entity>

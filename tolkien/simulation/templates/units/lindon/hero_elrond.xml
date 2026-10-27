@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/lindon_elrond_vilya
+  </Auras>
+  <Cost>
+    <Resources>
+      <food>200</food>
+      <wood>150</wood>
+      <stone>0</stone>
+      <metal>250</metal>
+</Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/hero_elrond</SelectionGroupName>
+    <GenericName>Elrond</GenericName>
+    <SpecificName>Elrond Half-elven</SpecificName>
+    <Tooltip>Warrior-lord. Fights with hero sword in the front line and steadies nearby infantry through Vilya's healing aura. One hero per match.</Tooltip>
+    <Icon>units/gaul/hero_vercingetorix.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Hero</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <!-- TODO: proper Elven lord with Vilya; uses custom Lindon warrior for the slice instead of the healer actor. -->
+    <Actor>units/seleucids/hero_infantry_swordsman_antiochus_IV.xml</Actor>
+  </VisualActor>
+</Entity>

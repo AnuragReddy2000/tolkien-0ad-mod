@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>22</Hack>
+        <Crush>12</Crush>
+      </Damage>
+      <RepeatTime>1700</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/moria_nain_wrath
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>200</food>
+      <wood>0</wood>
+      <stone>50</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <SelectionGroupName>units/moria/hero_nain</SelectionGroupName>
+    <GenericName>Náin</GenericName>
+    <SpecificName>Breaker of the Deep Holds</SpecificName>
+    <Icon>units/germ/hero_boiorix.png</Icon>
+    <Tooltip>Fortress commander: nearby Infantry hit harder, and crush harder, while he stands. One hero per match.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>12</Hack>
+        <Pierce>12</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moria/hero_nain.xml</Actor>
+  </VisualActor>
+</Entity>

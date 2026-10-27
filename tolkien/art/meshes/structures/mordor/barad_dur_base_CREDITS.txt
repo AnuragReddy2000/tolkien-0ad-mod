@@ -1,0 +1,4 @@
+Derivative of the 0 A.D. public Carthaginian wonder mesh. The lower shaft
+and platform were adapted to form the Barad-dur tower base.
+Source art Copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/

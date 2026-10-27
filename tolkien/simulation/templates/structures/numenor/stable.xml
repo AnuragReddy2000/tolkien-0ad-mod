@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_stable">
+  <Identity>
+    <Civ>numenor</Civ>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <SpecificName>Scout Stables</SpecificName>
+    <Tooltip>Scout production only. Númenórean stables never advance past scouting.</Tooltip>
+  </Identity>
+  <Researcher disable=""/>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/cavalry_scout
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <!-- TODO: replace with a Númenórean stable once custom art lands. -->
+    <Actor>structures/athenians/stable.xml</Actor>
+  </VisualActor>
+</Entity>

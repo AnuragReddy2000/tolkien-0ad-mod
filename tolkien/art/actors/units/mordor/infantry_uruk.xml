@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rigged Uruk-Hai, left (helmeted sword+shield) figure
+     (Ulrik Langvandsbraaten @best3deu, CC-BY 4.0 - see uruk_CREDITS.txt).
+     Mesh: skeletal/tolkien/uruk.dae with stock Biped armature.
+     Skeleton: public art/skeletons/biped.xml (no custom skeleton needed).
+     Anims: custom tall idle + retargeted stock walk/run/melee/capture
+     (biped/uruk_*.dae); slaughter/death/promotion stock public. -->
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/tolkien/uruk.dae</mesh>
+      <textures>
+        <texture file="skeletal/tolkien/uruk_body.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/uruk_relax.xml"/>
+    <variant file="biped/uruk_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

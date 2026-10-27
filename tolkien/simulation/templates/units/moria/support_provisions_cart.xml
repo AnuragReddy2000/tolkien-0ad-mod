@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_wagon">
+  <!-- Mobile dropsite for the Deep Larder's supply lines: reuses the German
+       supply wagon (template_unit_support_wagon) art and dropsite behavior. -->
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>60</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <GenericName>Provisions Cart</GenericName>
+    <SpecificName>Cart of the Deep Larder</SpecificName>
+    <Tooltip>Mobile dropsite for all resources. Sturdy, slow supply cart; guards the early food line where no horse will go.</Tooltip>
+  </Identity>
+</Entity>

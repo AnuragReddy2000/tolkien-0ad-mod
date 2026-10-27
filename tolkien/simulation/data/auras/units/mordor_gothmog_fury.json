@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Orc"],
+	"modifications": [
+		{ "value": "Attack/Melee/RepeatTime", "multiply": 0.9 },
+		{ "value": "Attack/Ranged/RepeatTime", "multiply": 0.9 }
+	],
+	"auraName": "Fury of Gothmog",
+	"auraDescription": "Nearby Orc soldiers attack ~10% faster. Static aura (simplified from HP-scaling by decision). Matches the explicit Orc class token carried by Orc military; Snaga slaves carry no Orc token and gain nothing.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
+}

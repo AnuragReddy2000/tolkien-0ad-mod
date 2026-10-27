@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.15 }
+	],
+	"auraName": "Command of Thingol",
+	"auraDescription": "Nearby Doriath Infantry +15% melee hack damage while Thingol stands. Fades if he falls.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
+}

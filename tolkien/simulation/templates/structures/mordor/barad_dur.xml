@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <EyeOfSauron>
+    <Cooldown>480000</Cooldown>
+    <WaypointLinger>4000</WaypointLinger>
+    <MaxWaypoints>10</MaxWaypoints>
+    <QueryRadius>1500</QueryRadius>
+    <SeerTemplate>units/mordor/eye_seer</SeerTemplate>
+  </EyeOfSauron>
+  <!-- Blighted Desolation: entire Mordor territory + spillover (see component). -->
+  <BlightedDesolation/>
+  <BuildRestrictions>
+    <Category>BaradDur</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>150</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>300</wood>
+      <stone>700</stone>
+      <metal>300</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>mordor</Civ>
+    <GenericName>Dark Tower</GenericName>
+    <SpecificName>Barad-dûr</SpecificName>
+    <Classes datatype="tokens">CivSpecific ConquestCritical Wonder</Classes>
+    <VisibleClasses datatype="tokens">Wonder</VisibleClasses>
+    <Icon>structures/wonder.png</Icon>
+    <Tooltip>Wonder of Mordor — Barad-dûr. Fortress of the Eye. While it stands, the Eye Opens every few minutes: a searching gaze sweeps enemy strongholds. Raze it to blind Mordor.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/mordor/barad_dur.xml</Actor>
+    <FoundationActor>structures/fndn_4x4_lighthouse.xml</FoundationActor>
+  </VisualActor>
+</Entity>

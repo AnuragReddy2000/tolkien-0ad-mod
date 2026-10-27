@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_storehouse">
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>100</wood>
+      <stone>150</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>moria</Civ>
+    <!-- NOT a general storehouse: metal + stone only (no wood/food). -->
+    <Classes datatype="tokens">DropsiteMetal DropsiteStone DeepShaft CivSpecific</Classes>
+    <SpecificName>Mithril Deep-Shaft</SpecificName>
+    <Icon>structures/moria_mithril_shaft.png</Icon>
+    <Tooltip>Delves too greedily and too deep: trickles metal while it stands. Accepts metal and stone drop-offs only, and researches mining technologies only. Shafts must stand 60m apart. Destroy them to cut the flow.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      gather_mining_servants
+      gather_mining_serfs
+      gather_mining_slaves
+      gather_mining_wedgemallet
+      gather_mining_shaftmining
+      gather_mining_silvermining
+    </Technologies>
+  </Researcher>
+  <ResourceDropsite>
+    <Types>stone metal</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>
+  <!-- Spacing + spam control: shafts must stand 60m apart (same pattern
+       as stock towers: own-class MinDistance, proven in
+       template_structure_defensive_tower). No MatchLimit (owner decision);
+       upkeep via negative trickle is schema-forbidden. Cost + territory +
+       slow payback do the rest; raiding shafts stays the counterplay. -->
+  <BuildRestrictions>
+    <Category>DeepShaft</Category>
+    <Distance>
+      <FromClass>DeepShaft</FromClass>
+      <MinDistance>60</MinDistance>
+    </Distance>
+  </BuildRestrictions>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.5</metal>
+    </Rates>
+    <Interval>2000</Interval>
+  </ResourceTrickle>
+  <VisualActor>
+    <!-- Mine mouth + cart/track diorama with the vanilla Carthaginian
+         storehouse prop parked in the yard south-west of the mouth
+         (attachpoint 'prop-yard' baked into deep_shaft.dae, rotated so its
+         arcade faces the yard). -->
+    <Actor>structures/moria/mine.xml</Actor>
+  </VisualActor>
+  <!-- Diorama is ~30u wide, ~23u deep (mine + storehouse): footprint covers
+       it, with the stock-tower MinDistance rule unchanged. -->
+  <Footprint>
+    <Square width="30.0" depth="24.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Obstruction>
+    <Static width="28.0" depth="22.0"/>
+  </Obstruction>
+</Entity>

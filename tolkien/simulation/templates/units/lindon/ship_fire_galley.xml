@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_fire">
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Population>2</Population>
+    <Resources>
+      <food>0</food>
+      <wood>120</wood>
+      <stone>0</stone>
+      <metal>80</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>800</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/ship_fire_galley</SelectionGroupName>
+    <GenericName>Fire Galley</GenericName>
+    <SpecificName>Fireship of the Havens</SpecificName>
+    <Tooltip>Fast coastal fireship. Strong against ships and coastal structures; fragile if caught. No ignition upgrade in the slice.</Tooltip>
+    <Icon>units/iber/ship_fire.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <!-- Ignition upgrade disabled for the slice: no lindon fire-fire entity yet. -->
+  <Upgrade disable=""/>
+  <VisualActor>
+    <Actor>structures/iberians/fireship.xml</Actor>
+  </VisualActor>
+</Entity>

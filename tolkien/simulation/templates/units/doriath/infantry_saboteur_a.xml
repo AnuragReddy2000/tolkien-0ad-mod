@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/doriath/infantry_saboteur">
+  <Identity>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/doriath/infantry_saboteur_e</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/athenians/infantry_spearman_c.xml</Actor>
+  </VisualActor>
+</Entity>

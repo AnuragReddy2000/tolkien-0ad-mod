@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship_arrow">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>40</Pierce>
+        <Crush>30</Crush>
+      </Damage>
+      <MaxRange>170</MaxRange>
+      <MinRange>20</MinRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>6000</RepeatTime>
+      <Projectile>
+        <Speed>160</Speed>
+        <Spread>2</Spread>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Ship Structure</PreferredClasses>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>6</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Pierce>15</Pierce>
+          <Crush>15</Crush>
+        </Damage>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <food>0</food>
+      <wood>250</wood>
+      <stone>0</stone>
+      <metal>250</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1200</Max>
+  </Health>
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/ship_siege</SelectionGroupName>
+    <GenericName>Siege Ship</GenericName>
+    <SpecificName>Ballista Ship of Rómenna</SpecificName>
+    <Tooltip>Heavy siege ship with onboard ballistas. Dominates shorelines; weak vs fireships, focus fire, and boarding maneuver. Dock only, City phase.</Tooltip>
+    <Icon>units/hele/ship_arrow.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <!-- TODO: proper ballista ship; reuses the trireme hull for the slice. -->
+    <Actor>structures/athenians/trireme.xml</Actor>
+  </VisualActor>
+</Entity>

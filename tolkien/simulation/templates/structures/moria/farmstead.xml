@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_economic_farmstead">
+  <!-- Stone-built structures (docs/factions/moria.md): half the Wood cost
+       becomes Stone, combined resource cost unchanged (100 -> 50 + 50). -->
+  <Cost>
+    <BuildTime>45</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>50</wood>
+      <stone>50</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="18.0" depth="13.0"/>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x2</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <SpecificName>Provision Hall</SpecificName>
+  </Identity>
+  <!-- Dwarves abandoned farming for mining and trade: no grain techs
+       (plows/training/fertilizer). Keeps wicker baskets (wild foraging,
+       not farming) so the early berry line still has one upgrade. -->
+  <Researcher>
+    <Technologies datatype="tokens">gather_wicker_baskets</Technologies>
+  </Researcher>
+  <Obstruction>
+    <Static width="16.0" depth="11.0"/>
+  </Obstruction>
+  <VisualActor>
+    <Actor>structures/carthaginians/farmstead.xml</Actor>
+    <FoundationActor>structures/fndn_5x4.xml</FoundationActor>
+  </VisualActor>
+</Entity>

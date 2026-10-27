@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_fishing">
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/fishing_boat</SelectionGroupName>
+    <GenericName>Númenórean Fishing Boat</GenericName>
+    <SpecificName>Boat of the Fishers' Port</SpecificName>
+    <Icon>units/hele/ship_fishing.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/hellenes/fishing_boat.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -14,27 +14,31 @@ Completed:
 - Twelve faction design documents.
 - Shared design principles and recorded design decisions.
 - First playable faction set.
-- Numeric v0.1 rosters for all twelve factions.
-- Cross-faction balance audit.
-- Active v0.2 balance targets and changelog.
+- Faction design documents and initial roster concepts.
+- Historical cross-faction balance audit.
+- Canonical v1.0 balance specification for the five implemented factions.
 
 First playable factions:
 
 1. Lindon
 2. Doriath
-3. Rohan
-4. Mordor
-5. Moria
-6. Gondor & Arnor
+3. Mordor
+4. Moria
+5. Númenor
 
-Not yet implemented:
+> Revised: Rohan and Gondor & Arnor moved to the second wave; Númenor promoted here
+> because its implementation is already underway. First-wave art is deprioritized —
+> reuse vanilla art per the per-faction mapping in `docs/design-decisions.md`.
 
-- 0 A.D. mod metadata and executable mod structure.
-- XML entity templates.
-- Technologies and phase progression.
-- Faction selection and civilization data.
-- JavaScript or engine-side custom mechanics.
-- Art, audio, UI, localization, AI, maps, and automated tests.
+Implementation status:
+
+- The repository contains an executable mod skeleton, five implemented
+  faction data sets, unit and structure templates, technologies, and custom
+  simulation components.
+- This content has not been validated in an in-game match in this environment.
+- Remaining work includes a complete effective-stat inventory, playtesting
+  and balance measurement, implementation of the seven future factions,
+  remaining art/audio/UI/localization work, and repeatable automated tests.
 
 ## 3. Non-negotiable design constraints
 
@@ -43,15 +47,18 @@ Not yet implemented:
 - Keep ordinary 0 A.D. counters recognizable.
 - Every faction bonus must have a practical counter.
 - Do not implement placeholder global buffs when a local or conditional effect is intended.
-- Use the active v0.2 values as targets, but expect changes after playtesting.
-- Record every balance change in `docs/balance/changelog.md`.
+- Use `docs/balance/unit-balance.md` as the canonical balance baseline for the
+  five implemented factions. Do not treat it as a measured power ranking.
+- Record future balance revisions, rationale, and verification status in the
+  version history of `docs/balance/unit-balance.md`.
 - Do not add a custom mechanic until its fallback behavior is defined for unsupported engine features.
 - Separate lore/design assumptions from confirmed engine capabilities.
 - **All simulation-affecting randomness must use the engine's deterministic, seeded simulation RNG. Never use `Math.random()` or another unsynchronized random source in simulation code.**
+- First-wave art is deprioritized: reuse vanilla art per the per-faction mapping in `docs/design-decisions.md`. Produce no new custom meshes or textures until the slice plays clean on reused art.
 
 ## 4. Repository and mod structure to establish
 
-The implementer should first confirm the target 0 A.D. version and create the actual mod using the version-appropriate metadata format. The paths below are the expected 0 A.D. layout for the target implementation and should be validated against the selected release only if that release has a documented structural difference.
+The target version is 0 A.D. Release 28 (A28, tag `v0.28.0`). The structure below was verified against the `v0.28.0` source tree and is implemented in the `tolkien/` mod skeleton in this repository.
 
 ```text
 mod-root/
@@ -63,10 +70,13 @@ mod-root/
 │   ├── helpers/
 │   ├── ai/
 │   ├── data/
-���   │   ├── civs/
+│   │   ├── civs/
 │   │   └── technologies/
 │   └── templates/
+│       ├── special/
+│       │   └── players/
 │       ├── structures/
+│       │   └── <civ>/
 │       └── units/
 │           ├── <civ>/
 │           │   ├── infantry/
@@ -83,7 +93,14 @@ mod-root/
 └── tests/
 ```
 
-Use `simulation/data/technologies/` for technology definitions and `simulation/data/civs/` for civilization data. Use `simulation/ai/` for AI code. Put structures under `simulation/templates/structures/`; ships and siege are unit templates under `simulation/templates/units/<civ>/ships/` and `simulation/templates/units/<civ>/siege/`, not sibling template categories. Keep the logical grouping above even if the selected 0 A.D. release requires a small naming variation.
+Use `simulation/data/technologies/` for technology definitions and `simulation/data/civs/` for civilization data. Use `simulation/ai/` for AI code. Put structures under `simulation/templates/structures/<civ>/`; ships and siege are unit templates under `simulation/templates/units/<civ>/ships/` and `simulation/templates/units/<civ>/siege/`, not sibling template categories.
+
+A28-specific requirements confirmed from source:
+
+- Every civ JSON must contain all of `Code`, `Culture`, `Music`, `CivBonuses`, `StartEntities`, `AINames`, `SkirmishReplacements`, and `SelectableInGameSetup`, or loading throws.
+- Civ display name, emblem, and history come from the player template `simulation/templates/special/players/<civ>.xml` (`Identity/GenericName`, `Identity/Icon`, `Identity/History`), not from the civ JSON.
+- `phase_town_{civ}` and `phase_city_{civ}` tokens in a building's `Researcher` list fall back to `phase_town_generic` / `phase_city_generic` automatically when no civ-specific tech exists (`Researcher.js`).
+- The base game mod is `mods/mod` plus `mods/public` (label `0ad`, version `0.28.0`); a third-party mod declares `{"label": "0ad", "version": "0.28.0"}` in its `mod.json` dependencies.
 
 ## 5. Workstream A — engine and toolchain validation
 
@@ -134,6 +151,7 @@ Use `simulation/data/technologies/` for technology definitions and `simulation/d
 - Avoid copying entire templates when one inherited override is sufficient.
 - Keep names, icons, sounds, and selection text separate from combat logic.
 - Use one canonical template for each balance role so cross-faction changes are easy to audit.
+- Follow vanilla class names and component layouts for all standard roles (`Worker`, `CitizenSoldier`, `Cavalry`, `Archer`, `Champion`, `Hero`, `Siege`, `Ship`, `House`, `CivCentre`, `ResourceTrickle`, etc.). Petra discovers content through these classes, so convention-compliant templates are AI-playable with no AI code. Deviating from vanilla classes is reserved for genuinely custom mechanics and must be listed as an AI gap.
 
 ### Exit criteria
 
@@ -162,14 +180,13 @@ Implement only the minimum playable content first:
 
 1. Lindon basic infantry and archer.
 2. Doriath basic infantry and conditional stealth prototype.
-3. Rohan scout, spearman, and rider.
-4. Mordor Snaga, Orc Warrior, and Orc Spearman.
-5. Moria Guardsman and tunnel placeholder.
-6. Gondor/Arnor shared recruit, spearman, and archer.
+3. Moria Guardsman and tunnel placeholder.
+4. Númenor recruit, spearman, archer, and naval units.
+5. Mordor Snaga, Orc Warrior, and Orc Spearman.
 
 ### Vertical-slice acceptance criteria
 
-- Six civilizations can start a match.
+- Five civilizations can start a match.
 - Workers gather all required resources.
 - Each faction can reach Town phase.
 - Each faction can produce a basic military force.
@@ -208,21 +225,17 @@ Start with infantry, archer, dock, and Gift of the West. Add Swan Ships only aft
 
 Start with forest camouflage on stationary units. Add Girdle of Melian as a local territory effect after detection and stealth behavior is tested.
 
-#### Rohan
-
-Start with scout, spearman, rider, and pasture. Add stakes and Field Camps next. Implement Éored Wedge only after ordinary cavalry charge behavior is stable.
-
 #### Mordor
 
-Start with Snaga workers and Orc mass production. Add Wargs and Crebain. Implement Blighted Desolation and the All-Seeing Eye as separate prototypes.
+Slice implemented: Snaga workers (only gatherers; military gather-disabled), Orc Warrior/Spearman/Archer, Variag Rider (hired citizen-cavalry archer at the CC — no stable, no Wargs), Crebain (one fast, non-attacking flying scout flock; standard vision does not reveal Doriath camouflage), Black Uruk and Olog-hai champions (Morgul Dread aura), hero trio Sauron/Gothmog (Fury)/Khamûl (Hunt) at the Fortress, Grond champion ram + catapult at the War Foundry, dual-mode Mountain Troll, Snaga Caravan trader, Orc Watch Post (outpost) + Crude Lookout (sentry), full structure set plus Barad-dûr wonder (explicit Wonder classes, City-phase, single-build; lighthouse stand-in art). Blighted Desolation v2 is territory-wide: a scripted component on CC/Black Fortress/Watch-crag/Barad-dûr penalizes enemy gather speed across all Mordor territory plus spillover, non-stacking, Mordor-immune, with a visible status icon. All-Seeing Eye implemented search-only (auto-cast waypoint seers) but not yet live-fired — needs a City-phase playtest.
 
 #### Moria
 
 Start with durable infantry and deep mining. Implement tunnels as a separate prototype before making them central to the faction's build order.
 
-#### Gondor & Arnor
+#### Númenor
 
-Implement the shared Phase I roster first. Add the Phase II branch choice only after the shared faction is playable. Lock access to incompatible branch upgrades.
+Implemented. Recruit, spearman, archer, guard, coast guard, champions, and naval units are in; civ bonuses (Blessing of the West, Great Houses, Fortified Havens) are auto-researched stat techs. No scripted active mechanic is required for the slice.
 
 ## 9. Custom mechanic prototypes
 
@@ -253,15 +266,14 @@ Each prototype must have a minimal test map, debug output, fallback, and accepta
 
 ### Mordor All-Seeing Eye
 
-Preferred behavior:
+Search-only (no global map reveal — decided: Sauron's attention is finite per lore, and the engine exposes no shroud-reveal script API):
 
-1. Approximately 5 seconds of global reveal.
-2. Approximately 30–45 seconds of regional search.
-3. Long cooldown around 8 minutes.
-4. Warning and visual feedback for all players.
-5. Barad-dûr must remain standing.
+1. Approximately 30–45 seconds of regional search via short-lived seer entities spawned/destroyed on a fixed waypoint schedule (no movement code, no pathing or water issues).
+2. Waypoints prioritize enemy heroes, fortresses, civic centres, and wonders, computed with a fixed priority sort at cast time (deterministic, no RNG needed).
+3. Long cooldown around 8 minutes, global warning for all players, Barad-dûr must remain standing (gating re-checked; handles destroy/rebuild).
+4. Auto-cast cycle (no command-button GUI work in v1); manual trigger deferred until the auto-cast version proves fun.
 
-Fallback: approximately 15 seconds of global reveal with an 8–10-minute cooldown if a moving search cannot be implemented reliably.
+Fallbacks, in order: sweep-only with fewer waypoints → visible low-HP search seers (shoot-the-spies counterplay) → optional dread aura (enemy soldiers under the gaze fight slightly worse) and Crebain-vision synergy while the Eye is active.
 
 ### Moria tunnels
 
@@ -346,7 +358,7 @@ Do not implement a technology that only exists to grant an undocumented global s
 - Unit production priorities.
 - Response to cavalry, siege, stealth, and monsters.
 - Use of faction mechanics.
-- Branch selection for Gondor/Arnor.
+- Naval production priorities for Númenor.
 
 ### Maps
 
@@ -405,14 +417,19 @@ Every issue should include:
 
 ## 14. Balance process
 
-1. Use `docs/balance/v0.2-active-targets.md` as the initial target.
+1. Use `docs/balance/unit-balance.md` as the current baseline for the five
+   implemented factions; add future factions only when their role targets are
+   defined.
 2. Implement one role or mechanic at a time.
 3. Test without heroes and wonders first.
 4. Compare equal-resource and equal-population results.
 5. Adjust the smallest number of variables possible.
-6. Record the change and reason in `docs/balance/changelog.md`.
-7. Create v0.3 only after the first implementation playtest cycle.
-8. Never silently change a roster value in code without updating the design document.
+6. Record the change, reason, affected templates, and verification status in
+   the version history of `docs/balance/unit-balance.md`.
+7. Use v1.1 for the next balance revision; do not revive the retired v0.x
+   target documents.
+8. Never silently change a roster value in code without updating the canonical
+   balance specification.
 
 ## 15. Suggested execution milestones
 
@@ -424,9 +441,9 @@ Deliverables: metadata, minimal test unit, clean logs, documented launch instruc
 
 Deliverables: resources, workers, phases, houses, basic buildings, shared unit templates.
 
-### Milestone 3 — Six-faction skeleton
+### Milestone 3 — Five-faction skeleton
 
-Deliverables: six civilizations start, gather, build, phase, and train basic units.
+Deliverables: five civilizations start, gather, build, phase, and train basic units.
 
 ### Milestone 4 — First-wave vertical slice
 
@@ -448,9 +465,9 @@ The next contributor should not begin by adding random units. They should:
 - read `docs/design-principles.md`;
 - read `docs/design-decisions.md`;
 - read `docs/first-playable-factions.md`;
-- read `docs/balance/cross-faction-audit.md`;
-- read `docs/balance/changelog.md`;
-- read `docs/balance/v0.2-active-targets.md`;
+- read `docs/balance/unit-balance.md`;
+- consult `docs/balance/cross-faction-audit.md` only as an explicitly
+  historical qualitative review, not as a verified balance ranking;
 - read the relevant faction and roster files;
 - confirm the target 0 A.D. version;
 - create the minimal loading mod;
@@ -462,7 +479,7 @@ The next contributor should not begin by adding random units. They should:
 
 The first public vertical slice is complete only when:
 
-- six factions are selectable and playable;
+- five factions are selectable and playable;
 - all factions use the standard resource and phase loop;
 - each faction has at least one recognizable signature mechanic;
 - all implemented mechanics have visible counterplay;
@@ -477,7 +494,7 @@ The first public vertical slice is complete only when:
 
 ## 18. Known risks and fallback decisions
 
-- If a moving reveal cone is unreliable, use a timed global reveal.
+- The Eye of Sauron is search-only by decision (no global reveal). Implement it as a fixed waypoint schedule of short-lived seer entities; if scheduling proves unreliable, reduce waypoint count before touching anything else.
 - If Mûmakil howdah fire while moving is unreliable, use static firing or ordinary transport behavior.
 - If tunnel traversal requires engine changes, begin with linked transport points or a temporary movement prototype.
 - If territory-based worker penalties are too expensive to calculate, use aura regions around major structures as a controlled approximation.
@@ -496,8 +513,8 @@ The implementation owner is expected to return:
 - unsupported feature list;
 - test results;
 - known bugs;
-- balance changes from v0.2;
-- updated changelog;
+- balance changes since the v1.0 baseline;
+- updated canonical balance version history;
 - determinism test results and any RNG limitations;
 - next milestone estimate.
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_trader">
+  <Identity>
+    <Civ>mordor</Civ>
+    <GenericName>Snaga Caravan</GenericName>
+    <SpecificName>Thrall-train of Lugbúrz</SpecificName>
+    <Icon>units/hele/support_trader.png</Icon>
+    <Tooltip>Slave-driven pack train. Mordor's only trader — fat, slow, and worth raiding.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <!-- TODO: proper slave caravan; reuses a vanilla trader for the slice. -->
+    <Actor>units/hellenes/trader.xml</Actor>
+  </VisualActor>
+</Entity>

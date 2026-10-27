@@ -1,0 +1,17 @@
+{
+	"genericName": "Green-weave Training",
+	"description": "The Green-elves of Doriath learn to move between trunks without stirring a leaf, and to see all while being seen by none.",
+	"cost": {
+		"wood": 100,
+		"metal": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "doriath" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "sentries.png",
+	"researchTime": 40,
+	"tooltip": "Scouts +15% vision.",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.15, "affects": "Scout" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

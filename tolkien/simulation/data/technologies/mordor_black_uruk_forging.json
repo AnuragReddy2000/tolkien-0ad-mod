@@ -1,0 +1,17 @@
+{
+	"genericName": "Black Uruk Forging",
+	"description": "The Uruks of Lugburz are bred and mailed in the Black Mountain itself, and their harness turns aside the blows that kill lesser Orcs.",
+	"cost": {
+		"food": 200,
+		"metal": 300
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "mordor" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_plates_iron.png",
+	"researchTime": 45,
+	"tooltip": "Orc champions +15% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.15, "affects": "Orc Champion" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

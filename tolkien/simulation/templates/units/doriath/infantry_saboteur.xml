@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/menegroth
+      structures/{civ}/hunters_cache
+      structures/{civ}/ent_grove
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Attack>
+    <Melee>
+      <AttackName>Demolition</AttackName>
+      <Damage>
+        <Hack>5</Hack>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2500</RepeatTime>
+      <Bonuses>
+        <BonusStructures>
+          <Classes>Structure</Classes>
+          <Multiplier>10</Multiplier>
+        </BonusStructures>
+      </Bonuses>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Field Organic</RestrictedClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>70</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>20</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SelectionGroupName>units/doriath/infantry_saboteur</SelectionGroupName>
+    <GenericName>Doriath Saboteur</GenericName>
+    <SpecificName>Shadow of the Girdle</SpecificName>
+    <Icon>units/athen/infantry_spearman.png</Icon>
+    <Tooltip>Fortress demolition specialist. Devastating charges against structures; cannot fight units. Limited forest stealth.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/doriath/infantry_saboteur_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>2</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <Visibility>
+    <Camouflage>
+      <StationaryDelay>3000</StationaryDelay>
+      <ForestRadius>10</ForestRadius>
+      <MinTrees>4</MinTrees>
+      <DetectRadius>12</DetectRadius>
+      <GirdleDetectRadius>6</GirdleDetectRadius>
+    </Camouflage>
+  </Visibility>
+  <VisualActor>
+    <Actor>units/athenians/infantry_spearman_a.xml</Actor>
+  </VisualActor>
+</Entity>

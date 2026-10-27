@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>14</Hack>
+      </Damage>
+      <RepeatTime>750</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>22</BuildTime>
+    <Resources>
+      <food>90</food>
+      <wood>60</wood>
+      <stone>0</stone>
+      <metal>90</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>220</Max>
+  </Health>
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/infantry_guard_king</SelectionGroupName>
+    <GenericName>Númenórean Royal Guard</GenericName>
+    <SpecificName>Guard of the King's Tower</SpecificName>
+    <Tooltip>Slow, unbreakable anchor of the Númenórean line. Expensive to replace.</Tooltip>
+    <Icon>units/athen/champion_infantry.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>7</Hack>
+        <Pierce>7</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>8.1</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/romans/infantry_swordsman_f.xml</Actor>
+  </VisualActor>
+</Entity>

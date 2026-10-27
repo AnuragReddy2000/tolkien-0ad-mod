@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_wonder">
+  <Identity>
+    <Civ>moria</Civ>
+    <GenericName>Deep Vaults</GenericName>
+    <SpecificName>The Dwarrowdelf</SpecificName>
+    <Classes datatype="tokens">CivSpecific ConquestCritical Wonder</Classes>
+    <Icon>structures/wonder.png</Icon>
+    <Tooltip>Deep infrastructure: while it stands, every Moria structure gains +50% health and is far slower to capture. Raze it to break the Vaults.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Footprint>
+    <Square width="29.0" depth="59.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <Obstruction>
+    <Static width="27.0" depth="57.0"/>
+  </Obstruction>
+  <VisualActor>
+    <!-- Carthaginian Temple of Ba'al Hammon actor (trees pruned out of the
+         actor file): reads as a pillared vault-hall, not a fortress.
+         Footprint/obstruction match the vanilla Cart wonder template.
+         FoundationActor is explicit (not inherited): the wonder must show
+         the 8x15 scaffold matching this footprint while builders work it. -->
+    <Actor>structures/moria/wonder.xml</Actor>
+    <FoundationActor>structures/fndn_8x15.xml</FoundationActor>
+  </VisualActor>
+  <!-- While this wonder stands, the owner's structures are hardened (see
+       Dwarrowdelf.js). Multipliers live here so balance is XML-driven. -->
+  <Dwarrowdelf>
+    <HealthMultiply>1.5</HealthMultiply>
+    <CapturePointsMultiply>2</CapturePointsMultiply>
+    <CaptureRegenMultiply>4</CaptureRegenMultiply>
+  </Dwarrowdelf>
+</Entity>

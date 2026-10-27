@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_melee_spearman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>4.5</Hack>
+        <Pierce>3.5</Pierce>
+      </Damage>
+      <RepeatTime>1000</RepeatTime>
+      <Bonuses>
+        <BonusCavalry>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.5</Multiplier>
+        </BonusCavalry>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Promotion>
+    <Entity>units/numenor/cavalry_scout_a</Entity>
+  </Promotion>
+  <Cost>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>80</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>5</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>110</Max>
+  </Health>
+  <Identity>
+    <Civ>numenor</Civ>
+    <Classes datatype="tokens">Human FastMoving CitizenSoldier</Classes>
+    <VisibleClasses datatype="tokens">Spearman</VisibleClasses>
+    <SelectionGroupName>units/numenor/cavalry_scout</SelectionGroupName>
+    <GenericName>Númenórean Scout</GenericName>
+    <SpecificName>King's Messenger</SpecificName>
+    <Icon>units/pers/cavalry_spearman.png</Icon>
+    <Tooltip>Fast messenger and scout with 2.5x damage versus cavalry. Stables never advance past scouting.</Tooltip>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>13.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>95</Range>
+  </Vision>
+  <VisualActor>
+    <!-- TODO: proper Númenórean horseman; reuses a vanilla horseman for the slice. -->
+    <Actor>units/romans/cavalry_spearman_a_m.xml</Actor>
+  </VisualActor>
+</Entity>

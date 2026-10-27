@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_stonethrower">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Crush>75</Crush>
+      </Damage>
+      <MaxRange>180</MaxRange>
+      <RepeatTime>5000</RepeatTime>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>1.5</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Crush>40</Crush>
+        </Damage>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <food>0</food>
+      <wood>100</wood>
+      <stone>0</stone>
+      <metal>100</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>220</Max>
+  </Health>
+  <!-- Pack disabled for v1: the stonethrower base's Time-only Pack block is
+       completed by packed/unpacked child pairs in vanilla; with no packed
+       variant of its own, the catapult stays unpacked — mobile and able to
+       fire with no pack dance. -->
+  <Pack disable=""/>
+  <Identity>
+    <Civ>mordor</Civ>
+    <SelectionGroupName>units/mordor/siege_catapult</SelectionGroupName>
+    <GenericName>Siege Catapult</GenericName>
+    <SpecificName>Engine of the Iron-works</SpecificName>
+    <Icon>units/hele/siege_lithobolos.png</Icon>
+    <Tooltip>Area siege; weak if reached. Needs spotters at full range.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>5</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>6.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/hellenes/siege_lithobolos_med.xml</Actor>
+  </VisualActor>
+</Entity>

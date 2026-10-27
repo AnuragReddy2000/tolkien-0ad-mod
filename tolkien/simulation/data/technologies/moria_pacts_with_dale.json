@@ -1,0 +1,18 @@
+{
+	"genericName": "Pacts with Dale",
+	"description": "The Dwarves gave up the plough for the pick and the forge, and the grain of Dale and Esgaroth comes up the Running River in exchange for Khazad craft and steel.",
+	"cost": {
+		"wood": 150,
+		"metal": 150
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "moria" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "trade_caravan.png",
+	"researchTime": 40,
+	"tooltip": "Traders +15% trade gain (take it in food).",
+	"modifications": [
+		{ "value": "Trader/GainMultiplier", "multiply": 1.15 }
+	],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

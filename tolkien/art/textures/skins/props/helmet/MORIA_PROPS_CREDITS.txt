@@ -1,0 +1,6 @@
+`moria_crest.png`, `moria_crown.png`, and `moria_horn.png` are project-made
+procedural materials for the corresponding custom Moria props. Their geometry
+and upstream asset details are documented in the adjacent mesh
+`_CREDITS.txt` files.
+`erebor_helm_gold.png` is a recolored derivative of `erebor_helm.png`, whose
+source and license are recorded in `art/meshes/props/new/erebor_helm_CREDITS.txt`.

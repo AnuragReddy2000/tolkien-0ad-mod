@@ -1,0 +1,7 @@
+Derivative of 'The Eye Of Sauron (Lord of the Rings)' by Yanez Designs, CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/the-eye-of-sauron-lord-of-the-rings-fadecd2a323b47dab09f7e27402e521d
+Changes: baked node transforms, kept crown (tower Z>140) + eye, scaled 0.114x and seated
+for the Barad-dur lighthouse fusion; single material with new 128px palette texture
+(basalt / glowing red / pupil black). Base shaft: 0 A.D. public
+ptol_lighthouse mesh, Copyright (C) 2009 Wildfire Games, CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/

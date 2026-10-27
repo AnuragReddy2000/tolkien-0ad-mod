@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Unit Organic"],
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 1 }
+	],
+	"auraName": "Healing of the Havens",
+	"auraDescription": "Idle organic units +1 health regeneration per second near the Fortress. Units in combat do not regenerate.",
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

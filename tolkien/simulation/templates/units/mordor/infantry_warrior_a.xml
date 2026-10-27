@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/mordor/infantry_warrior">
+  <Identity>
+    <Rank>Advanced</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/mordor/infantry_warrior_e</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/mordor/orc_warrior_a.xml</Actor>
+  </VisualActor>
+</Entity>

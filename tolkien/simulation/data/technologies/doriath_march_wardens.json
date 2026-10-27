@@ -1,0 +1,16 @@
+{
+	"genericName": "March-wardens of Doriath",
+	"description": "The March-wardens settle the borders of the guarded kingdom, raising their halls swift as a thought along the marches.",
+	"cost": {
+		"wood": 100
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "doriath" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "tenement.png",
+	"researchTime": 30,
+	"tooltip": "Houses -25% build time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75, "affects": "House" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

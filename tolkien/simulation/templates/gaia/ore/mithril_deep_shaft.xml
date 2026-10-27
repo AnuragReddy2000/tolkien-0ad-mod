@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_gaia_ore">
+  <Identity>
+    <GenericName>Deep Mithril Shaft</GenericName>
+    <Tooltip>Dwarven deep-workings: this vein never truly runs dry, but it yields only half the normal rate. Hold the ground around it.</Tooltip>
+  </Identity>
+  <ResourceSupply>
+    <Max>50000</Max>
+    <Yield>0.5</Yield>
+  </ResourceSupply>
+  <VisualActor>
+    <!-- Brazier-lit worked mine: never mistaken for a normal outcrop. -->
+    <Actor>geology/deep_shaft.xml</Actor>
+  </VisualActor>
+</Entity>

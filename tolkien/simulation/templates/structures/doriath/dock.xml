@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_dock">
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Coastal Haven</SpecificName>
+  </Identity>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/ship_fishing
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/doriath/dock.xml</Actor>
+  </VisualActor>
+</Entity>

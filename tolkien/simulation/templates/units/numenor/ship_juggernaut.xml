@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_warship_arrow">
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <food>0</food>
+      <wood>250</wood>
+      <stone>0</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1600</Max>
+  </Health>
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/ship_juggernaut</SelectionGroupName>
+    <GenericName>Juggernaut Warship</GenericName>
+    <SpecificName>Great Ship of the King's Fleet</SpecificName>
+    <Tooltip>Phase III heavy warship. Strong vs ships and coastal structures; slow, weak vs fireships, focus fire, and maneuver. Pairs with Ar-Pharazôn naval aura.</Tooltip>
+    <Icon>units/hele/ship_arrow.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed>10.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <!-- TODO: proper great ship; reuses the trireme hull for the slice. -->
+    <Actor>structures/athenians/trireme.xml</Actor>
+  </VisualActor>
+</Entity>

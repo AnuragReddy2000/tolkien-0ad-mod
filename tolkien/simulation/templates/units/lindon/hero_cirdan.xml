@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Auras datatype="tokens">
+    units/lindon_cirdan_sea_lord
+    units/lindon_cirdan_haven_master
+  </Auras>
+  <Cost>
+    <Resources>
+      <food>200</food>
+      <wood>200</wood>
+      <stone>0</stone>
+      <metal>200</metal>
+</Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/hero_cirdan</SelectionGroupName>
+    <GenericName>Círdan</GenericName>
+    <SpecificName>Círdan the Shipwright</SpecificName>
+    <Tooltip>Naval hero. Ships sail faster and build sooner; nearby ships carry more and endure more. One hero per match.</Tooltip>
+    <Icon>units/athen/hero_themistocles.png</Icon>
+  </Identity>
+  <TrainingRestrictions>
+    <Category>Hero</Category>
+  </TrainingRestrictions>
+  <VisualActor>
+    <!-- TODO: proper Elven shipwright; reuses a vanilla naval hero for the slice. -->
+    <Actor>units/seleucids/hero_infantry_swordsman_antiochus_III.xml</Actor>
+  </VisualActor>
+</Entity>

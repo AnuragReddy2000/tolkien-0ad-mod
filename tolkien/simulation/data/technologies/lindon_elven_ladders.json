@@ -1,0 +1,17 @@
+{
+	"genericName": "Elven Ladders",
+	"description": "Elven towers rise taller than any siege-ladder can reach, and their crests carry guards that never tire.",
+	"cost": {
+		"stone": 200,
+		"metal": 200
+	},
+	"requirements": { "all": [{ "tech": "phase_city" }, { "civ": "lindon" }] },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "crenelations.png",
+	"researchTime": 60,
+	"tooltip": "Fortresses and Stone Towers +15% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.15, "affects": "Fortress StoneTower" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

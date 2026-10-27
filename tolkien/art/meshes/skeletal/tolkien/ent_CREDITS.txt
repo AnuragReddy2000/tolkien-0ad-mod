@@ -1,0 +1,4 @@
+Derivative of 'Treeman' by DJMaesen (@bumstrum), CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/treeman-e3a094316a8c4820a94d271afffe497c
+Changes: decimated ~8.6k -> ~5.5k tris, rigged to stock 0 A.D. Biped (art/skeletons/biped.xml), rescaled ~2.0x human, 512px baseTex.
+Custom tall idle + walk + run (biped/ent_*.dae); melee/death/promotion stock.

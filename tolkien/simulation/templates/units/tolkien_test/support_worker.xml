@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_civilian">
+  <Identity>
+    <Civ>tolkien_test</Civ>
+    <GenericName>Test Worker</GenericName>
+    <SpecificName>Test Worker</SpecificName>
+    <Icon>units/athen/support_civilian.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/citizen_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>

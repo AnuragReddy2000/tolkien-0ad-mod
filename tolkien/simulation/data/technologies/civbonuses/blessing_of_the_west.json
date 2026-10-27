@@ -1,0 +1,12 @@
+{
+	"genericName": "Blessing of the West",
+	"autoResearch": true,
+	"description": "The Valar blessed the Edain, and the Númenóreans inherited strength and long life beyond other Men. This is the elite edge of the Dúnedain — their units' hit points are built to the blessed baseline, and this blessing lifts them a little further.",
+	"requirements": { "civ": "numenor" },
+	"requirementsTooltip": "Númenor civilization bonus (automatic).",
+	"icon": "shields_generic_silver.png",
+	"tooltip": "Númenórean Infantry +5% health. The Dúnedain remain mortal Men: no other stats are raised.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.05, "affects": "Infantry !Hero" }
+	]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Weaker than Gondor/Moria stone by design: fragile-but-prepared woodland
+     identity. HP tuning deferred to the first balance playtest. -->
+<Entity parent="template_wallset">
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Girdle Wall</SpecificName>
+  </Identity>
+  <WallSet>
+    <Templates>
+      <Tower>structures/doriath/wall_tower</Tower>
+      <Gate>structures/doriath/wall_gate</Gate>
+      <WallLong>structures/doriath/wall_long</WallLong>
+      <WallMedium>structures/doriath/wall_medium</WallMedium>
+      <WallShort>structures/doriath/wall_short</WallShort>
+    </Templates>
+    <MaxTowerOverlap>0.90</MaxTowerOverlap>
+    <MinTowerOverlap>0.05</MinTowerOverlap>
+  </WallSet>
+</Entity>

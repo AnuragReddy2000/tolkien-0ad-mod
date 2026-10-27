@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged_archer">
+  <!-- Variag riders of Khand: hired Men, not Orcs. No Orc token, so the
+       Orc-class auras (Gothmog's Fury, Khamûl's Hunt) do not ride with them. -->
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>7</Pierce>
+      </Damage>
+      <MaxRange>50</MaxRange>
+      <RepeatTime>1200</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>90</food>
+      <wood>50</wood>
+      <stone>0</stone>
+      <metal>10</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>110</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <Classes datatype="tokens">Human FastMoving CitizenSoldier</Classes>
+    <VisibleClasses datatype="tokens">Archer</VisibleClasses>
+    <SelectionGroupName>units/mordor/cavalry_variag_rider</SelectionGroupName>
+    <GenericName>Variag Rider</GenericName>
+    <SpecificName>Variag Mercenary of Khand</SpecificName>
+    <Icon>units/mace/cavalry_spearman_merc.png</Icon>
+    <Tooltip>Hired horse archer from Khand — Mordor's only cavalry. Skirmishes with arrows; weak vs spears, formations, and forts.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/mordor/cavalry_variag_rider_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>1</Pierce>
+        <Crush>15</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <!-- TODO: proper Variag look; reuses a vanilla horse archer for the slice. -->
+    <Actor>units/persians/cavalry_archer_b_m.xml</Actor>
+  </VisualActor>
+</Entity>

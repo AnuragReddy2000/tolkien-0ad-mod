@@ -1,0 +1,12 @@
+{
+	"genericName": "Great Houses of the Dúnedain",
+	"autoResearch": true,
+	"description": "The great houses of the Dúnedain settled Númenor in ordered realms, settling and defending the land with disciplined efficiency.",
+	"requirements": { "civ": "numenor" },
+	"requirementsTooltip": "Númenor civilization bonus (automatic).",
+	"icon": "population.png",
+	"tooltip": "Houses support +10% population. Númenor's infrastructure is strong, but its numbers are not.",
+	"modifications": [
+		{ "value": "Population/Bonus", "multiply": 1.1, "affects": "House" }
+	]
+}

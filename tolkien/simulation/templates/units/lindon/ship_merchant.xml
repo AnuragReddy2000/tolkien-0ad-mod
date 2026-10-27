@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_merchant">
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>120</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <SelectionGroupName>units/lindon/ship_merchant</SelectionGroupName>
+    <GenericName>Merchant Ship</GenericName>
+    <SpecificName>Grey Havens Trader</SpecificName>
+    <Tooltip>Trade between docks. Garrison a Trader aboard for additional profit. Sturdier than ordinary merchantmen, but still no warship.</Tooltip>
+    <Icon>units/hele/ship_merchant.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/hellenes/merchant.xml</Actor>
+  </VisualActor>
+</Entity>

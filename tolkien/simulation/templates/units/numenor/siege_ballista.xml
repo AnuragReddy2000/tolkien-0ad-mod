@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_boltshooter">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>60</Pierce>
+      </Damage>
+      <MaxRange>185</MaxRange>
+      <MinRange>15</MinRange>
+      <PrepareTime>2000</PrepareTime>
+      <RepeatTime>5000</RepeatTime>
+      <Projectile>
+        <Speed>180</Speed>
+        <Spread>1</Spread>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human Siege Mechanical Ship</PreferredClasses>
+      <Splash>
+        <Shape>Linear</Shape>
+        <Range>9</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Pierce>25</Pierce>
+        </Damage>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <food>0</food>
+      <wood>150</wood>
+      <stone>0</stone>
+      <metal>150</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>220</Max>
+  </Health>
+  <!-- Pack disabled for v1: stays unpacked, mobile and able to fire, like the Mordor catapult. -->
+  <Pack disable=""/>
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/siege_ballista</SelectionGroupName>
+    <GenericName>Steel-Bow Ballista</GenericName>
+    <SpecificName>Engine of the King's Warworks</SpecificName>
+    <Icon>units/rome/siege_ballista.png</Icon>
+    <Tooltip>Long-range precision engine; greater range and velocity than standard bolt-shooters. Weak if reached.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>10</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>6.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/romans/siege_ballista_med.xml</Actor>
+  </VisualActor>
+</Entity>

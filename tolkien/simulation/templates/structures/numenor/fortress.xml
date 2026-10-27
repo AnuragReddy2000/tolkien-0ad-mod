@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Identity>
+    <Civ>numenor</Civ>
+    <Classes datatype="tokens">CivSpecific</Classes>
+    <SpecificName>Fortress of Andúnië</SpecificName>
+  </Identity>
+  <Researcher>
+    <Technologies datatype="tokens">
+      numenor_citadel_of_armenelos
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <!-- Champions + heroes. Basic infantry comes from the Barracks. -->
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_archer
+      units/{civ}/infantry_guard_king
+      units/{civ}/hero_elendil
+      units/{civ}/hero_isildur
+      units/{civ}/hero_pharazon
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/athenians/fortress.xml</Actor>
+  </VisualActor>
+</Entity>

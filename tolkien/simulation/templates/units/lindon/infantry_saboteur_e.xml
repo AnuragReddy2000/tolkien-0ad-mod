@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/lindon/infantry_saboteur_a">
+  <Identity>
+    <Rank>Elite</Rank>
+  </Identity>
+  <Promotion>
+    <Entity>units/lindon/champion_infantry</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/lindon/saboteur_e.xml</Actor>
+  </VisualActor>
+</Entity>

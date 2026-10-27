@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Ship"],
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 0.5 }
+	],
+	"auraName": "Havens' Care",
+	"auraDescription": "Idle Ships +0.5 health regeneration per second near the Dock. Ships in combat do not regenerate.",
+	"overlayIcon": "art/textures/ui/session/auras/repair.png"
+}

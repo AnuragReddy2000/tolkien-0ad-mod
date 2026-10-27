@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>22</Hack>
+      </Damage>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/doriath_thingol_command
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>200</food>
+      <wood>150</wood>
+      <stone>0</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SelectionGroupName>units/doriath/hero_thingol</SelectionGroupName>
+    <GenericName>Thingol</GenericName>
+    <SpecificName>Elu Thingol of Doriath</SpecificName>
+    <Icon>units/gaul/hero_vercingetorix.png</Icon>
+    <Tooltip>Hero of Doriath. Nearby infantry fight harder at his command (+15% hack, local only). Strong, but not overtuned alone.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>12</Hack>
+        <Pierce>12</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <!-- Vercingetorix (foot sword, Gaulish): Celtic king look for the King of Doriath. -->
+    <Actor>units/gauls/hero_infantry_swordsman_vercingetorix.xml</Actor>
+  </VisualActor>
+</Entity>

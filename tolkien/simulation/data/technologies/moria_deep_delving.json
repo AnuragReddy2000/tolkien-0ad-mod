@@ -1,0 +1,19 @@
+{
+	"genericName": "Deep Delving",
+	"description": "The Khazad sink shafts deeper than any other kindred dares, and the deep veins pay them in stone and metal.",
+	"cost": {
+		"wood": 150,
+		"metal": 150
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "moria" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "mining_pickax.png",
+	"researchTime": 45,
+	"tooltip": "Workers +15% stone and metal gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/stone.stone", "multiply": 1.15 },
+		{ "value": "ResourceGatherer/Rates/metal.metal", "multiply": 1.15 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

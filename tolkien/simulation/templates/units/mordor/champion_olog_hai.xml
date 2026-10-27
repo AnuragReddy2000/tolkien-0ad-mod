@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <!-- Olog-hai: the troll-drums' champion breed. No Orc token — Gothmog's
+       Fury and Khamûl's Hunt do not drive it; its own Morgul Dread does. -->
+  <Attack>
+    <Melee>
+      <AttackName>Maul</AttackName>
+      <Damage>
+        <Hack>24</Hack>
+        <Crush>24</Crush>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+      <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>
+    </Melee>
+    <!-- Boulder-throw: champion artillery mode. The engine picks stanzas by
+         range, so it lobs boulders at distance and mauls up close. -->
+    <Ranged>
+      <AttackName>Hurl Boulder</AttackName>
+      <Damage>
+        <Crush>22</Crush>
+      </Damage>
+      <MaxRange>70</MaxRange>
+      <MinRange>12</MinRange>
+      <RepeatTime>3200</RepeatTime>
+      <Splash>
+        <Shape>Circular</Shape>
+        <Range>2</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Crush>12</Crush>
+        </Damage>
+      </Splash>
+      <PreferredClasses datatype="tokens">Unit Structure+!Ship</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+    units/morgul_dread
+  </Auras>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <food>200</food>
+      <wood>60</wood>
+      <stone>0</stone>
+      <metal>80</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="3.0" depth="3.0" />
+    <Height>8.0</Height>
+  </Footprint>
+  <StatusBars>
+    <HeightOffset>8.5</HeightOffset>
+  </StatusBars>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <Classes datatype="tokens">Human Champion Infantry Melee</Classes>
+    <VisibleClasses datatype="tokens">Melee Olog</VisibleClasses>
+    <SelectionGroupName>units/mordor/champion_olog_hai</SelectionGroupName>
+    <GenericName>Olog-hai</GenericName>
+    <SpecificName>Champion Troll of Udûn</SpecificName>
+    <Icon>units/mordor/infantry_troll.png</Icon>
+    <Tooltip>Champion troll. Hurls boulders at range, mauls up close, and nearby enemies attack slower in dread. Strong, not invincible — siege and focus fire answer it.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>8</Hack>
+        <Pierce>8</Pierce>
+        <Crush>20</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>7.5</WalkSpeed>
+    <PassabilityClass>large</PassabilityClass>
+  </UnitMotion>
+  <VisualActor>
+    <!-- TODO: proper Olog-hai look; reuses the Mountain Troll actor for the slice. -->
+    <Actor>units/mordor/infantry_troll.xml</Actor>
+  </VisualActor>
+</Entity>

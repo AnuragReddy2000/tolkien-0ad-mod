@@ -1,0 +1,3 @@
+Moria shaft icon: composite of the 0 A.D. public storehouse portrait and stone/metal resource badges, with a procedural sparkle.
+Source art copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/

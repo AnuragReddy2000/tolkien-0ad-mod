@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/menegroth
+      structures/{civ}/hunters_cache
+      structures/{civ}/ent_grove
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>10</Pierce>
+      </Damage>
+      <MaxRange>75</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>16</BuildTime>
+    <Resources>
+      <food>60</food>
+      <wood>40</wood>
+      <stone>0</stone>
+      <metal>10</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>115</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SelectionGroupName>units/doriath/infantry_sentinel</SelectionGroupName>
+    <GenericName>Doriath Sentinel</GenericName>
+    <SpecificName>Warden of the Egladil</SpecificName>
+    <Icon>units/pers/infantry_archer.png</Icon>
+    <Tooltip>Elite long-range support with exceptional sight. Fragile if caught in melee.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/doriath/infantry_sentinel_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>4</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/athenians/infantry_archer_e.xml</Actor>
+  </VisualActor>
+</Entity>

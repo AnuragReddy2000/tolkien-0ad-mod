@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/tolkien/erebor_dwarf_stout.dae</mesh>
+      <props>
+        <prop actor="props/units/heads/erebor_head.xml" attachpoint="head"/>
+        <prop actor="props/units/heads/erebor_beard.xml" attachpoint="head"/>
+        <prop actor="props/units/helmets/erebor_helm.xml" attachpoint="helmet"/>
+        <prop actor="props/units/weapons/axe_single.xml" attachpoint="weapon_R"/>
+      </props>
+      <textures>
+        <texture file="skeletal/tolkien/moria_iron_01.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/base_swordsman_2hand_relax.xml"/>
+    <variant file="biped/attack_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

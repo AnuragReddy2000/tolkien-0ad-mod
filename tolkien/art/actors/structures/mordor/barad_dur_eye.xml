@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="barad_dur_eye">
+      <mesh>structures/mordor/barad_dur_eye.dae</mesh>
+      <textures>
+        <texture file="structures/mordor/barad_dur_eye.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <!-- objectcolor: the Eye must stay blood-red under any player color. -->
+  <material>objectcolor_norm_spec.xml</material>
+</actor>

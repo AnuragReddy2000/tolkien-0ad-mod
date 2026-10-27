@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "multiply": 1.1 }
+	],
+	"auraName": "Guidance of Beleg",
+	"auraDescription": "Nearby Doriath Infantry +15% vision and +10% ranged damage under Beleg's guidance. Fades if he falls.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
+}

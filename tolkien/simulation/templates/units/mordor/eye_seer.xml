@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Attack disable=""/>
+  <Cost>
+    <BuildTime>1</BuildTime>
+    <Population>0</Population>
+    <Resources>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <Classes datatype="tokens">Unit Organic</Classes>
+    <GenericName>Gaze of the Eye</GenericName>
+    <SpecificName>Shadow of Barad-dûr</SpecificName>
+    <Icon>units/mordor/scout_crebain.png</Icon>
+    <Tooltip>The Eye searches here. Slay the shadow to blind this gaze early.</Tooltip>
+  </Identity>
+  <Looter disable=""/>
+  <Sound>
+    <SoundGroups>
+      <death>actor/fauna/death/death_animal_gen.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Vision>
+    <Range>175</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>fauna/crow.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_wall_gate">
+  <Identity>
+    <Civ>numenor</Civ>
+    <SpecificName>Númenórean Gate</SpecificName>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/athenians/wall_gate_door.xml</Actor>
+  </VisualActor>
+</Entity>

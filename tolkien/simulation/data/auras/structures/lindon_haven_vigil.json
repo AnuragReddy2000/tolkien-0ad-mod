@@ -1,0 +1,10 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Mariner"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "add": 2 }
+	],
+	"auraName": "Haven Vigil",
+	"auraDescription": "Mariners +2 melee hack near Docks and Swan Ships. Inland they fight at base strength."
+}

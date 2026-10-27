@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.1 }
+	],
+	"auraName": "Valour of Isildur",
+	"auraDescription": "Nearby Infantry +10% melee hack damage while Isildur stands. His finishing strike vs heroes is on his own blade (bonus vs Hero). Fades if he falls.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
+}

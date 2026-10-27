@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Worker"],
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/metal.ore", "multiply": 1.15 },
+		{ "value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.15 }
+	],
+	"auraName": "Providence of Fundin",
+	"auraDescription": "Nearby workers +15% stone and metal gather rate while Fundin stands.",
+	"stackable": false
+}

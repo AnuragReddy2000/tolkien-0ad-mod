@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>20</Hack>
+        <Crush>10</Crush>
+      </Damage>
+      <RepeatTime>1700</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/moria_durin_endurance
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>200</food>
+      <wood>0</wood>
+      <stone>100</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1100</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <SelectionGroupName>units/moria/hero_durin</SelectionGroupName>
+    <GenericName>Durin VI</GenericName>
+    <SpecificName>King of Khazad-dûm</SpecificName>
+    <Icon>units/pers/hero_darius.png</Icon>
+    <Tooltip>Deep-guard commander: nearby Infantry +20% health while he stands. One hero per match.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>12</Hack>
+        <Pierce>12</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>8.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moria/hero_durin.xml</Actor>
+  </VisualActor>
+</Entity>

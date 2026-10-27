@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>6</Hack>
+        <Pierce>0</Pierce>
+      </Damage>
+      <RepeatTime>750</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/barracks
+      structures/{civ}/workshop
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/barad_dur
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>30</food>
+      <wood>10</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>90</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <Classes datatype="tokens">Human CitizenSoldier Orc</Classes>
+    <VisibleClasses datatype="tokens">Swordsman Orc</VisibleClasses>
+    <SelectionGroupName>units/mordor/infantry_warrior</SelectionGroupName>
+    <GenericName>Orc Warrior</GenericName>
+    <SpecificName>Warrior of the Black Land</SpecificName>
+    <Icon>units/rome/infantry_swordsman.png</Icon>
+    <Tooltip>Cheap mass infantry. Trains 15% faster; loses 1v1 to quality troops.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/mordor/infantry_warrior_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>2</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable="" />
+  <UnitMotion>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mordor/orc_warrior.xml</Actor>
+  </VisualActor>
+</Entity>

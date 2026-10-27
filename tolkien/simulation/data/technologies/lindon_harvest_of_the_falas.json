@@ -1,0 +1,17 @@
+{
+	"genericName": "Harvest of the Falas",
+	"description": "The Falathrim of the Grey Havens read the tides as other men read fields, and their nets never come up empty.",
+	"cost": {
+		"wood": 150
+	},
+	"requirements": { "all": [{ "tech": "phase_town" }, { "civ": "lindon" }] },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "fishing_net.png",
+	"researchTime": 45,
+	"tooltip": "Fishing ships +25% fish gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.fish", "multiply": 1.25 }
+	],
+	"affects": ["FishingShip"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

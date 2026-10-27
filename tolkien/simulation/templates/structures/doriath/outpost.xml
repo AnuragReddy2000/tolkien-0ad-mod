@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_outpost">
+  <Identity>
+    <Civ>doriath</Civ>
+    <SpecificName>Enchanted Outpost</SpecificName>
+    <Tooltip>Pricier watch-post with deep forest vision. Extends the woodland mist; conceals nearby stationary allies. An information post, not a tower.</Tooltip>
+    <VisibleClasses datatype="tokens">Girdle</VisibleClasses>
+  </Identity>
+  <Auras datatype="tokens">
+    structures/doriath_outpost_mist
+  </Auras>
+  <Vision>
+    <Range>95</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/doriath/outpost.xml</Actor>
+  </VisualActor>
+</Entity>

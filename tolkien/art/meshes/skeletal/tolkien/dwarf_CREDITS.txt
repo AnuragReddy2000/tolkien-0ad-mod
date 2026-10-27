@@ -1,0 +1,5 @@
+Derivative of '3D model of dwarf' by The Kala Ce (@harishrbat987), CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/3d-model-of-dwarf-6a8f36db7c7a4cecb75c6634052ec598
+Changes: decimated ~461k -> ~8998 tris (iterative collapse), display-stand disc stripped, armour KEPT, rigged to stock 0 A.D. Biped (art/skeletons/biped.xml), rescaled 0.8x human (~3.1 game units), single material, 2048px atlas baseTex (one cell per part albedo).
+Deviation: hand faces repainted to face skin tone (forearm sleeves keep source leather; throat skin left authentic).
+Custom sturdy idle + retargeted walk/run (biped/dwarf_*.dae); melee/capture retargeted, death/promotion stock.

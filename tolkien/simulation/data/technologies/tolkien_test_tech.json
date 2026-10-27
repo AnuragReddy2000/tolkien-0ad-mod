@@ -1,0 +1,18 @@
+{
+	"genericName": "Test Craft",
+	"description": "Placeholder technology for Workstream A validation. Workers gather 10% faster.",
+	"cost": {
+		"food": 100,
+		"wood": 100
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "town_phase.png",
+	"researchTime": 20,
+	"tooltip": "Workers +10% gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/BaseSpeed", "multiply": 1.1 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

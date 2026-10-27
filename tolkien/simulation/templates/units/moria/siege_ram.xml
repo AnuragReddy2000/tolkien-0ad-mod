@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_ram">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Crush>80</Crush>
+      </Damage>
+      <MaxRange>6.5</MaxRange>
+      <PrepareTime>750</PrepareTime>
+      <RepeatTime>4000</RepeatTime>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Field Organic</RestrictedClasses>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Population>3</Population>
+    <Resources>
+      <food>0</food>
+      <wood>120</wood>
+      <stone>0</stone>
+      <metal>80</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>320</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <SelectionGroupName>units/moria/siege_ram</SelectionGroupName>
+    <GenericName>Steam Ram</GenericName>
+    <SpecificName>Iron Ram of Khazad-dûm</SpecificName>
+    <Icon>units/mace/siege_ram.png</Icon>
+    <Tooltip>Compact chokepoint ram; clears gates and tight passages. No open-air catapult. Weak if unescorted.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>50</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>6.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>structures/macedonians/siege_ram.xml</Actor>
+  </VisualActor>
+</Entity>

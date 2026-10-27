@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_civilian">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/stable
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/workshop
+      structures/{civ}/wonder
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Identity>
+    <Civ>numenor</Civ>
+    <GenericName>Númenórean Worker</GenericName>
+    <SpecificName>Shipwright's Folk</SpecificName>
+    <Icon>units/athen/support_civilian.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/romans/infantry_swordsman_servus.xml</Actor>
+  </VisualActor>
+</Entity>

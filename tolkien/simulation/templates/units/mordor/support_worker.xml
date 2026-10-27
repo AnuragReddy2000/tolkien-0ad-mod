@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_female_citizen">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>2</Hack>
+      </Damage>
+      <RepeatTime>2000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/barracks
+      structures/{civ}/workshop
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/barad_dur
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>7</BuildTime>
+    <Resources>
+      <food>35</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>55</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <GenericName>Snaga Slave</GenericName>
+    <SpecificName>Thrall of the Black Land</SpecificName>
+    <Icon>units/athen/support_civilian.png</Icon>
+    <Tooltip>Cheap worker; vulnerable. Mordor's only gatherer â€” protect it.</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/athenians/citizen_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>

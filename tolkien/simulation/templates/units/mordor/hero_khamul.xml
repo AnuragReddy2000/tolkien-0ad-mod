@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>26</Hack>
+      </Damage>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/mordor_khamul_raid
+    units/morgul_dread_hero
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>300</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>300</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1200</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <SelectionGroupName>units/mordor/hero_khamul</SelectionGroupName>
+    <GenericName>Khamûl</GenericName>
+    <SpecificName>The Black Easterling, Second of the Nine</SpecificName>
+    <Tooltip>Hero of Mordor. Leads the hunt: nearby Orcs move faster and strike harder; his Morgul Dread slows nearby enemy attacks.</Tooltip>
+    <Icon>units/mordor/hero_khamul.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion disable="" />
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>11</Hack>
+        <Pierce>9</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>13.0</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>100</Range>
+  </Vision>
+  <VisualActor>
+    <!-- TODO: proper Nazgûl look; reuses a vanilla horseman for the slice. -->
+    <Actor>units/britons/cavalry_swordsman_a_m.xml</Actor>
+  </VisualActor>
+</Entity>

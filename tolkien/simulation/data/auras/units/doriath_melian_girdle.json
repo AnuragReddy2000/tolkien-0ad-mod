@@ -1,0 +1,14 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affectedPlayers": ["Enemy"],
+	"affects": ["Unit"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 0.9 },
+		{ "value": "Vision/Range", "multiply": 0.9 }
+	],
+	"auraName": "Girdle of Melian",
+	"auraDescription": "Enemies near Melian wander lost: -10% movement speed and -10% vision. No stacking with the civic Girdle.",
+	"overlayIcon": "art/textures/ui/session/auras/fear.png",
+	"stackable": false
+}

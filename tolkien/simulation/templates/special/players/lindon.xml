@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>lindon</Civ>
+    <GenericName>Lindon</GenericName>
+    <History>The Grey Havens of Lindon are the last Elven realm in the west of Middle-earth, ruled by Gil-galad and sheltered by Círdan the Shipwright. Its warriors are few but disciplined, its ships unmatched, and its craft preserves the skill of the Noldor. Lindon wins prepared fights on coast and field, but cannot replace losses as quickly as younger, more numerous peoples.</History>
+    <Icon>emblems/emblem_athenians.png</Icon>
+  </Identity>
+  <!-- One hero alive at a time (vanilla Hero category): pick Cirdan, Gil-galad, or Elrond. -->
+  <EntityLimits>
+    <Limits>
+      <Hero>1</Hero>
+    </Limits>
+  </EntityLimits>
+  </Entity>

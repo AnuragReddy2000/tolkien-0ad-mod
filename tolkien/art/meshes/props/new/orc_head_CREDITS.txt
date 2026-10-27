@@ -1,0 +1,4 @@
+Derivative of the 0 A.D. public mesh meshes_props_new_dude_head.dae, reshaped
+with Orc features for the Mordor Orc head.
+Source art copyright (C) 2009 Wildfire Games; CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/

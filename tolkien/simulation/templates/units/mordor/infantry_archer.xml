@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>6</Pierce>
+      </Damage>
+      <MaxRange>55</MaxRange>
+      <RepeatTime>1250</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/barracks
+      structures/{civ}/workshop
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/barad_dur
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>35</food>
+      <wood>15</wood>
+      <stone>0</stone>
+      <metal>5</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>60</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <Classes datatype="tokens">Human CitizenSoldier Orc</Classes>
+    <VisibleClasses datatype="tokens">Archer Orc</VisibleClasses>
+    <SelectionGroupName>units/mordor/infantry_archer</SelectionGroupName>
+    <GenericName>Orc Archer</GenericName>
+    <SpecificName>Bow of the Ephel Duath</SpecificName>
+    <Icon>units/pers/infantry_archer.png</Icon>
+    <Tooltip>Cheap ranged pressure.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/mordor/infantry_archer_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable="" />
+  <UnitMotion>
+    <WalkSpeed>9.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>90</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/mordor/orc_archer.xml</Actor>
+  </VisualActor>
+</Entity>

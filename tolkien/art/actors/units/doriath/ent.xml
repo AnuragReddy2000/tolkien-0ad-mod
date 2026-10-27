@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rigged Treeman Ent (DJMaesen, CC-BY 4.0 - see ent_CREDITS.txt).
+     Mesh: skeletal/tolkien/ent.dae with stock Biped armature.
+     Skeleton: public art/skeletons/biped.xml (no custom skeleton needed).
+     Anims: custom tall idle + retargeted walk/run/melee/capture (biped/ent_*.dae). -->
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/tolkien/ent.dae</mesh>
+      <textures>
+        <texture file="skeletal/tolkien/ent_body.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/ent_relax.xml"/>
+    <variant file="biped/ent_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

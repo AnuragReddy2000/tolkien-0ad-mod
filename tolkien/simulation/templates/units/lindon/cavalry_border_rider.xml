@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>7.5</Pierce>
+      </Damage>
+      <MaxRange>55</MaxRange>
+      <RepeatTime>1100</RepeatTime>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>100</food>
+      <wood>50</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>lindon</Civ>
+    <Classes datatype="tokens">Human FastMoving CitizenSoldier</Classes>
+    <VisibleClasses datatype="tokens">Archer</VisibleClasses>
+    <SelectionGroupName>units/lindon/cavalry_border_rider</SelectionGroupName>
+    <GenericName>Border Rider</GenericName>
+    <SpecificName>Mithlond Border Rider</SpecificName>
+    <Icon>units/pers/cavalry_archer.png</Icon>
+    <Tooltip>Hit-and-run horse archer. Fast with a high fire rate, but lightly armored — loses any direct melee.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Promotion>
+    <Entity>units/lindon/cavalry_border_rider_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>12.5</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <!-- TODO: proper mounted Elf archer; reuses a vanilla horseman for the slice. -->
+    <Actor>units/persians/cavalry_archer_b_m.xml</Actor>
+  </VisualActor>
+</Entity>

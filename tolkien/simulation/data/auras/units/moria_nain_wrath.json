@@ -1,0 +1,12 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Infantry"],
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.15 },
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.2 }
+	],
+	"auraName": "Wrath of Nain",
+	"auraDescription": "Nearby Moria Infantry +15% hack, +20% crush. Simplified: the vs-structures-only condition has no engine path, so the crush applies universally nearby.",
+	"stackable": false
+}

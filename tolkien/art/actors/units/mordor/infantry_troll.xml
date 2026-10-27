@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rigged Cave Troll (Ole Gunnar Isager, CC-BY 4.0 - see troll_CREDITS.txt).
+     Mesh: skeletal/tolkien/troll.dae with stock Biped armature.
+     Skeleton: public art/skeletons/biped.xml (no custom skeleton needed).
+     Anims reused from public: idle/walk/run/melee via base_swordsman_2hand_relax. -->
+<actor version="1">
+  <castshadow/>
+  <group>
+    <variant frequency="1" name="Base">
+      <mesh>skeletal/tolkien/troll.dae</mesh>
+      <textures>
+        <texture file="skeletal/tolkien/troll_body.png" name="baseTex"/>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <group>
+    <variant file="biped/troll_relax.xml"/>
+    <variant file="biped/troll_capture.xml"/>
+    <variant file="biped/attack_slaughter.xml"/>
+    <variant file="biped/death_infantry.xml"/>
+  </group>
+  <group>
+    <variant>
+      <textures>
+        <texture file="default_norm.png" name="normTex"/>
+        <texture file="null_black.dds" name="specTex"/>
+      </textures>
+    </variant>
+  </group>
+  <material>player_trans_norm_spec.xml</material>
+</actor>

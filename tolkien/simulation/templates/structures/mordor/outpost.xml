@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_outpost">
+  <Identity>
+    <Civ>mordor</Civ>
+    <SpecificName>Orc Watch Post</SpecificName>
+    <Tooltip>Forward claim: grabs territory for the shadow and warns of approach. Blight flows through all Mordor ground.</Tooltip>
+  </Identity>
+  <VisualActor>
+    <!-- TODO: proper Orc watch post; reuses a vanilla outpost for the slice. -->
+    <Actor>structures/mordor/outpost.xml</Actor>
+  </VisualActor>
+</Entity>

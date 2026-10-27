@@ -1,0 +1,4 @@
+Derivative of 'Realistic 3D fantasy male elf warrior' by zaini.AI, CC-BY 4.0.
+Source: https://sketchfab.com/3d-models/realistic-3d-fantasy-male-elf-warrior-b40d56a51c574a6e8e09e001d3e7530f
+Changes: single-mesh source decimated ~10k -> ~4.5k tris (separate sword prop excluded if present, leather armour kept merged), rigged to stock 0 A.D. Biped (art/skeletons/biped.xml), rescaled ~1.05x human (tall slim elf), 512px baseTex.
+Custom tall idle + walk + run (biped/elf_*.dae); melee/capture retargeted stock.

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>13</Hack>
+        <Crush>8</Crush>
+      </Damage>
+      <RepeatTime>750</RepeatTime>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>24</BuildTime>
+    <Resources>
+      <food>80</food>
+      <wood>40</wood>
+      <stone>50</stone>
+      <metal>80</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>235</Max>
+  </Health>
+  <Identity>
+    <Civ>moria</Civ>
+    <Classes datatype="tokens">Human Champion Infantry Melee Swordsman</Classes>
+    <VisibleClasses datatype="tokens">Melee Swordsman</VisibleClasses>
+    <SelectionGroupName>units/moria/champion_vanguard</SelectionGroupName>
+    <GenericName>Mithril Vanguard</GenericName>
+    <SpecificName>Vanguard of the Deep Guard</SpecificName>
+    <Icon>units/athen/champion_infantry.png</Icon>
+    <Tooltip>Fortress elite: extreme hack/pierce, holds lines and breaks walls. Dies to siege, trampling, and focus fire.</Tooltip>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>7</Hack>
+        <Pierce>6</Pierce>
+        <Crush>20</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>7.8</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/moria/champion_vanguard.xml</Actor>
+  </VisualActor>
+</Entity>

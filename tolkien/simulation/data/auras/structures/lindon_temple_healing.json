@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 25,
+	"affects": ["Unit Organic"],
+	"modifications": [
+		{ "value": "Health/IdleRegenRate", "add": 0.75 }
+	],
+	"auraName": "Sanctuary's Grace",
+	"auraDescription": "Idle organic units +0.75 health regeneration per second near the Temple. Units in combat do not regenerate.",
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

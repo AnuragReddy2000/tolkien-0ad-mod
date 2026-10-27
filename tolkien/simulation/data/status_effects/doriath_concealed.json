@@ -1,0 +1,7 @@
+{
+	"applierTooltip": "This unit conceals itself in the forest while stationary.",
+	"code": "ConcealedDoriath",
+	"icon": "concealed",
+	"statusName": "Concealed",
+	"receiverTooltip": "Concealed by the forest while stationary. Revealed by moving, attacking, taking damage, or enemies coming close."
+}

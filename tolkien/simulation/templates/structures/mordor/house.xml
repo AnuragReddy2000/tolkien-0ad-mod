@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_house">
+  <Identity>
+    <Civ>mordor</Civ>
+    <SpecificName>Slave Quarters</SpecificName>
+  </Identity>
+  <Trainer disable=""/>
+  <VisualActor>
+    <Actor>structures/mordor/house.xml</Actor>
+  </VisualActor>
+</Entity>

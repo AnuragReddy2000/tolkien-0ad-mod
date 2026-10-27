@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_swordsman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>24</Hack>
+      </Damage>
+      <RepeatTime>1500</RepeatTime>
+      <Bonuses>
+        <BonusHeroes>
+          <Classes>Hero</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusHeroes>
+      </Bonuses>
+      <PreferredClasses datatype="tokens">Hero</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/numenor_isildur_valour
+  </Auras>
+  <Cost>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <food>200</food>
+      <wood>100</wood>
+      <stone>0</stone>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>1000</Max>
+  </Health>
+  <Identity>
+    <Civ>numenor</Civ>
+    <SelectionGroupName>units/numenor/hero_isildur</SelectionGroupName>
+    <GenericName>Isildur</GenericName>
+    <SpecificName>Isildur, Son of Elendil</SpecificName>
+    <Tooltip>Duelist. Finishing-strike bonus vs heroes (1.5x); nearby infantry +10% melee. Flat double-damage crit shelved — no engine crit path. One hero per match.</Tooltip>
+    <Icon>units/rome/hero_maximus.png</Icon>
+    <Requirements>
+      <Techs datatype="tokens">phase_city</Techs>
+    </Requirements>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>11</Hack>
+        <Pierce>11</Pierce>
+        <Crush>25</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <!-- TODO: proper Heir of Elendil; Brennus foot-sword verified in A28 public.zip. -->
+    <Actor>units/romans/hero_infantry_swordsman_maximus.xml</Actor>
+  </VisualActor>
+</Entity>

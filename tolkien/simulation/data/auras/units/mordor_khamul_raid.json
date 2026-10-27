@@ -1,0 +1,13 @@
+{
+	"type": "range",
+	"radius": 35,
+	"affects": ["Orc"],
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.05 },
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.1 }
+	],
+	"auraName": "Hunt of Khamûl",
+	"auraDescription": "Nearby Orcs +5% speed and +10% melee damage on the hunt. Heroes are unaffected by his fear. Fades if he falls.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png",
+	"stackable": false
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_ranged_archer">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/menegroth
+      structures/{civ}/hunters_cache
+      structures/{civ}/ent_grove
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Attack>
+    <Ranged>
+      <Damage>
+        <Pierce>5</Pierce>
+      </Damage>
+      <MaxRange>32</MaxRange>
+      <RepeatTime>1250</RepeatTime>
+      <Bonuses>
+        <BonusGame>
+          <Classes>Animal</Classes>
+          <Multiplier>4</Multiplier>
+        </BonusGame>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>35</food>
+      <wood>10</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>60</Max>
+  </Health>
+  <Identity>
+    <Civ>doriath</Civ>
+    <SelectionGroupName>units/doriath/infantry_scout</SelectionGroupName>
+    <GenericName>Green-weave Scout</GenericName>
+    <SpecificName>Sindarin Wayfinder</SpecificName>
+    <Icon>units/pers/infantry_archer.png</Icon>
+    <Tooltip>Fast foot scout. Invisible near trees while stationary and +10% faster in forest; deadly against wild game. Revealed by moving, attacking, damage, or nearby enemies.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/doriath/infantry_scout_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitMotion>
+    <WalkSpeed>11.0</WalkSpeed>
+  </UnitMotion>
+  <Visibility>
+    <Camouflage>
+      <StationaryDelay>3000</StationaryDelay>
+      <ForestRadius>10</ForestRadius>
+      <MinTrees>4</MinTrees>
+      <DetectRadius>12</DetectRadius>
+      <GirdleDetectRadius>6</GirdleDetectRadius>
+    </Camouflage>
+</Visibility>
+  <ForestAffinity>
+    <Modifiers>
+      <Stride>
+        <Paths datatype="tokens">UnitMotion/WalkSpeed</Paths>
+        <Multiply>1.1</Multiply>
+      </Stride>
+    </Modifiers>
+  </ForestAffinity>
+  <Vision>
+    <Range>85</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>units/athenians/infantry_archer_a.xml</Actor>
+  </VisualActor>
+</Entity>

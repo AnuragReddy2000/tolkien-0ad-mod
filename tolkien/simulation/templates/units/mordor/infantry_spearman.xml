@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_spearman">
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>3.5</Hack>
+        <Pierce>2.5</Pierce>
+      </Damage>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/barracks
+      structures/{civ}/workshop
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
+      structures/{civ}/barad_dur
+      structures/wallset_palisade
+      structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>35</food>
+      <wood>15</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Civ>mordor</Civ>
+    <Classes datatype="tokens">Human CitizenSoldier Orc</Classes>
+    <VisibleClasses datatype="tokens">Spearman Orc</VisibleClasses>
+    <SelectionGroupName>units/mordor/infantry_spearman</SelectionGroupName>
+    <GenericName>Orc Spearman</GenericName>
+    <SpecificName>Spear of the Morannon</SpecificName>
+    <Icon>units/athen/infantry_spearman.png</Icon>
+    <Tooltip>Counters: 2.5x vs Cavalry. Mass anti-cavalry.</Tooltip>
+  </Identity>
+  <Promotion>
+    <Entity>units/mordor/infantry_spearman_a</Entity>
+  </Promotion>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>2</Pierce>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable="" />
+  <UnitMotion>
+    <WalkSpeed>9.0</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/mordor/orc_spearman.xml</Actor>
+  </VisualActor>
+</Entity>

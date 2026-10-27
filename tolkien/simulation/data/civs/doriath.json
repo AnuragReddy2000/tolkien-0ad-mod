@@ -1,0 +1,157 @@
+{
+	"Code": "doriath",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Highland_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"Factions": [
+		{
+			"Name": "Doriath",
+			"Description": "The hidden Sindarin woodland realm of King Thingol and Melian. Doriath relies on concealment, ambush, and prepared forest ground; it is less comfortable in open-field battles.",
+			"Technologies": [
+				{
+					"Name": "Girdle of Melian",
+					"History": "Melian's girdle folds the mist about the Thousand Caves, and no foe may pass the thresholds of Thingol unseen.",
+					"Description": "Menegroth +33% health and +25% vision."
+				},
+				{
+					"Name": "Green-weave Training",
+					"History": "The Green-elves of Doriath learn to move between trunks without stirring a leaf, and to see all while being seen by none.",
+					"Description": "Scouts +15% vision."
+				},
+				{
+					"Name": "Guardianship of the Greenwood",
+					"History": "The woodland folk take only what the forest can spare, leaving each tree with strength to live and grow.",
+					"Description": "Gatherers leave at least 5% of each tree's wood unharvested."
+				},
+				{
+					"Name": "March-wardens of Doriath",
+					"History": "The March-wardens guard the borders of the hidden kingdom, raising their halls swiftly along the marches.",
+					"Description": "Houses -25% build time."
+				},
+				{
+					"Name": "Sindar Forging",
+					"History": "The forges of Menegroth temper axe and blade for the hidden kingdom's wardens, keen enough for a single clean stroke.",
+					"Description": "Infantry +1 Hack attack damage."
+				},
+				{
+					"Name": "Song of Things Unseen",
+					"History": "The masons of Menegroth shape stone deep beneath the forest, building halls that endure like the trees above.",
+					"Description": "Structures +15% health."
+				},
+				{
+					"Name": "Warden's Glade",
+					"History": "In Doriath's guarded glades, field and forest yield together, and gatherers take only what the woodland can spare.",
+					"Description": "Workers +15% food and wood gather rate."
+				}
+			],
+			"Heroes": [
+				{
+					"Name": "Thingol",
+					"Class": "King of Doriath",
+					"Armament": "Sword",
+					"Emblem": "",
+					"History": "King Thingol leads Doriath's infantry with a local combat bonus."
+				},
+				{
+					"Name": "Melian",
+					"Class": "Maia Queen",
+					"Armament": "Support",
+					"Emblem": "",
+					"History": "Melian heals nearby allies and strengthens the slowing, obscuring Girdle around her."
+				},
+				{
+					"Name": "Beleg",
+					"Class": "Marchwarden",
+					"Armament": "Bow",
+					"Emblem": "",
+					"History": "Beleg Strongbow is a long-range archer whose guidance improves nearby archers."
+				}
+			]
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Hidden Kingdom",
+			"History": "Behind the Girdle of Melian, the Sindar and Marchwardens of Doriath learned to fight as the forest fights: unseen until the moment of the blow.",
+			"Description": "Doriath Rangers conceal themselves while stationary in forest. Concealment breaks on movement, attack, damage, or when enemies come close. Inside the Girdle they are revealed only at close range."
+		},
+		{
+			"Name": "The Girdle of Melian",
+			"History": "Melian girdled all Doriath about with a fence of mist and shadow, so that the hidden kingdom lay unseen, and those who entered it wandered lost.",
+			"Description": "Doriath Civic Centres project a woodland mist: enemy units within it move -10% slower and see -15% less. Menegroth deepens the Girdle further. Destroy the sources to lift it."
+		},
+		{
+			"Name": "Melian's Guard",
+			"History": "The halls of Menegroth and the spear-wards of the Marchwardens keep the hidden kingdom, rewarding prepared woodland defense over open-field battle.",
+			"Description": "Woodland-tempered infantry with strong anti-cavalry spears, but weaker in open-ground slugging matches than the coastal hosts of Lindon."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/doriath/wallset_stone"
+	],
+	"Structures": [
+		{
+			"Name": "Menegroth",
+			"History": "The Thousand Caves are the hidden halls and seat of King Thingol.",
+			"Description": "Doriath's wonder deepens the Girdle around it and researches the Girdle of Melian."
+		},
+		{
+			"Name": "Grove of the Shepherds",
+			"History": "The Ents, ancient shepherds of the forest, gather in this living moot.",
+			"Description": "Trains Ent-allies, Doriath's organic answer to walls and siege engines."
+		},
+		{
+			"Name": "Hunter's Cache",
+			"History": "A small forward camp where hunters can bring their food to safety.",
+			"Description": "A cheap food-only dropsite that can be built near wildlife."
+		}
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/doriath/civil_centre"
+		},
+		{
+			"Template": "units/doriath/support_worker",
+			"Count": 4
+		},
+		{
+			"Template": "units/doriath/infantry_spearman",
+			"Count": 2
+		}
+	],
+	"AINames": [
+		"Thingol",
+		"Melian",
+		"Beleg",
+		"Mablung",
+		"Saeros",
+		"Nellas",
+		"Thranduil",
+		"Avarach"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_infantry_ranged_b": "units/doriath/infantry_ranger",
+		"skirmish/units/default_infantry_melee_b": "units/doriath/infantry_spearman",
+		"skirmish/units/default_support_civilian": "units/doriath/support_worker",
+		"skirmish/units/default_cavalry": "units/doriath/infantry_spearman",
+		"skirmish/structures/default_defense_tower": "structures/doriath/defense_tower"
+	},
+	"SelectableInGameSetup": true
+}
