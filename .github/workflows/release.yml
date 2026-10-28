@@ -1,0 +1,106 @@
+name: Create release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version without the v prefix (for example, 0.0.2)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Require the default branch
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/$DEFAULT_BRANCH" ]; then
+            echo "::error::Run this workflow from the default branch ($DEFAULT_BRANCH)."
+            exit 1
+          fi
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Update version and prepare release
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+          from pathlib import Path
+
+          path = Path("tolkien/mod.json")
+          text = path.read_text(encoding="utf-8")
+          metadata = json.loads(text)
+          version = os.environ["RELEASE_VERSION"]
+          pattern = re.compile(r"(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)")
+          if not pattern.fullmatch(version):
+              raise SystemExit("Version must use numeric major.minor.patch format.")
+          current = metadata.get("version") if isinstance(metadata, dict) else None
+          if not isinstance(current, str) or not pattern.fullmatch(current):
+              raise SystemExit("tolkien/mod.json has an invalid current version.")
+          if tuple(map(int, version.split("."))) <= tuple(map(int, current.split("."))):
+              raise SystemExit(f"Version {version} must be greater than current version {current}.")
+
+          tag = f"v{version}"
+          tag_check = subprocess.run(
+              ["git", "show-ref", "--verify", "--quiet", f"refs/tags/{tag}"],
+              check=False,
+              stdout=subprocess.DEVNULL,
+              stderr=subprocess.DEVNULL,
+          )
+          if tag_check.returncode == 0:
+              raise SystemExit(f"Tag {tag} already exists locally.")
+          if not isinstance(metadata, dict):
+              raise SystemExit("tolkien/mod.json must contain a JSON object.")
+
+          updated, replacements = re.subn(
+              r'(?m)^([ \t]*"version"[ \t]*:[ \t]*)"[^"]*"',
+              lambda match: f'{match.group(1)}"{version}"',
+              text,
+          )
+          if replacements != 1:
+              raise SystemExit("Expected exactly one version field in tolkien/mod.json.")
+          path.write_text(updated, encoding="utf-8")
+          print(f"Updated tolkien/mod.json to {version}.")
+          PY
+          TAG="v${RELEASE_VERSION}"
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null 2>&1; then
+            echo "::error::Tag $TAG already exists on origin."
+            exit 1
+          fi
+          python tools/validate_mod.py
+          python tools/package_mod.py --output-dir dist --tag "$TAG"
+      - name: Commit version and create tag
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: |
+          TAG="v${RELEASE_VERSION}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tolkien/mod.json
+          git commit -m "Release $TAG"
+          git tag -a "$TAG" -m "Release $TAG"
+          git push origin "HEAD:refs/heads/$DEFAULT_BRANCH" "refs/tags/$TAG"
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ inputs.version }}
+          files: |
+            dist/*.zip
+            dist/*.sha256
+          generate_release_notes: true

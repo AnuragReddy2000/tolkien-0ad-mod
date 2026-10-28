@@ -41,6 +41,14 @@ Push builds are available as GitHub Actions artifacts. They are useful for
 testing but are not published releases; use a tagged release for a stable,
 version-matched download.
 
+To publish a release, open **Actions → Create release → Run workflow**, run it
+from the default branch, and enter the new version without the `v` prefix
+(for example, `0.0.2`). The workflow updates `tolkien/mod.json`, validates and
+packages the mod, pushes a version commit and matching `v` tag, and publishes
+a GitHub Release with the archive and checksum. The version must be greater
+than the current version. The repository must allow GitHub Actions to write
+contents and push to the default branch.
+
 ## Repository layout
 
 ```text
