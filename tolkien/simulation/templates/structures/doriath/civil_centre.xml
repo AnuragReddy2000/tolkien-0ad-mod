@@ -17,6 +17,7 @@
       phase_town_{civ}
       phase_city_{civ}
       doriath_march_wardens
+      doriath_song_of_things_unseen
     </Technologies>
   </Researcher>
   <Trainer>

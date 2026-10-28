@@ -9,12 +9,11 @@
       <metal>0</metal>
     </Resources>
   </Cost>
-  <!-- Wonder-scale mesh: single 55x57m Stonehenge ring (measured from the
-       .dae vertex bounds), so the footprint mirrors the vanilla wonder
-       (Circle 30 / 55x55). Do NOT shrink this to "save space" — the ring
-       would overhang neighbours and read as a placement lie in Atlas. -->
+  <!-- Compact grove: the Stonehenge ring props were dropped from the actor,
+       leaving only the tree-grove heart, so the footprint is ~1/3 of the old
+       wonder-scale one (Circle 30 / 55x55 -> Circle 17.3 / 31.8x31.8). -->
   <Footprint replace="">
-    <Circle radius="30.0"/>
+    <Circle radius="17.3"/>
     <Height>20.0</Height>
   </Footprint>
   <Health>
@@ -31,16 +30,17 @@
     </Requirements>
   </Identity>
   <Obstruction>
-    <Static width="55.0" depth="55.0"/>
+    <Static width="31.8" depth="31.8"/>
   </Obstruction>
+  <ProductionQueue/>
   <Trainer>
     <Entities datatype="tokens">
       units/{civ}/siege_ent
     </Entities>
   </Trainer>
   <VisualActor>
-    <!-- Stone-circle moot ring with a living tree heart (see actor). -->
-    <FoundationActor>structures/fndn_stonehenge.xml</FoundationActor>
+    <!-- Compact tree-grove heart (see actor). -->
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
     <Actor>structures/doriath/ent_grove.xml</Actor>
   </VisualActor>
 </Entity>

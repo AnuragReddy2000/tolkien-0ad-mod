@@ -4,6 +4,9 @@
     <Civ>lindon</Civ>
     <SpecificName>House of the Havens</SpecificName>
   </Identity>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Trainer disable=""/>
   <VisualActor>
     <Actor>structures/seleucids/house.xml</Actor>

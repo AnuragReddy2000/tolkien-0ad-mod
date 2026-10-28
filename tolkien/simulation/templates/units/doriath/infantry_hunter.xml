@@ -83,6 +83,6 @@
     </Modifiers>
   </ForestAffinity>
   <VisualActor>
-    <Actor>units/athenians/infantry_javelineer_b.xml</Actor>
+    <Actor>units/athenians/infantry_javelinist_b.xml</Actor>
   </VisualActor>
 </Entity>

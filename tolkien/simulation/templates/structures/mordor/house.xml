@@ -4,6 +4,9 @@
     <Civ>mordor</Civ>
     <SpecificName>Slave Quarters</SpecificName>
   </Identity>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Trainer disable=""/>
   <VisualActor>
     <Actor>structures/mordor/house.xml</Actor>

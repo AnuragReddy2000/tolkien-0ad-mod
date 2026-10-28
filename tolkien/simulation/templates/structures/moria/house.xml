@@ -15,6 +15,9 @@
     <Civ>moria</Civ>
     <SpecificName>Deep Dwelling</SpecificName>
   </Identity>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
   <Trainer disable=""/>
   <VisualActor>
     <Actor>structures/carthaginians/house.xml</Actor>

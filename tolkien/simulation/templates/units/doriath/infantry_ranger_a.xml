@@ -7,6 +7,6 @@
     <Entity>units/doriath/infantry_ranger_e</Entity>
   </Promotion>
   <VisualActor>
-    <Actor>units/athenians/infantry_archer_e.xml</Actor>
+    <Actor>units/doriath/ranger_a.xml</Actor>
   </VisualActor>
 </Entity>
